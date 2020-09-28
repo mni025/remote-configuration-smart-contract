@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Mon Sep 28 09:58:35 2020
+# Process ID: 5752
+# Current directory: D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.runs/synth_1
+# Command line: vivado.exe -log zynqWithWifiExp_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source zynqWithWifiExp_wrapper.tcl
+# Log file: D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.runs/synth_1/zynqWithWifiExp_wrapper.vds
+# Journal file: D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source zynqWithWifiExp_wrapper.tcl -notrace

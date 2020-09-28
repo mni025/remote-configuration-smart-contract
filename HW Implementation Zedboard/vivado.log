@@ -1,0 +1,623 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Fri Sep 25 08:50:11 2020
+# Process ID: 6448
+# Current directory: D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent21216 D:\Tools\xilinxVivado\VipinKizheppatt\remoteConfig\vivadoProject\zedWithWifiExp.xpr
+# Log file: D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/vivado.log
+# Journal file: D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.xpr
+INFO: [Project 1-313] Project file moved from 'D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp' since last save.
+WARNING: [Project 1-312] File not found as 'D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/zynqWithWifiExp.bd'; using path 'D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/zynqWithWifiExp.bd' instead.
+WARNING: [Project 1-312] File not found as 'D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/hdl/zynqWithWifiExp_wrapper.v'; using path 'D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/hdl/zynqWithWifiExp_wrapper.v' instead.
+WARNING: [Project 1-312] File not found as 'D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.srcs/constrs_1/new/esp.xdc'; using path 'D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/constrs_1/new/esp.xdc' instead.
+Scanning sources...
+Finished scanning sources
+WARNING: [Project 1-509] GeneratedRun file for 'synth_1' not found
+WARNING: [Project 1-509] GeneratedRun file for 'zynqWithWifiExp_axi_gpio_1_0_synth_1' not found
+WARNING: [Project 1-509] GeneratedRun file for 'zynqWithWifiExp_xbar_0_synth_1' not found
+WARNING: [Project 1-509] GeneratedRun file for 'zynqWithWifiExp_rst_ps7_0_100M_0_synth_1' not found
+WARNING: [Project 1-509] GeneratedRun file for 'zynqWithWifiExp_processing_system7_0_0_synth_1' not found
+WARNING: [Project 1-509] GeneratedRun file for 'zynqWithWifiExp_auto_pc_0_synth_1' not found
+WARNING: [Project 1-509] GeneratedRun file for 'zynqWithWifiExp_axi_gpio_0_0_synth_1' not found
+WARNING: [Project 1-509] GeneratedRun file for 'impl_1' not found
+INFO: [filemgmt 56-1] IPUserFilesDir: Directory not found as 'D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.ip_user_files'; using path 'D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.ip_user_files' instead.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.
+open_project: Time (s): cpu = 00:00:25 ; elapsed = 00:02:07 . Memory (MB): peak = 707.078 ; gain = 93.176
+update_compile_order -fileset sources_1
+open_bd_design {D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/zynqWithWifiExp.bd}
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding cell -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_0
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_100M
+Adding cell -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_1
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Successfully read diagram <zynqWithWifiExp> from BD file <D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/zynqWithWifiExp.bd>
+open_bd_design: Time (s): cpu = 00:00:18 ; elapsed = 00:01:29 . Memory (MB): peak = 784.129 ; gain = 77.051
+update_ip_catalog -rebuild
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+set_property  ip_repo_paths  D:/Tools/xilinxVivado/ip_repo [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Tools/xilinxVivado/ip_repo'.
+update_ip_catalog -rebuild
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Tools/xilinxVivado/ip_repo'.
+config_ip_cache -import_from_project -use_cache_location D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.cache/ip
+INFO: [Coretcl 2-1503] Importing synthesis data to the IP Cache for IP zynqWithWifiExp_xbar_0
+INFO: [Coretcl 2-1503] Importing synthesis data to the IP Cache for IP zynqWithWifiExp_axi_gpio_1_0
+INFO: [Coretcl 2-1503] Importing synthesis data to the IP Cache for IP zynqWithWifiExp_rst_ps7_0_100M_0
+INFO: [Coretcl 2-1503] Importing synthesis data to the IP Cache for IP zynqWithWifiExp_axi_gpio_0_0
+INFO: [Coretcl 2-1503] Importing synthesis data to the IP Cache for IP zynqWithWifiExp_processing_system7_0_0
+INFO: [Coretcl 2-1503] Importing synthesis data to the IP Cache for IP zynqWithWifiExp_auto_pc_0
+update_ip_catalog
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+config_ip_cache -import_from_project -use_cache_location D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.cache/ip
+INFO: [Coretcl 2-1503] Importing synthesis data to the IP Cache for IP zynqWithWifiExp_xbar_0
+INFO: [Coretcl 2-1503] Importing synthesis data to the IP Cache for IP zynqWithWifiExp_axi_gpio_1_0
+INFO: [Coretcl 2-1503] Importing synthesis data to the IP Cache for IP zynqWithWifiExp_rst_ps7_0_100M_0
+INFO: [Coretcl 2-1503] Importing synthesis data to the IP Cache for IP zynqWithWifiExp_axi_gpio_0_0
+INFO: [Coretcl 2-1503] Importing synthesis data to the IP Cache for IP zynqWithWifiExp_processing_system7_0_0
+INFO: [Coretcl 2-1503] Importing synthesis data to the IP Cache for IP zynqWithWifiExp_auto_pc_0
+update_ip_catalog
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:myipBCM:1.0 myipBCM_0
+create_bd_cell: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 860.145 ; gain = 1.430
+endgroup
+delete_bd_objs [get_bd_nets processing_system7_0_FCLK_RESET0_N] [get_bd_nets rst_ps7_0_100M_interconnect_aresetn] [get_bd_cells rst_ps7_0_100M]
+delete_bd_objs [get_bd_intf_nets processing_system7_0_M_AXI_GP0] [get_bd_intf_nets ps7_0_axi_periph_M00_AXI] [get_bd_intf_nets ps7_0_axi_periph_M01_AXI] [get_bd_cells ps7_0_axi_periph]
+delete_bd_objs [get_bd_intf_nets axi_gpio_0_GPIO] [get_bd_nets rst_ps7_0_100M_peripheral_aresetn] [get_bd_cells axi_gpio_0]
+delete_bd_objs [get_bd_intf_ports sws_8bits]
+delete_bd_objs [get_bd_intf_nets axi_gpio_1_GPIO] [get_bd_intf_ports leds_8bits]
+delete_bd_objs [get_bd_cells axi_gpio_1]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config {Master "/processing_system7_0/M_AXI_GP0" intc_ip "New AXI Interconnect" Clk_xbar "Auto" Clk_master "Auto" Clk_slave "Auto" }  [get_bd_intf_pins myipBCM_0/S00_AXI]
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+</myipBCM_0/S00_AXI/S00_AXI_reg> is being mapped into </processing_system7_0/Data> at <0x43C00000 [ 64K ]>
+apply_bd_automation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 888.719 ; gain = 7.465
+regenerate_bd_layout
+validate_bd_design
+delete_ip_run [get_files -of_objects [get_fileset sources_1] D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/zynqWithWifiExp.bd]
+set_property synth_checkpoint_mode None [get_files  D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/zynqWithWifiExp.bd]
+generate_target all [get_files  D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/zynqWithWifiExp.bd]
+INFO: [BD 41-1662] The design 'zynqWithWifiExp.bd' is already validated. Therefore parameter propagation will not be re-run.
+Wrote  : <D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/zynqWithWifiExp.bd> 
+Wrote  : <D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ui/bd_c1223ca0.ui> 
+VHDL Output written to : D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/synth/zynqWithWifiExp.v
+VHDL Output written to : D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/sim/zynqWithWifiExp.v
+VHDL Output written to : D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/hdl/zynqWithWifiExp_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block myipBCM_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ip/zynqWithWifiExp_auto_pc_1/zynqWithWifiExp_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/hw_handoff/zynqWithWifiExp.hwh
+Generated Block Design Tcl file D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/hw_handoff/zynqWithWifiExp_bd.tcl
+Generated Hardware Definition File D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/synth/zynqWithWifiExp.hwdef
+generate_target: Time (s): cpu = 00:00:08 ; elapsed = 00:00:18 . Memory (MB): peak = 994.914 ; gain = 97.164
+export_ip_user_files -of_objects [get_files D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/zynqWithWifiExp.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/zynqWithWifiExp.bd] -directory D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.ip_user_files/sim_scripts -ip_user_files_dir D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.ip_user_files -ipstatic_source_dir D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.cache/compile_simlib/modelsim} {questa=D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.cache/compile_simlib/questa} {riviera=D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.cache/compile_simlib/riviera} {activehdl=D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+ipx::edit_ip_in_project -upgrade true -name myipBCM_v1_0_project -directory D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.tmp/myipBCM_v1_0_project d:/Tools/xilinxVivado/ip_repo/myipBCM_1.0/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'd:/tools/xilinxvivado/vipinkizheppatt/remoteconfig/vivadoproject/zedwithwifiexp.tmp/myipbcm_v1_0_project'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:12 . Memory (MB): peak = 1013.754 ; gain = 0.000
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Tools/xilinxVivado/ip_repo'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:17 . Memory (MB): peak = 1014.266 ; gain = 0.512
+update_compile_order -fileset sources_1
+close_project
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_0
+apply_board_connection -board_interface "leds_8bits" -ip_intf "axi_gpio_0/GPIO" -diagram "zynqWithWifiExp" 
+INFO: [board_interface 100-100] set_property CONFIG.USE_BOARD_FLOW true [get_bd_cells -quiet /axi_gpio_0]
+INFO: [board_interface 100-100] set_property CONFIG.GPIO_BOARD_INTERFACE leds_8bits [get_bd_cells -quiet /axi_gpio_0]
+INFO: [board_interface 100-100] create_bd_intf_port -mode Master -vlnv xilinx.com:interface:gpio_rtl:1.0 leds_8bits
+INFO: [board_interface 100-100] connect_bd_intf_net /leds_8bits /axi_gpio_0/GPIO
+endgroup
+undo
+INFO: [Common 17-17] undo 'endgroup'
+INFO: [Common 17-17] undo 'apply_board_connection -board_interface "leds_8bits" -ip_intf "axi_gpio_0/GPIO" -diagram "zynqWithWifiExp" '
+INFO: [Common 17-17] undo 'create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_0'
+INFO: [Common 17-17] undo 'startgroup'
+create_bd_port -dir O -from 7 -to 0 leds
+connect_bd_net [get_bd_ports leds] [get_bd_pins myipBCM_0/leds]
+regenerate_bd_layout
+save_bd_design
+Wrote  : <D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/zynqWithWifiExp.bd> 
+Wrote  : <D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ui/bd_c1223ca0.ui> 
+regenerate_bd_layout
+validate_bd_design
+generate_target all [get_files  D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/zynqWithWifiExp.bd]
+INFO: [BD 41-1662] The design 'zynqWithWifiExp.bd' is already validated. Therefore parameter propagation will not be re-run.
+Wrote  : <D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/zynqWithWifiExp.bd> 
+Wrote  : <D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ui/bd_c1223ca0.ui> 
+VHDL Output written to : D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/synth/zynqWithWifiExp.v
+VHDL Output written to : D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/sim/zynqWithWifiExp.v
+VHDL Output written to : D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/hdl/zynqWithWifiExp_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block myipBCM_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ip/zynqWithWifiExp_auto_pc_0/zynqWithWifiExp_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/hw_handoff/zynqWithWifiExp.hwh
+Generated Block Design Tcl file D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/hw_handoff/zynqWithWifiExp_bd.tcl
+Generated Hardware Definition File D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/synth/zynqWithWifiExp.hwdef
+export_ip_user_files -of_objects [get_files D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/zynqWithWifiExp.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/zynqWithWifiExp.bd] -directory D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.ip_user_files/sim_scripts -ip_user_files_dir D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.ip_user_files -ipstatic_source_dir D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.cache/compile_simlib/modelsim} {questa=D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.cache/compile_simlib/questa} {riviera=D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.cache/compile_simlib/riviera} {activehdl=D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+make_wrapper -files [get_files D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/zynqWithWifiExp.bd] -top
+launch_runs synth_1 -jobs 2
+[Fri Sep 25 09:28:51 2020] Launched synth_1...
+Run output will be captured here: D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:20 . Memory (MB): peak = 1061.988 ; gain = 8.758
+launch_runs impl_1 -jobs 2
+[Fri Sep 25 09:36:20 2020] Launched impl_1...
+Run output will be captured here: D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 14 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.4
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/.Xil/Vivado-6448-DESKTOP-98SOI2D/dcp14/zynqWithWifiExp_wrapper_board.xdc]
+Finished Parsing XDC File [D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/.Xil/Vivado-6448-DESKTOP-98SOI2D/dcp14/zynqWithWifiExp_wrapper_board.xdc]
+Parsing XDC File [D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/.Xil/Vivado-6448-DESKTOP-98SOI2D/dcp14/zynqWithWifiExp_wrapper_early.xdc]
+Finished Parsing XDC File [D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/.Xil/Vivado-6448-DESKTOP-98SOI2D/dcp14/zynqWithWifiExp_wrapper_early.xdc]
+Parsing XDC File [D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/.Xil/Vivado-6448-DESKTOP-98SOI2D/dcp14/zynqWithWifiExp_wrapper.xdc]
+Finished Parsing XDC File [D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/.Xil/Vivado-6448-DESKTOP-98SOI2D/dcp14/zynqWithWifiExp_wrapper.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.800 . Memory (MB): peak = 1368.082 ; gain = 1.191
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.816 . Memory (MB): peak = 1368.082 ; gain = 1.191
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:34 ; elapsed = 00:01:18 . Memory (MB): peak = 1459.391 ; gain = 387.234
+startgroup
+set_property package_pin "" [get_ports [list  {leds[0]}]]
+place_ports {leds[7]} U14
+endgroup
+place_ports {leds[6]} U19
+place_ports {leds[5]} W22
+place_ports {leds[4]} V22
+place_ports {leds[3]} U21
+place_ports {leds[2]} U22
+place_ports {leds[1]} T21
+place_ports {leds[0]} T22
+set_property is_loc_fixed false [get_ports [list  {leds[0]}]]
+set_property is_loc_fixed true [get_ports [list  {leds[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {leds[7]} {leds[6]} {leds[5]} {leds[4]} {leds[3]} {leds[2]} {leds[1]} {leds[0]}]]
+save_constraints
+save_constraints: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1977.680 ; gain = 0.000
+reset_run impl_1
+launch_runs impl_1 -jobs 2
+[Fri Sep 25 09:50:26 2020] Launched impl_1...
+Run output will be captured here: D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1977.680 ; gain = 0.000
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri Sep 25 10:11:19 2020] Launched impl_1...
+Run output will be captured here: D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:50 . Memory (MB): peak = 1977.680 ; gain = 0.000
+file mkdir D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.sdk
+file copy -force D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.runs/impl_1/zynqWithWifiExp_wrapper.sysdef D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.sdk/zynqWithWifiExp_wrapper.hdf
+
+launch_sdk -workspace D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.sdk -hwspec D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.sdk/zynqWithWifiExp_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.sdk -hwspec D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.sdk/zynqWithWifiExp_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+xit::source_ipfile: Time (s): cpu = 00:00:00 ; elapsed = 00:00:11 . Memory (MB): peak = 1977.680 ; gain = 0.000
+get_paramspec: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1977.680 ; gain = 0.000
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+startgroup
+set_property -dict [list CONFIG.PCW_UART0_BAUD_RATE {115200} CONFIG.PCW_UART1_BAUD_RATE {115200}] [get_bd_cells processing_system7_0]
+endgroup
+make_wrapper -files [get_files D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/zynqWithWifiExp.bd] -top
+delete_bd_objs: Time (s): cpu = 00:00:00 ; elapsed = 00:00:11 . Memory (MB): peak = 2067.254 ; gain = 0.000
+create_bd_cell: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 2067.254 ; gain = 0.000
+Wrote  : <D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/zynqWithWifiExp.bd> 
+VHDL Output written to : D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/synth/zynqWithWifiExp.v
+VHDL Output written to : D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/sim/zynqWithWifiExp.v
+VHDL Output written to : D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/hdl/zynqWithWifiExp_wrapper.v
+make_wrapper: Time (s): cpu = 00:00:03 ; elapsed = 00:00:58 . Memory (MB): peak = 2073.926 ; gain = 6.672
+reset_run synth_1
+reset_run: Time (s): cpu = 00:00:01 ; elapsed = 00:00:13 . Memory (MB): peak = 2076.660 ; gain = 0.000
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+INFO: [BD 41-1662] The design 'zynqWithWifiExp.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/synth/zynqWithWifiExp.v
+VHDL Output written to : D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/sim/zynqWithWifiExp.v
+VHDL Output written to : D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/hdl/zynqWithWifiExp_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block myipBCM_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ip/zynqWithWifiExp_auto_pc_0/zynqWithWifiExp_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/hw_handoff/zynqWithWifiExp.hwh
+Generated Block Design Tcl file D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/hw_handoff/zynqWithWifiExp_bd.tcl
+Generated Hardware Definition File D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/synth/zynqWithWifiExp.hwdef
+[Fri Sep 25 12:02:34 2020] Launched synth_1...
+Run output will be captured here: D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.runs/synth_1/runme.log
+[Fri Sep 25 12:02:36 2020] Launched impl_1...
+Run output will be captured here: D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:43 ; elapsed = 00:03:18 . Memory (MB): peak = 2166.629 ; gain = 89.969
+file copy -force D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.runs/impl_1/zynqWithWifiExp_wrapper.sysdef D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.sdk/zynqWithWifiExp_wrapper.hdf
+
+launch_sdk -workspace D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.sdk -hwspec D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.sdk/zynqWithWifiExp_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.sdk -hwspec D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.sdk/zynqWithWifiExp_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+launch_sdk -workspace D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.sdk -hwspec D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.sdk/zynqWithWifiExp_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.sdk -hwspec D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.sdk/zynqWithWifiExp_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+ipx::edit_ip_in_project -upgrade true -name myipBCM_v1_0_project -directory D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.tmp/myipBCM_v1_0_project d:/Tools/xilinxVivado/ip_repo/myipBCM_1.0/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'd:/tools/xilinxvivado/vipinkizheppatt/remoteconfig/vivadoproject/zedwithwifiexp.tmp/myipbcm_v1_0_project'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:01:48 . Memory (MB): peak = 2169.578 ; gain = 1.684
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Tools/xilinxVivado/ip_repo'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:15 ; elapsed = 00:02:37 . Memory (MB): peak = 2169.578 ; gain = 1.684
+update_compile_order -fileset sources_1
+ipx::merge_project_changes files [ipx::current_core]
+set_property core_revision 22 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+close_project -delete
+close_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 2169.578 ; gain = 0.000
+update_ip_catalog -rebuild -repo_path d:/Tools/xilinxVivado/ip_repo
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'd:/Tools/xilinxVivado/ip_repo'
+update_ip_catalog: Time (s): cpu = 00:00:03 ; elapsed = 00:00:25 . Memory (MB): peak = 2172.070 ; gain = 2.492
+report_ip_status -name ip_status 
+upgrade_ip -vlnv xilinx.com:user:myipBCM:1.0 [get_ips  zynqWithWifiExp_myipBCM_0_0] -log ip_upgrade.log
+Upgrading 'D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/zynqWithWifiExp.bd'
+INFO: [IP_Flow 19-3422] Upgraded zynqWithWifiExp_myipBCM_0_0 (myipBCM_v1.0 1.0) from revision 21 to revision 22
+Wrote  : <D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/zynqWithWifiExp.bd> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/ip_upgrade.log'.
+upgrade_ip: Time (s): cpu = 00:00:01 ; elapsed = 00:00:25 . Memory (MB): peak = 2172.070 ; gain = 0.000
+export_ip_user_files -of_objects [get_ips zynqWithWifiExp_myipBCM_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/zynqWithWifiExp.bd]
+Wrote  : <D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/zynqWithWifiExp.bd> 
+VHDL Output written to : D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/synth/zynqWithWifiExp.v
+VHDL Output written to : D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/sim/zynqWithWifiExp.v
+VHDL Output written to : D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/hdl/zynqWithWifiExp_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block myipBCM_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ip/zynqWithWifiExp_auto_pc_0/zynqWithWifiExp_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/hw_handoff/zynqWithWifiExp.hwh
+Generated Block Design Tcl file D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/hw_handoff/zynqWithWifiExp_bd.tcl
+Generated Hardware Definition File D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/synth/zynqWithWifiExp.hwdef
+generate_target: Time (s): cpu = 00:00:04 ; elapsed = 00:01:16 . Memory (MB): peak = 2207.074 ; gain = 35.004
+export_ip_user_files -of_objects [get_files D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/zynqWithWifiExp.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/zynqWithWifiExp.bd] -directory D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.ip_user_files/sim_scripts -ip_user_files_dir D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.ip_user_files -ipstatic_source_dir D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.cache/compile_simlib/modelsim} {questa=D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.cache/compile_simlib/questa} {riviera=D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.cache/compile_simlib/riviera} {activehdl=D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+make_wrapper -files [get_files D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/zynqWithWifiExp.bd] -top
+reset_run synth_1
+reset_run: Time (s): cpu = 00:00:01 ; elapsed = 00:00:16 . Memory (MB): peak = 2211.434 ; gain = 0.000
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri Sep 25 16:06:26 2020] Launched synth_1...
+Run output will be captured here: D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.runs/synth_1/runme.log
+[Fri Sep 25 16:06:28 2020] Launched impl_1...
+Run output will be captured here: D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:23 . Memory (MB): peak = 2211.629 ; gain = 0.195
+file copy -force D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.runs/impl_1/zynqWithWifiExp_wrapper.sysdef D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.sdk/zynqWithWifiExp_wrapper.hdf
+
+launch_sdk -workspace D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.sdk -hwspec D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.sdk/zynqWithWifiExp_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.sdk -hwspec D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.sdk/zynqWithWifiExp_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+launch_sdk -workspace D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.sdk -hwspec D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.sdk/zynqWithWifiExp_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.sdk -hwspec D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.sdk/zynqWithWifiExp_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.009 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.061 . PS DDR interfaces might fail when entering negative DQS skew values. 
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+ipx::edit_ip_in_project -upgrade true -name myipBCM_v1_0_project -directory D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.tmp/myipBCM_v1_0_project d:/Tools/xilinxVivado/ip_repo/myipBCM_1.0/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'd:/tools/xilinxvivado/vipinkizheppatt/remoteconfig/vivadoproject/zedwithwifiexp.tmp/myipbcm_v1_0_project'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.
+create_project: Time (s): cpu = 00:00:10 ; elapsed = 00:02:00 . Memory (MB): peak = 2230.855 ; gain = 0.000
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Tools/xilinxVivado/ip_repo'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:13 ; elapsed = 00:03:43 . Memory (MB): peak = 2230.855 ; gain = 0.000
+update_compile_order -fileset sources_1
+ipx::merge_project_changes files [ipx::current_core]
+ipx::merge_project_changes: Time (s): cpu = 00:00:01 ; elapsed = 00:00:23 . Memory (MB): peak = 2278.062 ; gain = 0.000
+set_property core_revision 23 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::update_checksums: Time (s): cpu = 00:00:01 ; elapsed = 00:00:16 . Memory (MB): peak = 2278.062 ; gain = 0.000
+ipx::save_core [ipx::current_core]
+ipx::save_core: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 2278.062 ; gain = 0.000
+close_project -delete
+close_project: Time (s): cpu = 00:00:06 ; elapsed = 00:01:22 . Memory (MB): peak = 2278.984 ; gain = 0.895
+update_ip_catalog -rebuild -repo_path d:/Tools/xilinxVivado/ip_repo
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'd:/Tools/xilinxVivado/ip_repo'
+update_ip_catalog: Time (s): cpu = 00:00:01 ; elapsed = 00:01:59 . Memory (MB): peak = 2278.984 ; gain = 0.000
+report_ip_status -name ip_status 
+upgrade_ip -vlnv xilinx.com:user:myipBCM:1.0 [get_ips  zynqWithWifiExp_myipBCM_0_0] -log ip_upgrade.log
+Upgrading 'D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/zynqWithWifiExp.bd'
+INFO: [IP_Flow 19-3422] Upgraded zynqWithWifiExp_myipBCM_0_0 (myipBCM_v1.0 1.0) from revision 22 to revision 23
+Wrote  : <D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/zynqWithWifiExp.bd> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/ip_upgrade.log'.
+upgrade_ip: Time (s): cpu = 00:00:01 ; elapsed = 00:00:24 . Memory (MB): peak = 2278.984 ; gain = 0.000
+export_ip_user_files -of_objects [get_ips zynqWithWifiExp_myipBCM_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/zynqWithWifiExp.bd]
+delete_bd_objs: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 2278.984 ; gain = 0.000
+create_bd_cell: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 2278.984 ; gain = 0.000
+Wrote  : <D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/zynqWithWifiExp.bd> 
+VHDL Output written to : D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/synth/zynqWithWifiExp.v
+VHDL Output written to : D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/sim/zynqWithWifiExp.v
+VHDL Output written to : D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/hdl/zynqWithWifiExp_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block myipBCM_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ip/zynqWithWifiExp_auto_pc_0/zynqWithWifiExp_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/hw_handoff/zynqWithWifiExp.hwh
+Generated Block Design Tcl file D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/hw_handoff/zynqWithWifiExp_bd.tcl
+Generated Hardware Definition File D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/synth/zynqWithWifiExp.hwdef
+generate_target: Time (s): cpu = 00:00:03 ; elapsed = 00:00:43 . Memory (MB): peak = 2312.855 ; gain = 33.871
+export_ip_user_files -of_objects [get_files D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/zynqWithWifiExp.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/zynqWithWifiExp.bd] -directory D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.ip_user_files/sim_scripts -ip_user_files_dir D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.ip_user_files -ipstatic_source_dir D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.cache/compile_simlib/modelsim} {questa=D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.cache/compile_simlib/questa} {riviera=D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.cache/compile_simlib/riviera} {activehdl=D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+make_wrapper -files [get_files D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/zynqWithWifiExp.bd] -top
+reset_run synth_1
+reset_run: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 2317.090 ; gain = 0.000
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Sat Sep 26 00:27:23 2020] Launched synth_1...
+Run output will be captured here: D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.runs/synth_1/runme.log
+[Sat Sep 26 00:27:24 2020] Launched impl_1...
+Run output will be captured here: D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:16 . Memory (MB): peak = 2318.789 ; gain = 1.699
+file copy -force D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.runs/impl_1/zynqWithWifiExp_wrapper.sysdef D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.sdk/zynqWithWifiExp_wrapper.hdf
+
+launch_sdk -workspace D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.sdk -hwspec D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.sdk/zynqWithWifiExp_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.sdk -hwspec D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.sdk/zynqWithWifiExp_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+launch_sdk -workspace D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.sdk -hwspec D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.sdk/zynqWithWifiExp_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.sdk -hwspec D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.sdk/zynqWithWifiExp_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+ipx::edit_ip_in_project -upgrade true -name myipBCM_v1_0_project -directory D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.tmp/myipBCM_v1_0_project d:/Tools/xilinxVivado/ip_repo/myipBCM_1.0/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'd:/tools/xilinxvivado/vipinkizheppatt/remoteconfig/vivadoproject/zedwithwifiexp.tmp/myipbcm_v1_0_project'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.
+create_project: Time (s): cpu = 00:00:10 ; elapsed = 00:02:11 . Memory (MB): peak = 2339.348 ; gain = 0.000
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Tools/xilinxVivado/ip_repo'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:13 ; elapsed = 00:03:36 . Memory (MB): peak = 2339.348 ; gain = 0.000
+update_compile_order -fileset sources_1
+set_property version 1.1 [ipx::current_core]
+ipx::merge_project_changes files [ipx::current_core]
+set_property previous_version_for_upgrade xilinx.com:user:myipBCM:1.0 [ipx::current_core]
+set_property core_revision 1 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path d:/Tools/xilinxVivado/ip_repo
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'd:/Tools/xilinxVivado/ip_repo'
+update_ip_catalog: Time (s): cpu = 00:00:01 ; elapsed = 00:00:21 . Memory (MB): peak = 2339.348 ; gain = 0.000
+report_ip_status -name ip_status 
+upgrade_ip -vlnv xilinx.com:user:myipBCM:1.1 [get_ips  zynqWithWifiExp_myipBCM_0_0] -log ip_upgrade.log
+Upgrading 'D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/zynqWithWifiExp.bd'
+INFO: [IP_Flow 19-1972] Upgraded zynqWithWifiExp_myipBCM_0_0 from myipBCM_v1.0 1.0 to myipBCM_v1.0 1.1
+Wrote  : <D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/zynqWithWifiExp.bd> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/ip_upgrade.log'.
+upgrade_ip: Time (s): cpu = 00:00:02 ; elapsed = 00:00:11 . Memory (MB): peak = 2339.348 ; gain = 0.000
+export_ip_user_files -of_objects [get_ips zynqWithWifiExp_myipBCM_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/zynqWithWifiExp.bd]
+Wrote  : <D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/zynqWithWifiExp.bd> 
+VHDL Output written to : D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/synth/zynqWithWifiExp.v
+VHDL Output written to : D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/sim/zynqWithWifiExp.v
+VHDL Output written to : D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/hdl/zynqWithWifiExp_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block myipBCM_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ip/zynqWithWifiExp_auto_pc_0/zynqWithWifiExp_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/hw_handoff/zynqWithWifiExp.hwh
+Generated Block Design Tcl file D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/hw_handoff/zynqWithWifiExp_bd.tcl
+Generated Hardware Definition File D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/synth/zynqWithWifiExp.hwdef
+generate_target: Time (s): cpu = 00:00:03 ; elapsed = 00:00:31 . Memory (MB): peak = 2357.152 ; gain = 17.805
+export_ip_user_files -of_objects [get_files D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/zynqWithWifiExp.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/zynqWithWifiExp.bd] -directory D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.ip_user_files/sim_scripts -ip_user_files_dir D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.ip_user_files -ipstatic_source_dir D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.cache/compile_simlib/modelsim} {questa=D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.cache/compile_simlib/questa} {riviera=D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.cache/compile_simlib/riviera} {activehdl=D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+make_wrapper -files [get_files D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/zynqWithWifiExp.bd] -top
+report_ip_status -name ip_status 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Sat Sep 26 11:26:34 2020] Launched synth_1...
+Run output will be captured here: D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.runs/synth_1/runme.log
+[Sat Sep 26 11:26:36 2020] Launched impl_1...
+Run output will be captured here: D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:17 . Memory (MB): peak = 2361.371 ; gain = 0.055
+file copy -force D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.runs/impl_1/zynqWithWifiExp_wrapper.sysdef D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.sdk/zynqWithWifiExp_wrapper.hdf
+
+launch_sdk -workspace D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.sdk -hwspec D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.sdk/zynqWithWifiExp_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.sdk -hwspec D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.sdk/zynqWithWifiExp_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+launch_sdk -workspace D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.sdk -hwspec D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.sdk/zynqWithWifiExp_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.sdk -hwspec D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.sdk/zynqWithWifiExp_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+ipx::edit_ip_in_project -upgrade true -name myipBCM_v1_1_project -directory D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.tmp/myipBCM_v1_1_project d:/Tools/xilinxVivado/ip_repo/myipBCM_1.0/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'd:/tools/xilinxvivado/vipinkizheppatt/remoteconfig/vivadoproject/zedwithwifiexp.tmp/myipbcm_v1_1_project'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:01:29 . Memory (MB): peak = 2362.027 ; gain = 0.656
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Tools/xilinxVivado/ip_repo'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:11 ; elapsed = 00:02:01 . Memory (MB): peak = 2362.027 ; gain = 0.656
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'd:/tools/xilinxvivado/vipinkizheppatt/remoteconfig/vivadoproject/zedwithwifiexp.tmp/myipbcm_v1_1_project/myipBCM_v1_1_project.sim/sim_1/behav/xsim'
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Vivado 12-5357] 'setup' step aborted
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'd:/tools/xilinxvivado/vipinkizheppatt/remoteconfig/vivadoproject/zedwithwifiexp.tmp/myipbcm_v1_1_project/myipBCM_v1_1_project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'myipBCM_v1_0' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'd:/tools/xilinxvivado/vipinkizheppatt/remoteconfig/vivadoproject/zedwithwifiexp.tmp/myipbcm_v1_1_project/myipBCM_v1_1_project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj myipBCM_v1_0_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "d:/tools/xilinxvivado/ip_repo/myipBCM_1.0/src/bcmProcess.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bcmProcess
+INFO: [VRFC 10-2263] Analyzing Verilog file "d:/tools/xilinxvivado/ip_repo/myipBCM_1.0/src/hcmProcess.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hcmProcess
+INFO: [VRFC 10-2263] Analyzing Verilog file "d:/tools/xilinxvivado/ip_repo/myipBCM_1.0/hdl/myipBCM_v1_0_S00_AXI.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myipBCM_v1_0_S00_AXI
+INFO: [VRFC 10-2263] Analyzing Verilog file "d:/tools/xilinxvivado/ip_repo/myipBCM_1.0/src/timestampProcess.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module timestampProcess
+INFO: [VRFC 10-2263] Analyzing Verilog file "d:/tools/xilinxvivado/ip_repo/myipBCM_1.0/hdl/myipBCM_v1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myipBCM_v1_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "d:/tools/xilinxvivado/vipinkizheppatt/remoteconfig/vivadoproject/zedwithwifiexp.tmp/myipbcm_v1_1_project/myipBCM_v1_1_project.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:51 . Memory (MB): peak = 2362.027 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '52' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'd:/tools/xilinxvivado/vipinkizheppatt/remoteconfig/vivadoproject/zedwithwifiexp.tmp/myipbcm_v1_1_project/myipBCM_v1_1_project.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 259acc4d642a490489b487dc8d8f88cd --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot myipBCM_v1_0_behav xil_defaultlib.myipBCM_v1_0 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.bcmProcess
+Compiling module xil_defaultlib.hcmProcess
+Compiling module xil_defaultlib.timestampProcess
+Compiling module xil_defaultlib.myipBCM_v1_0_S00_AXI_default
+Compiling module xil_defaultlib.myipBCM_v1_0
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot myipBCM_v1_0_behav
+
+****** Webtalk v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source d:/tools/xilinxvivado/vipinkizheppatt/remoteconfig/vivadoproject/zedwithwifiexp.tmp/myipbcm_v1_1_project/myipBCM_v1_1_project.sim/sim_1/behav/xsim/xsim.dir/myipBCM_v1_0_behav/webtalk/xsim_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 51.188 ; gain = 1.414
+INFO: [Common 17-206] Exiting Webtalk at Sat Sep 26 15:34:36 2020...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:02:11 . Memory (MB): peak = 2362.027 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '132' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'd:/tools/xilinxvivado/vipinkizheppatt/remoteconfig/vivadoproject/zedwithwifiexp.tmp/myipbcm_v1_1_project/myipBCM_v1_1_project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "myipBCM_v1_0_behav -key {Behavioral:sim_1:Functional:myipBCM_v1_0} -tclbatch {myipBCM_v1_0.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+source myipBCM_v1_0.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+add_wave: Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 2370.383 ; gain = 1.320
+# run 1000ns
+xsim: Time (s): cpu = 00:00:08 ; elapsed = 00:00:35 . Memory (MB): peak = 2370.383 ; gain = 8.355
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'myipBCM_v1_0_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:11 ; elapsed = 00:04:59 . Memory (MB): peak = 2370.383 ; gain = 8.355
+add_wave {{/myipBCM_v1_0/myipBCM_v1_0_S00_AXI_inst/timestampProcessor/ticker}} 
+add_wave {{/myipBCM_v1_0/myipBCM_v1_0_S00_AXI_inst/timestampProcessor/clk}} 
+log_wave {/myipBCM_v1_0/myipBCM_v1_0_S00_AXI_inst/timestampProcessor/clock_out} 
+add_wave {{/myipBCM_v1_0/myipBCM_v1_0_S00_AXI_inst/timestampProcessor/counter}} 
+add_wave {{/myipBCM_v1_0/myipBCM_v1_0_S00_AXI_inst/timestampProcessor/timeup_out}} 
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:37 . Memory (MB): peak = 2393.832 ; gain = 0.000
+launch_runs synth_1 -jobs 2
+[Sun Sep 27 17:31:17 2020] Launched synth_1...
+Run output will be captured here: d:/tools/xilinxvivado/vipinkizheppatt/remoteconfig/vivadoproject/zedwithwifiexp.tmp/myipbcm_v1_1_project/myipBCM_v1_1_project.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:31 . Memory (MB): peak = 2393.832 ; gain = 0.000
+ipx::merge_project_changes files [ipx::current_core]
+ipx::merge_project_changes: Time (s): cpu = 00:00:01 ; elapsed = 00:00:14 . Memory (MB): peak = 2393.953 ; gain = 0.000
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::update_checksums: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 2393.953 ; gain = 0.000
+ipx::save_core [ipx::current_core]
+close_project -delete
+ERROR: [Project 1-161] Failed to remove the directory 'd:/tools/xilinxvivado/vipinkizheppatt/remoteconfig/vivadoproject/zedwithwifiexp.tmp/myipbcm_v1_1_project/myipBCM_v1_1_project.sim'. The directory might be in use by some other process.
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Tools/xilinxVivado/ip_repo'.
+update_ip_catalog: Time (s): cpu = 00:00:01 ; elapsed = 00:00:27 . Memory (MB): peak = 2393.953 ; gain = 0.000
+report_ip_status -name ip_status
+upgrade_ip -vlnv xilinx.com:user:myipBCM:1.1 [get_ips  zynqWithWifiExp_myipBCM_0_0] -log ip_upgrade.log
+Upgrading 'D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/zynqWithWifiExp.bd'
+INFO: [IP_Flow 19-3422] Upgraded zynqWithWifiExp_myipBCM_0_0 (myipBCM_v1.0 1.1) from revision 1 to revision 2
+Wrote  : <D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/zynqWithWifiExp.bd> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/ip_upgrade.log'.
+upgrade_ip: Time (s): cpu = 00:00:02 ; elapsed = 00:00:17 . Memory (MB): peak = 2393.953 ; gain = 0.000
+export_ip_user_files -of_objects [get_ips zynqWithWifiExp_myipBCM_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/zynqWithWifiExp.bd]
+create_bd_cell: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 2393.953 ; gain = 0.000
+Wrote  : <D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/zynqWithWifiExp.bd> 
+VHDL Output written to : D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/synth/zynqWithWifiExp.v
+VHDL Output written to : D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/sim/zynqWithWifiExp.v
+VHDL Output written to : D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/hdl/zynqWithWifiExp_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block myipBCM_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ip/zynqWithWifiExp_auto_pc_0/zynqWithWifiExp_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/hw_handoff/zynqWithWifiExp.hwh
+Generated Block Design Tcl file D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/hw_handoff/zynqWithWifiExp_bd.tcl
+Generated Hardware Definition File D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/synth/zynqWithWifiExp.hwdef
+generate_target: Time (s): cpu = 00:00:06 ; elapsed = 00:00:59 . Memory (MB): peak = 2404.969 ; gain = 11.016
+export_ip_user_files -of_objects [get_files D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/zynqWithWifiExp.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/zynqWithWifiExp.bd] -directory D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.ip_user_files/sim_scripts -ip_user_files_dir D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.ip_user_files -ipstatic_source_dir D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.cache/compile_simlib/modelsim} {questa=D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.cache/compile_simlib/questa} {riviera=D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.cache/compile_simlib/riviera} {activehdl=D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+make_wrapper -files [get_files D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/zynqWithWifiExp.bd] -top
+reset_run synth_1
+reset_run: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 2409.215 ; gain = 0.000
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Sun Sep 27 18:28:01 2020] Launched synth_1...
+Run output will be captured here: D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.runs/synth_1/runme.log
+[Sun Sep 27 18:28:04 2020] Launched impl_1...
+Run output will be captured here: D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:20 . Memory (MB): peak = 2409.215 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Sep 27 19:10:49 2020...
