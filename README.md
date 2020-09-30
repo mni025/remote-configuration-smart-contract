@@ -6,5 +6,10 @@ We implemented the remote IC configuraiton in both pure software and hardware-so
 
 # Demo
 
-A short demo video showing the software implementation of the remote IC configuration can be found on this YouTube link:
+Demo videos showing the implementation of remote IC configuration can be found on these YouTube links:
+
+Software implementation:
 https://www.youtube.com/watch?v=2Eaur3wn_cE&t=11s
+
+Hardware implementation:
+https://www.youtube.com/watch?v=mOxIy6ig-n0
