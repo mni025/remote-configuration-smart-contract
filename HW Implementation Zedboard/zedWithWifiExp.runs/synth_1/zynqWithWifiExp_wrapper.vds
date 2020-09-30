@@ -2,8 +2,8 @@
 # Vivado v2017.4 (64-bit)
 # SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
 # IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-# Start of session at: Mon Sep 28 09:58:35 2020
-# Process ID: 5752
+# Start of session at: Mon Sep 28 23:47:49 2020
+# Process ID: 15552
 # Current directory: D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.runs/synth_1
 # Command line: vivado.exe -log zynqWithWifiExp_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source zynqWithWifiExp_wrapper.tcl
 # Log file: D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.runs/synth_1/zynqWithWifiExp_wrapper.vds
@@ -13,42 +13,44 @@ source zynqWithWifiExp_wrapper.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Tools/xilinxVivado/ip_repo'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.
-add_files: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 259.543 ; gain = 29.641
+add_files: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 259.801 ; gain = 29.941
 Command: synth_design -top zynqWithWifiExp_wrapper -part xc7z020clg484-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 12996 
+INFO: Helper process launched with PID 17344 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 380.789 ; gain = 111.227
+Starting RTL Elaboration : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 381.465 ; gain = 111.379
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'zynqWithWifiExp_wrapper' [D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/hdl/zynqWithWifiExp_wrapper.v:12]
 INFO: [Synth 8-638] synthesizing module 'zynqWithWifiExp' [D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/synth/zynqWithWifiExp.v:318]
 INFO: [Synth 8-638] synthesizing module 'zynqWithWifiExp_myipBCM_0_0' [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ip/zynqWithWifiExp_myipBCM_0_0/synth/zynqWithWifiExp_myipBCM_0_0.v:57]
-INFO: [Synth 8-638] synthesizing module 'myipBCM_v1_0' [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/9f0d/hdl/myipBCM_v1_0.v:4]
+INFO: [Synth 8-638] synthesizing module 'myipBCM_v1_0' [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/8a92/hdl/myipBCM_v1_0.v:4]
 	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S00_AXI_ADDR_WIDTH bound to: 4 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'myipBCM_v1_0_S00_AXI' [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/9f0d/hdl/myipBCM_v1_0_S00_AXI.v:4]
+INFO: [Synth 8-638] synthesizing module 'myipBCM_v1_0_S00_AXI' [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/8a92/hdl/myipBCM_v1_0_S00_AXI.v:4]
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
 	Parameter ADDR_LSB bound to: 2 - type: integer 
 	Parameter OPT_MEM_ADDR_BITS bound to: 1 - type: integer 
-INFO: [Synth 8-226] default block is never used [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/9f0d/hdl/myipBCM_v1_0_S00_AXI.v:237]
-INFO: [Synth 8-226] default block is never used [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/9f0d/hdl/myipBCM_v1_0_S00_AXI.v:378]
-INFO: [Synth 8-638] synthesizing module 'bcmProcess' [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/9f0d/src/bcmProcess.v:3]
-INFO: [Synth 8-256] done synthesizing module 'bcmProcess' (1#1) [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/9f0d/src/bcmProcess.v:3]
-INFO: [Synth 8-638] synthesizing module 'hcmProcess' [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/9f0d/src/hcmProcess.v:3]
-WARNING: [Synth 8-567] referenced signal 'configs_in' should be on the sensitivity list [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/9f0d/src/hcmProcess.v:9]
-INFO: [Synth 8-256] done synthesizing module 'hcmProcess' (2#1) [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/9f0d/src/hcmProcess.v:3]
-INFO: [Synth 8-638] synthesizing module 'timestampProcess' [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/9f0d/src/timestampProcess.v:3]
-	Parameter DIVISOR bound to: 30'b010101001010001101111011000000 
-INFO: [Synth 8-256] done synthesizing module 'timestampProcess' (3#1) [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/9f0d/src/timestampProcess.v:3]
-WARNING: [Synth 8-6014] Unused sequential element slv_reg1_reg was removed.  [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/9f0d/hdl/myipBCM_v1_0_S00_AXI.v:230]
-WARNING: [Synth 8-6014] Unused sequential element slv_reg2_reg was removed.  [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/9f0d/hdl/myipBCM_v1_0_S00_AXI.v:231]
-WARNING: [Synth 8-6014] Unused sequential element slv_reg3_reg was removed.  [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/9f0d/hdl/myipBCM_v1_0_S00_AXI.v:232]
-INFO: [Synth 8-256] done synthesizing module 'myipBCM_v1_0_S00_AXI' (4#1) [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/9f0d/hdl/myipBCM_v1_0_S00_AXI.v:4]
-INFO: [Synth 8-256] done synthesizing module 'myipBCM_v1_0' (5#1) [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/9f0d/hdl/myipBCM_v1_0.v:4]
+INFO: [Synth 8-226] default block is never used [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/8a92/hdl/myipBCM_v1_0_S00_AXI.v:237]
+INFO: [Synth 8-226] default block is never used [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/8a92/hdl/myipBCM_v1_0_S00_AXI.v:378]
+INFO: [Synth 8-638] synthesizing module 'bcmProcess' [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/8a92/src/bcmProcess.v:3]
+INFO: [Synth 8-256] done synthesizing module 'bcmProcess' (1#1) [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/8a92/src/bcmProcess.v:3]
+INFO: [Synth 8-638] synthesizing module 'hcmProcess' [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/8a92/src/hcmProcess.v:3]
+WARNING: [Synth 8-567] referenced signal 'configs_in' should be on the sensitivity list [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/8a92/src/hcmProcess.v:9]
+INFO: [Synth 8-256] done synthesizing module 'hcmProcess' (2#1) [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/8a92/src/hcmProcess.v:3]
+INFO: [Synth 8-638] synthesizing module 'timestampProcess' [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/8a92/src/timestampProcess.v:3]
+	Parameter DIVISOR bound to: 50000000 - type: integer 
+WARNING: [Synth 8-5788] Register ticker_reg in module timestampProcess is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/8a92/src/timestampProcess.v:44]
+WARNING: [Synth 8-5788] Register timeup_out_reg in module timestampProcess is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/8a92/src/timestampProcess.v:48]
+INFO: [Synth 8-256] done synthesizing module 'timestampProcess' (3#1) [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/8a92/src/timestampProcess.v:3]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg1_reg was removed.  [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/8a92/hdl/myipBCM_v1_0_S00_AXI.v:230]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg2_reg was removed.  [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/8a92/hdl/myipBCM_v1_0_S00_AXI.v:231]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg3_reg was removed.  [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/8a92/hdl/myipBCM_v1_0_S00_AXI.v:232]
+INFO: [Synth 8-256] done synthesizing module 'myipBCM_v1_0_S00_AXI' (4#1) [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/8a92/hdl/myipBCM_v1_0_S00_AXI.v:4]
+INFO: [Synth 8-256] done synthesizing module 'myipBCM_v1_0' (5#1) [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/8a92/hdl/myipBCM_v1_0.v:4]
 INFO: [Synth 8-256] done synthesizing module 'zynqWithWifiExp_myipBCM_0_0' (6#1) [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ip/zynqWithWifiExp_myipBCM_0_0/synth/zynqWithWifiExp_myipBCM_0_0.v:57]
 INFO: [Synth 8-638] synthesizing module 'zynqWithWifiExp_processing_system7_0_0' [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ip/zynqWithWifiExp_processing_system7_0_0/synth/zynqWithWifiExp_processing_system7_0_0.v:60]
 INFO: [Synth 8-638] synthesizing module 'processing_system7_v5_5_processing_system7' [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ip/zynqWithWifiExp_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:162]
@@ -1084,7 +1086,7 @@ WARNING: [Synth 8-3331] design axi_protocol_converter_v2_1_15_b2s_rd_cmd_fsm has
 WARNING: [Synth 8-3331] design axi_protocol_converter_v2_1_15_b2s_rd_cmd_fsm has unconnected port s_arlen[2]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:01:17 ; elapsed = 00:01:36 . Memory (MB): peak = 536.598 ; gain = 267.035
+Finished RTL Elaboration : Time (s): cpu = 00:01:12 ; elapsed = 00:01:19 . Memory (MB): peak = 536.062 ; gain = 265.977
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -1094,7 +1096,7 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:17 ; elapsed = 00:01:40 . Memory (MB): peak = 536.598 ; gain = 267.035
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:13 ; elapsed = 00:01:22 . Memory (MB): peak = 536.062 ; gain = 265.977
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 13 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -1104,7 +1106,6 @@ INFO: [Project 1-570] Preparing netlist for logic optimization
 Processing XDC Constraints
 Initializing timing engine
 Parsing XDC File [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ip/zynqWithWifiExp_processing_system7_0_0/zynqWithWifiExp_processing_system7_0_0.xdc] for cell 'zynqWithWifiExp_i/processing_system7_0/inst'
-create_clock: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 796.816 ; gain = 9.832
 Finished Parsing XDC File [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ip/zynqWithWifiExp_processing_system7_0_0/zynqWithWifiExp_processing_system7_0_0.xdc] for cell 'zynqWithWifiExp_i/processing_system7_0/inst'
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ip/zynqWithWifiExp_processing_system7_0_0/zynqWithWifiExp_processing_system7_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/zynqWithWifiExp_wrapper_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/zynqWithWifiExp_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
@@ -1127,16 +1128,16 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   FDR => FDRE: 12 instances
   SRL16 => SRL16E: 1 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.598 . Memory (MB): peak = 802.023 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.207 . Memory (MB): peak = 802.246 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:01:43 ; elapsed = 00:03:41 . Memory (MB): peak = 802.023 ; gain = 532.461
+Finished Constraint Validation : Time (s): cpu = 00:01:37 ; elapsed = 00:02:06 . Memory (MB): peak = 802.246 ; gain = 532.160
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:01:43 ; elapsed = 00:03:43 . Memory (MB): peak = 802.023 ; gain = 532.461
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:37 ; elapsed = 00:02:07 . Memory (MB): peak = 802.246 ; gain = 532.160
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -1150,10 +1151,10 @@ Applied set_property DONT_TOUCH = true for zynqWithWifiExp_i/ps7_0_axi_periph. (
 Applied set_property DONT_TOUCH = true for zynqWithWifiExp_i/ps7_0_axi_periph/s00_couplers/auto_pc. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for zynqWithWifiExp_i/rst_ps7_0_100M. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:44 ; elapsed = 00:03:46 . Memory (MB): peak = 802.023 ; gain = 532.461
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:38 ; elapsed = 00:02:08 . Memory (MB): peak = 802.246 ; gain = 532.160
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-6014] Unused sequential element counter_reg was removed.  [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/9f0d/src/timestampProcess.v:22]
-WARNING: [Synth 8-6014] Unused sequential element ticker_reg was removed.  [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/9f0d/src/timestampProcess.v:32]
+INFO: [Synth 8-5545] ROM "counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clock_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 WARNING: [Synth 8-6014] Unused sequential element memory_reg[3] was removed.  [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
 WARNING: [Synth 8-6014] Unused sequential element memory_reg[2] was removed.  [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
 WARNING: [Synth 8-6014] Unused sequential element memory_reg[1] was removed.  [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
@@ -1231,7 +1232,7 @@ WARNING: [Synth 8-6014] Unused sequential element q_int_reg was removed.  [d:/To
 INFO: [Synth 8-4471] merging register 'seq_cnt_en_reg' into 'from_sys_reg' [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:377]
 WARNING: [Synth 8-6014] Unused sequential element seq_cnt_en_reg was removed.  [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:377]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:46 ; elapsed = 00:03:58 . Memory (MB): peak = 802.023 ; gain = 532.461
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:41 ; elapsed = 00:02:12 . Memory (MB): peak = 802.246 ; gain = 532.160
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1244,6 +1245,7 @@ Start RTL Component Statistics
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
+	   2 Input     32 Bit       Adders := 1     
 	   2 Input     12 Bit       Adders := 8     
 	   2 Input      9 Bit       Adders := 2     
 	   2 Input      8 Bit       Adders := 2     
@@ -1254,7 +1256,7 @@ Detailed RTL Component Info :
 +---Registers : 
 	               66 Bit    Registers := 4     
 	               47 Bit    Registers := 2     
-	               32 Bit    Registers := 2     
+	               32 Bit    Registers := 3     
 	               14 Bit    Registers := 2     
 	               12 Bit    Registers := 9     
 	                9 Bit    Registers := 2     
@@ -1264,16 +1266,16 @@ Detailed RTL Component Info :
 	                4 Bit    Registers := 8     
 	                3 Bit    Registers := 3     
 	                2 Bit    Registers := 11    
-	                1 Bit    Registers := 43    
+	                1 Bit    Registers := 44    
 +---Muxes : 
 	   2 Input     66 Bit        Muxes := 4     
 	   2 Input     47 Bit        Muxes := 2     
-	   2 Input     32 Bit        Muxes := 9     
+	   2 Input     32 Bit        Muxes := 10    
 	   4 Input     32 Bit        Muxes := 2     
 	   2 Input     14 Bit        Muxes := 2     
 	   2 Input     12 Bit        Muxes := 6     
 	   2 Input      9 Bit        Muxes := 4     
-	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 3     
 	   2 Input      6 Bit        Muxes := 1     
 	   2 Input      5 Bit        Muxes := 6     
 	   2 Input      4 Bit        Muxes := 18    
@@ -1295,12 +1297,15 @@ Detailed RTL Component Info :
 Module timestampProcess 
 Detailed RTL Component Info : 
 +---Adders : 
+	   2 Input     32 Bit       Adders := 1     
 	   2 Input      8 Bit       Adders := 1     
 +---Registers : 
+	               32 Bit    Registers := 1     
 	                8 Bit    Registers := 1     
-	                1 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
 +---Muxes : 
-	   2 Input      8 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
 	   2 Input      1 Bit        Muxes := 1     
 Module myipBCM_v1_0_S00_AXI 
 Detailed RTL Component Info : 
@@ -1481,8 +1486,8 @@ Finished Part Resource Summary
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-6014] Unused sequential element inst/myipBCM_v1_0_S00_AXI_inst/timestampProcessor/counter_reg was removed.  [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/9f0d/src/timestampProcess.v:22]
-WARNING: [Synth 8-6014] Unused sequential element inst/myipBCM_v1_0_S00_AXI_inst/timestampProcessor/ticker_reg was removed.  [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/9f0d/src/timestampProcess.v:32]
+INFO: [Synth 8-5545] ROM "inst/myipBCM_v1_0_S00_AXI_inst/timestampProcessor/counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "inst/myipBCM_v1_0_S00_AXI_inst/timestampProcessor/clock_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-3936] Found unconnected internal register 'inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw.aw_pipe/m_payload_i_reg' and it is trimmed from '66' to '62' bits. [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/3ed1/hdl/axi_register_slice_v2_1_vl_rfs.v:422]
 INFO: [Synth 8-3936] Found unconnected internal register 'inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar.ar_pipe/m_payload_i_reg' and it is trimmed from '66' to '62' bits. [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/3ed1/hdl/axi_register_slice_v2_1_vl_rfs.v:422]
 WARNING: [Synth 8-6014] Unused sequential element inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/bresp_cnt_reg was removed.  [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3759]
@@ -1546,7 +1551,7 @@ WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GE
 WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module proc_sys_reset.
 WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module proc_sys_reset.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:51 ; elapsed = 00:04:14 . Memory (MB): peak = 802.023 ; gain = 532.461
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:46 ; elapsed = 00:02:19 . Memory (MB): peak = 802.246 ; gain = 532.160
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1558,13 +1563,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:11 ; elapsed = 00:04:41 . Memory (MB): peak = 956.273 ; gain = 686.711
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:04 ; elapsed = 00:02:51 . Memory (MB): peak = 957.383 ; gain = 687.297
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:02:15 ; elapsed = 00:04:45 . Memory (MB): peak = 1023.238 ; gain = 753.676
+Finished Timing Optimization : Time (s): cpu = 00:02:07 ; elapsed = 00:03:02 . Memory (MB): peak = 1024.738 ; gain = 754.652
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1578,7 +1583,7 @@ Start Technology Mapping
 INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/axlen_cnt_reg[8]) is unused and will be removed from module zynqWithWifiExp_auto_pc_0.
 INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.ar_channel_0/cmd_translator_0/incr_cmd_0/axlen_cnt_reg[8]) is unused and will be removed from module zynqWithWifiExp_auto_pc_0.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:02:18 ; elapsed = 00:04:48 . Memory (MB): peak = 1032.316 ; gain = 762.754
+Finished Technology Mapping : Time (s): cpu = 00:02:10 ; elapsed = 00:03:07 . Memory (MB): peak = 1033.832 ; gain = 763.746
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1619,7 +1624,7 @@ INFO: [Synth 8-4618] Found max_fanout attribute set to 20 on net \inst/gen_axili
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:02:21 ; elapsed = 00:04:52 . Memory (MB): peak = 1032.316 ; gain = 762.754
+Finished IO Insertion : Time (s): cpu = 00:02:13 ; elapsed = 00:03:10 . Memory (MB): peak = 1033.832 ; gain = 763.746
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -1632,7 +1637,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:02:21 ; elapsed = 00:04:53 . Memory (MB): peak = 1032.316 ; gain = 762.754
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:13 ; elapsed = 00:03:11 . Memory (MB): peak = 1033.832 ; gain = 763.746
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1644,25 +1649,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:21 ; elapsed = 00:04:54 . Memory (MB): peak = 1032.316 ; gain = 762.754
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:13 ; elapsed = 00:03:12 . Memory (MB): peak = 1033.832 ; gain = 763.746
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:02:21 ; elapsed = 00:04:54 . Memory (MB): peak = 1032.316 ; gain = 762.754
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:13 ; elapsed = 00:03:12 . Memory (MB): peak = 1033.832 ; gain = 763.746
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:02:21 ; elapsed = 00:04:54 . Memory (MB): peak = 1032.316 ; gain = 762.754
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:13 ; elapsed = 00:03:12 . Memory (MB): peak = 1033.832 ; gain = 763.746
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:02:21 ; elapsed = 00:04:54 . Memory (MB): peak = 1032.316 ; gain = 762.754
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:13 ; elapsed = 00:03:12 . Memory (MB): peak = 1033.832 ; gain = 763.746
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -1700,33 +1705,36 @@ Report Cell Usage:
 |1     |BIBUF   |   130|
 |2     |BUFG    |     1|
 |3     |CARRY4  |    26|
-|4     |LUT1    |   125|
-|5     |LUT2    |    37|
-|6     |LUT3    |   271|
+|4     |LUT1    |   124|
+|5     |LUT2    |    53|
+|6     |LUT3    |   277|
 |7     |LUT4    |    76|
-|8     |LUT5    |    80|
-|9     |LUT6    |   119|
+|8     |LUT5    |   110|
+|9     |LUT6    |   127|
 |10    |PS7     |     1|
 |11    |SRL16   |     1|
 |12    |SRL16E  |    18|
 |13    |SRLC32E |    47|
-|14    |FDR     |     8|
-|15    |FDRE    |   692|
-|16    |FDSE    |    54|
-|17    |IBUF    |     1|
-|18    |OBUF    |     9|
+|14    |FDCE    |    41|
+|15    |FDPE    |     8|
+|16    |FDR     |     8|
+|17    |FDRE    |   654|
+|18    |FDSE    |    54|
+|19    |LDC     |     8|
+|20    |IBUF    |     1|
+|21    |OBUF    |     9|
 +------+--------+------+
 
 Report Instance Areas: 
 +------+---------------------------------------------------+---------------------------------------------------------------+------+
 |      |Instance                                           |Module                                                         |Cells |
 +------+---------------------------------------------------+---------------------------------------------------------------+------+
-|1     |top                                                |                                                               |  1696|
-|2     |  zynqWithWifiExp_i                                |zynqWithWifiExp                                                |  1686|
-|3     |    myipBCM_0                                      |zynqWithWifiExp_myipBCM_0_0                                    |   207|
-|4     |      inst                                         |myipBCM_v1_0                                                   |   207|
-|5     |        myipBCM_v1_0_S00_AXI_inst                  |myipBCM_v1_0_S00_AXI                                           |   207|
-|6     |          timestampProcessor                       |timestampProcess                                               |    92|
+|1     |top                                                |                                                               |  1774|
+|2     |  zynqWithWifiExp_i                                |zynqWithWifiExp                                                |  1764|
+|3     |    myipBCM_0                                      |zynqWithWifiExp_myipBCM_0_0                                    |   285|
+|4     |      inst                                         |myipBCM_v1_0                                                   |   285|
+|5     |        myipBCM_v1_0_S00_AXI_inst                  |myipBCM_v1_0_S00_AXI                                           |   285|
+|6     |          timestampProcessor                       |timestampProcess                                               |   170|
 |7     |    processing_system7_0                           |zynqWithWifiExp_processing_system7_0_0                         |   244|
 |8     |      inst                                         |processing_system7_v5_5_processing_system7                     |   244|
 |9     |    ps7_0_axi_periph                               |zynqWithWifiExp_ps7_0_axi_periph_1                             |  1169|
@@ -1764,28 +1772,27 @@ Report Instance Areas:
 |41    |          SEQ_COUNTER                              |upcnt_n                                                        |    13|
 +------+---------------------------------------------------+---------------------------------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:02:21 ; elapsed = 00:04:54 . Memory (MB): peak = 1032.316 ; gain = 762.754
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:13 ; elapsed = 00:03:12 . Memory (MB): peak = 1033.832 ; gain = 763.746
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 207 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:50 ; elapsed = 00:03:13 . Memory (MB): peak = 1032.316 ; gain = 497.328
-Synthesis Optimization Complete : Time (s): cpu = 00:02:22 ; elapsed = 00:04:55 . Memory (MB): peak = 1032.316 ; gain = 762.754
+Synthesis finished with 0 errors, 0 critical warnings and 203 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:46 ; elapsed = 00:02:43 . Memory (MB): peak = 1033.832 ; gain = 497.562
+Synthesis Optimization Complete : Time (s): cpu = 00:02:13 ; elapsed = 00:03:13 . Memory (MB): peak = 1033.832 ; gain = 763.746
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 36 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 44 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 9 instances were transformed.
+  A total of 17 instances were transformed.
   FDR => FDRE: 8 instances
+  LDC => LDCE: 8 instances
   SRL16 => SRL16E: 1 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-219 Infos, 196 Warnings, 0 Critical Warnings and 0 Errors encountered.
+223 Infos, 194 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:02:26 ; elapsed = 00:05:45 . Memory (MB): peak = 1032.316 ; gain = 772.773
+synth_design: Time (s): cpu = 00:02:18 ; elapsed = 00:03:48 . Memory (MB): peak = 1033.832 ; gain = 774.031
 INFO: [Common 17-1381] The checkpoint 'D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.runs/synth_1/zynqWithWifiExp_wrapper.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:01 ; elapsed = 00:00:14 . Memory (MB): peak = 1032.316 ; gain = 0.000
 INFO: [runtcl-4] Executing : report_utilization -file zynqWithWifiExp_wrapper_utilization_synth.rpt -pb zynqWithWifiExp_wrapper_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 1032.316 ; gain = 0.000
-report_utilization: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 1032.316 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Mon Sep 28 10:05:44 2020...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:02 . Memory (MB): peak = 1033.832 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Sep 28 23:52:19 2020...

@@ -12,7 +12,7 @@ src/wifi.o src/wifi.o: ../src/wifi.cc ../src/wifi.h \
  ../../remoteConfig_bsp/ps7_cortexa9_0/include/xreg_cortexa9.h \
  ../../remoteConfig_bsp/ps7_cortexa9_0/include/xpseudo_asm_gcc.h \
  ../../remoteConfig_bsp/ps7_cortexa9_0/include/xplatform_info.h \
- ../../remoteConfig_bsp/ps7_cortexa9_0/include/sleep.h
+ ../src/rsa.h ../../remoteConfig_bsp/ps7_cortexa9_0/include/sleep.h
 
 ../src/wifi.h:
 
@@ -41,5 +41,7 @@ src/wifi.o src/wifi.o: ../src/wifi.cc ../src/wifi.h \
 ../../remoteConfig_bsp/ps7_cortexa9_0/include/xpseudo_asm_gcc.h:
 
 ../../remoteConfig_bsp/ps7_cortexa9_0/include/xplatform_info.h:
+
+../src/rsa.h:
 
 ../../remoteConfig_bsp/ps7_cortexa9_0/include/sleep.h:

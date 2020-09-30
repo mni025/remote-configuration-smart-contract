@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-| Date         : Mon Sep 28 10:10:11 2020
+| Date         : Mon Sep 28 23:54:23 2020
 | Host         : DESKTOP-98SOI2D running 64-bit major release  (build 9200)
 | Command      : report_drc -file zynqWithWifiExp_wrapper_drc_opted.rpt -pb zynqWithWifiExp_wrapper_drc_opted.pb -rpx zynqWithWifiExp_wrapper_drc_opted.rpx
 | Design       : zynqWithWifiExp_wrapper
@@ -24,24 +24,12 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
-             Violations found: 1
-+-------------+----------+-------------------------------------------------------------+------------+
-| Rule        | Severity | Description                                                 | Violations |
-+-------------+----------+-------------------------------------------------------------+------------+
-| PLHOLDVIO-2 | Warning  | Non-Optimal connections which could lead to hold violations | 1          |
-+-------------+----------+-------------------------------------------------------------+------------+
+             Violations found: 0
++------+----------+-------------+------------+
+| Rule | Severity | Description | Violations |
++------+----------+-------------+------------+
++------+----------+-------------+------------+
 
 2. REPORT DETAILS
 -----------------
-PLHOLDVIO-2#1 Warning
-Non-Optimal connections which could lead to hold violations  
-A LUT zynqWithWifiExp_i/myipBCM_0/inst/myipBCM_v1_0_S00_AXI_inst/timestampProcessor/ticker[7]_i_3 is driving clock pin of 9 cells. This could lead to large hold time violations. First few involved cells are:
-    zynqWithWifiExp_i/myipBCM_0/inst/myipBCM_v1_0_S00_AXI_inst/timestampProcessor/ticker_reg[1] {FDRE}
-    zynqWithWifiExp_i/myipBCM_0/inst/myipBCM_v1_0_S00_AXI_inst/timestampProcessor/timeup_out_reg {FDRE}
-    zynqWithWifiExp_i/myipBCM_0/inst/myipBCM_v1_0_S00_AXI_inst/timestampProcessor/ticker_reg[0] {FDRE}
-    zynqWithWifiExp_i/myipBCM_0/inst/myipBCM_v1_0_S00_AXI_inst/timestampProcessor/ticker_reg[4] {FDRE}
-    zynqWithWifiExp_i/myipBCM_0/inst/myipBCM_v1_0_S00_AXI_inst/timestampProcessor/ticker_reg[2] {FDRE}
-
-Related violations: <none>
-
 

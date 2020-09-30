@@ -1,4 +1,5 @@
 #include "wifi.h"
+#include "rsa.h"
 #include <sleep.h>
 
 
@@ -14,9 +15,12 @@ std::string sendDataNew = "POST / HTTP/1.1\r\nHost: 192.168.0.12:8545\r\nConnect
 
 int espWiFi::initESP(string ssid,string pwd){
 	string recvData;
+	string recvDataConfigTime;
+	string configTime;
 	u32 found;
+	int temp = 0;
 	int i;
-	//int counter = 0;
+	int checker_val = 1;
 
 	xil_printf("Initializing Connection.");
 	espSendCommand("AT\r\n");
@@ -87,7 +91,6 @@ int espWiFi::initESP(string ssid,string pwd){
 	u32 dataSized;
 	string datSized;
 	u32 found1ok;
-	//u32 found2closed;
 	u32 j=0;
 	u32 bodySize = body.length();
 	dataSized = sendDataNew.length();
@@ -113,24 +116,78 @@ int espWiFi::initESP(string ssid,string pwd){
 	found = recvData.find("IPD,");
 	if(found != string::npos){
 		xil_printf("\n\r#IPD found\n\r");
-	}
+		recvDataConfigTime = recvData.substr(found+4,21);
+		string recvConfigTimeChecker = recvData.substr(found+4,2);
+		if (recvConfigTimeChecker == "2:"){
+			xil_printf("the received value is 0x only\n\r");
+			checker_val = 0;
+		}
+		found = recvDataConfigTime.find("0x");
+		if(found != string::npos){
+			xil_printf("\n\r#config_time found\n\r");
+			configTime = recvDataConfigTime.substr(found+2,16);
+			string configTime_check = recvDataConfigTime.substr(found+2,1);
+			xil_printf("the recovered configTime value: %d\n\r", configTime_check[0]);
+			long int config = strtol((recvDataConfigTime.substr(found+2,8)).c_str(), NULL, 16);
+			xil_printf("the recovered config value: %ld\n\r", config);
+			long *config_encrypted = &config;
+		    long *config_recovered;
+	        config_recovered = rsa_decrypt(config_encrypted, RSA_Own_Private_Key, 1);
+	        long config_recovered_val = *config_recovered;
+		    xil_printf("the recovered config value decrypted: %ld\n\r", config_recovered_val);
 
-	found = recvData.find("result");
-	if(found != string::npos){
-	  xil_printf("Successfully got data from server\n\r");
+		    char config_recovered_val_char = config_recovered_val;
+			//u32 temp = 0;
+			/*if (configTime[6] >= '0' && configTime[6] <= '9'){
+				xil_printf("\n\r a digit found in configTime[6]\n\r");
+				temp += (configTime[6] - '0')*16*16*16;
+			} else if (configTime[6] >= 'a' && configTime[6] <= 'f'){
+				xil_printf("\n\r a letter found in configTime[6]\n\r");
+				temp += (configTime[6] - 'W')*16*16*16;
+			}
+
+			if (configTime[7] >= '0' && configTime[7] <= '9'){
+				xil_printf("\n\r a digit found in configTime[7]\n\r");
+				temp += (configTime[7] - '0')*16*16;
+			} else if (configTime[7] >= 'a' && configTime[7] <= 'f'){
+				xil_printf("\n\r a letter found in configTime[7]\n\r");
+				temp += (configTime[7] - 'W')*16*16;
+			}*/
+
+			temp += (config_recovered_val_char - '0')*16*16;
+
+			if (configTime[14] >= '0' && configTime[14] <= '9'){
+				xil_printf("\n\r a digit found in configTime[14]\n\r");
+				temp += (configTime[14] - '0')*16;
+			} else if (configTime[14] >= 'a' && configTime[14] <= 'f'){
+				xil_printf("\n\r a letter found in configTime[14]\n\r");
+				temp += (configTime[14] - 'W')*16;
+			}
+
+			if (configTime[15] >= '0' && configTime[15] <= '9'){
+				xil_printf("\n\r a digit found in configTime[15]\n\r");
+				temp += (configTime[15] - '0');
+			} else if (configTime[15] >= 'a' && configTime[15] <= 'f'){
+				xil_printf("\n\r a letter found in configTime[15]\n\r");
+				temp += (configTime[15] - 'W');
+			}
+
+			xil_printf("temp value: %d\n\r", temp);
+		}
 	}
 
 	xil_printf("closing the connection\n\r");
-	//sleep(5);
 	espSendCommand("AT+CIPCLOSE\r\n");
 	do{
-		//xil_printf("\n\r#before\n\r");
 		recvData = espReceiveData();
-		//xil_printf("\n\r#after\n\r");
 		found1ok = recvData.find("CLOSED");
 	}while(found1ok==string::npos);
-
 	xil_printf("closed the connection\n\r");
+
+	if (!checker_val)
+		return WIFI_SUCCESS;
+	if (config_time_val != temp)
+		config_time_val = temp;
 	return WIFI_SUCCESS;
 	//-------------------------//
 }

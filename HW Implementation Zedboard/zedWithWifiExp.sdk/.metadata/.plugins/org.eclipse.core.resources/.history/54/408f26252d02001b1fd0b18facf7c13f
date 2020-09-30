@@ -1,0 +1,328 @@
+#include "wifi.h"
+#include <sleep.h>
+
+
+using namespace std;
+
+std::string tcp = "TCP";
+std::string server_ip = "192.168.0.20";
+std::string body = "\r\n\"jsonrpc\":\"2.0\",\r\n\"method\":\"eth_call\",\r\n\"params\":[\r\n{\r\n\"to\":\"0x4Cd8304Aa0e8B304CAc6EbCA95B92DdCF6437638\", \r\n\"data\":\"0x9de4d683\"},\r\n\"latest\"\r\n],\r\n\"id\":1\r\n";
+//std::string sendDataNew = "POST / HTTP/1.1\r\nHost: 192.168.0.12:8545\r\nContent-Type: application/json\r\nContent-Length: 159\r\n\r\n{\r\n\"jsonrpc\":\"2.0\",\r\n\"method\":\"eth_call\",\r\n\"params\":[\r\n{\r\n\"to\":\"0x4Cd8304Aa0e8B304CAc6EbCA95B92DdCF6437638\", \r\n\"data\":\"0x9de4d683\"\r\n},\r\n\"latest\"\r\n],\r\n\"id\":1\r\n}";
+std::string sendDataNew = "POST / HTTP/1.1\r\nHost: 192.168.0.12:8545\r\nConnection: close\r\nContent-Type: application/json\r\nContent-Length: 177\r\n\r\n{\r\n\t\"jsonrpc\":\"2.0\",\r\n\t\"method\":\"eth_call\",\r\n\t\"params\":[\r\n\t\t{\r\n\t\t\t\"to\":\"0x4Cd8304Aa0e8B304CAc6EbCA95B92DdCF6437638\", \r\n\t\t\t\"data\":\"0x9de4d683\"\r\n\t\t},\r\n\t\t\"latest\"\r\n\t\t],\r\n\t\"id\":1\r\n}";
+//no difference between without tabs and with tabs...
+//std::string sendDataNew = "POST / HTTP/1.1\r\nHost: 192.168.0.12:8545\r\nConnection: close\r\nContent-Type: application/json\r\nContent-Length: 177\r\n\r\n{\"jsonrpc\":\"2.0\",\"method\":\"eth_call\",\"params\":[{\"to\":\"0x4Cd8304Aa0e8B304CAc6EbCA95B92DdCF6437638\", \"data\":\"0x9de4d683\"},\"latest\"],\"id\":1}";
+
+int espWiFi::initESP(string ssid,string pwd){
+	string recvData;
+	string recvDataConfigTime;
+	string configTime;
+	u32 found;
+	int i;
+	//int counter = 0;
+
+	xil_printf("Initializing Connection.");
+	espSendCommand("AT\r\n");
+	recvData = espReceiveData();
+	sleep(1);
+	found = recvData.find("OK");
+	if (found == string::npos){
+		xil_printf("Could not detect ESP\n\r");
+		return ESP_Not_Detected;
+	}
+	xil_printf("..");
+	espSendCommand("AT+CWMODE=1\r\n");//Send the AT command to configure the ESP as a station+softAP //station=client//1(station) also works fine
+	sleep(1);
+	recvData = espReceiveData();
+	found = recvData.find("OK");
+	if(found == string::npos){
+		xil_printf("Error cannot configure as a station\n\r");
+		return No_Station;
+	}
+	xil_printf("....");
+	espSendCommand("AT+CWJAP_CUR="+string("\"")+ssid+string("\"")+","+string("\"")+pwd+string("\"")+"\r\n");
+	xil_printf("\n\rConnecting to WiFi");
+	for(int i=0;i<10000;i++){
+		usleep(100);
+		xil_printf("..");
+		recvData = espReceiveData();
+		found = recvData.find("OK");
+		if(found != string::npos){
+			break;
+		}
+	}
+	if(found == string::npos){
+		xil_printf("Failed to connect to WIFI\n\r");
+		return NO_WIFI;
+	}
+	xil_printf("\n\r");
+
+	espSendCommand("AT+CIFSR\r\n"); //Send AT command to get the IP address of ESP
+	sleep(1);
+	recvData = espReceiveData();
+	found = recvData.find("\"");
+	if(found != string::npos){
+		xil_printf("IP Address:");
+		i = found+1;
+		while(recvData[i]=='.' || (recvData[i]>='0' && recvData[i]<='9')){
+			xil_printf("%c",recvData[i]);
+			i++;
+		}
+		xil_printf("\n\r");
+	}
+	else{
+		xil_printf("Failed to get IP\n\r");
+		return NO_IP;
+	}
+
+	//-------------------------//
+	xil_printf("\n\rStarting a TCP connection");
+	espSendCommand("AT+CIPSTART="+string("\"")+tcp+string("\"")+","+string("\"")+server_ip+string("\"")+",8888\r\n");//Send the AT command to configure the ESP as a station+softAP
+	sleep(1);
+	recvData = espReceiveData();
+	found = recvData.find("OK");
+	if(found == string::npos){
+		xil_printf("Error cannot start CIPSTART to start a tcp connection\n\r");
+		return No_Station;
+	}
+	xil_printf("....\n\r");
+
+	u32 dataSized;
+	string datSized;
+	u32 found1ok;
+	u32 j=0;
+	u32 bodySize = body.length();
+	dataSized = sendDataNew.length();
+	datSized = to_string(dataSized);
+
+	xil_printf("%d",bodySize);
+	xil_printf("sending data through TCP...\n\r");
+	espSendCommand("AT+CIPSEND="+datSized+"\r\n");
+	sleep(1);
+	do{
+		recvData = espReceiveData();
+		found1ok = recvData.find("OK");
+		//xil_printf("!");
+	}while(found1ok==string::npos); //Wait until the send command is completed
+	while(j != dataSized){
+		uartBlockTransmitByte(sendDataNew[j]);
+		j++;
+	}
+
+	sleep(3); //this delay is important; IPD doesn't show without this delay
+	recvData = espReceiveData();
+	//sleep(3);
+	found = recvData.find("IPD,");
+	if(found != string::npos){
+		xil_printf("\n\r#IPD found\n\r");
+		recvDataConfigTime = recvData.substr(found+4,21);
+		found = recvDataConfigTime.find("0x0000000e000927c0");
+		if(found != string::npos){
+			xil_printf("\n\r#config_time found\n\r");
+			configTime = recvDataConfigTime.substr(found+2,16);
+			xil_printf("received config time value [15] %c\n\r",configTime[15]);
+			xil_printf("received config time value [15] %c\n\r",configTime[10]);
+			xil_printf("received config time value [15] %c\n\r",configTime[9]);
+			xil_printf("received config time value [15] %c\n\r",configTime[8]);
+			xil_printf("received config time value [15] %c\n\r",configTime[7]);
+			xil_printf("received config time value [15] %c\n\r",configTime[6]);
+			xil_printf("received config time value [15] %c\n\r",configTime[5]);
+			xil_printf("received config time value [15] %c\n\r",configTime[4]);
+			xil_printf("received config time value [15] %c\n\r",configTime[3]);
+			xil_printf("received config time value [15] %c\n\r",configTime[2]);
+			xil_printf("received config time value [15] %c\n\r",configTime[1]);
+			u32 temp = 0;
+			//if (configTime[6] >= '0' && configTime[6] <= '9'){
+				//xil_printf("\n\r a digit found\n\r");
+				//temp += (configTime[6] - 48)*16*16*16;
+			//}
+			for (u32 i = 0; i < configTime.length(); i++){
+				config_time[i] = configTime[i];
+			}
+		}
+	}
+
+	found = recvData.find("result");
+	if(found != string::npos){
+	  xil_printf("Successfully got data from server\n\r");
+	}
+
+	xil_printf("closing the connection\n\r");
+	//sleep(5);
+	espSendCommand("AT+CIPCLOSE\r\n");
+	do{
+		//xil_printf("\n\r#before\n\r");
+		recvData = espReceiveData();
+		//xil_printf("\n\r#after\n\r");
+		found1ok = recvData.find("CLOSED");
+	}while(found1ok==string::npos);
+
+	xil_printf("closed the connection\n\r");
+	return WIFI_SUCCESS;
+	//-------------------------//
+}
+
+int espWiFi::initWifi(string ssid,string pwd){
+	u32 status;
+	myUartConfig = XUartPs_LookupConfig(XPAR_PS7_UART_0_DEVICE_ID);
+	status = XUartPs_CfgInitialize(&myUart, myUartConfig, myUartConfig->BaseAddress);
+	if(status != XST_SUCCESS){
+		print("Uart initialization failed...\n\r");
+		return UART_FAILED;
+	}
+	status = initESP(ssid,pwd);
+	return status;
+}
+
+
+int espWiFi::initWifi(int baudRate,string ssid,string pwd){
+	u32 status;
+	string recvData;
+	myUartConfig = XUartPs_LookupConfig(XPAR_PS7_UART_0_DEVICE_ID);
+	status = XUartPs_CfgInitialize(&myUart, myUartConfig, myUartConfig->BaseAddress);
+	if(status != XST_SUCCESS){
+		print("Uart initialization failed...\n\r");
+		return UART_FAILED;
+	}
+
+	espSendCommand("AT+UART_CUR="+to_string(baudRate)+",8,1,0,0\r\n");
+
+	recvData = espReceiveData(); //read and discard all responses from ESP
+
+	status = XUartPs_SetBaudRate(&myUart,baudRate);//Change the baudrate for PS UART
+
+
+	if(status != XST_SUCCESS){
+		print("Baud Rate Error....\n\r");
+		return UART_FAILED;
+	}
+
+	status = initESP(ssid,pwd);
+	return status;
+}
+
+
+
+void espWiFi::espSendCommand(string command){
+	u32 numBytes = 0;
+	while(numBytes != command.length()){
+		//xil_printf("%c",command[numBytes]);
+		uartBlockTransmitByte(command[numBytes]);
+		numBytes++;
+	}
+}
+
+void espWiFi::espSendData(char channelNum,string sendData){
+	u32 i=0;
+	u32 dataSize;
+	string datSize;
+	std::string recvData;
+	u32 found1;
+	u32 found2;
+	dataSize = sendData.length();
+	datSize = to_string(dataSize);
+	espSendCommand("AT+CIPSEND="+getString(channelNum)+","+datSize+"\r\n");
+	do{
+		recvData = espReceiveData();
+		found1 = recvData.find("OK");
+	}while(found1==string::npos); //Wait until the send command is completed
+	while(i != dataSize){
+		uartBlockTransmitByte(sendData[i]);
+		i++;
+	}
+	do{
+		recvData = espReceiveData();
+		found1 = recvData.find("OK");
+		found2 = recvData.find("CLOSED");
+	}while(found1==string::npos && found2==string::npos); //Wait either for client to close the connection or all data to be sent
+	if(found2==string::npos){ //If client didn't close the connection, close it
+		espSendCommand("AT+CIPCLOSE="+getString(channelNum)+"\r\n");
+		do{
+			recvData = espReceiveData();
+			found1 = recvData.find("CLOSED");
+		}while(found1==string::npos);
+	}
+}
+
+string espWiFi::espReceiveData(){
+	u8 receivedByte=1;
+	string receivedData="";
+	while(receivedByte != 0){
+		receivedByte = uartBlockReceiveByte();
+		receivedData += receivedByte;
+		//xil_printf("#");
+		xil_printf("%c",receivedByte);
+		usleep(100);
+	}
+	return receivedData;
+}
+
+void espWiFi::uartBlockTransmitByte(u8 sendData){
+	u32 transmittedBytes = 0;
+	while(!transmittedBytes){
+		transmittedBytes =  XUartPs_Send(&myUart,&sendData,1);
+	}
+	//xil_printf("%d\n\r",sendData);
+}
+
+u8 espWiFi::uartBlockReceiveByte(){
+	u32 receivedBytes = 0;
+	u8 receivedData;
+	u32 timeOut = 0;
+	while(!receivedBytes){
+		receivedBytes =  XUartPs_Recv(&myUart,&receivedData,1);
+		timeOut++;
+		if(timeOut==50000){
+			//xil_printf("timeout\n\r");
+			return 0;
+		}
+	}
+	return receivedData;
+}
+
+u8 espWiFi::espBlockReceiveData(){
+	u8 receivedByte=0;
+	u8 receivedData;
+	while(!receivedByte){
+		receivedByte =  XUartPs_Recv(&myUart,&receivedData,1);
+	}
+	return receivedData;
+}
+
+string espWiFi::getString(char x)
+{
+    string s(1, x);
+    return s;
+}
+
+string espWiFi::getPacket(){
+	string recvData="";
+	u32 found;
+	while(1){
+		recvData = espReceiveData();
+		found = recvData.find("IPD,");
+		if(found != string::npos){
+			this->currentChannel = recvData[found+4];
+			return recvData;
+		}
+	}
+}
+
+
+string espWiFi::getPacket(std::string filter){
+	std::string recvData;
+	u32 found;
+	while(1){
+		recvData = espReceiveData();
+		found = recvData.find("IPD,");
+		if(found != string::npos){
+			this->currentChannel = recvData[found+4];
+			if(recvData.find(filter))
+				return recvData;
+		}
+	}
+}
+
+int espWiFi::sendPacket(std::string sendData){
+	espSendData(this->currentChannel,sendData);
+	return 0;
+}

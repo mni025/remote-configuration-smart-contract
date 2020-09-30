@@ -1,0 +1,76 @@
+#include "xparameters.h"
+#include "xuartps.h"
+#include "xil_io.h"
+//#include "xbasic_types.h"
+#include <sleep.h>
+#include "wifi.h"
+#include <iostream>
+
+using namespace std;
+
+std::string ssid= "The_Gambia_24G";
+std::string pwd = "scoobyroo";
+string config_time[16] = "0000000000000000";
+
+void loop(espWiFi*);
+int stringToBin(std::string in);
+std::string intToBinString(int in);
+
+int main(){
+
+	xil_printf("starting the main function...\n\r");
+	int status;
+	espWiFi myWiFi;
+	do{
+		status = myWiFi.initWifi(921600,ssid,pwd);
+		if(status == WIFI_SUCCESS)
+			xil_printf("Successfully started HTTP Client\n\r");
+		else{
+			xil_printf("Failed retrying...\n\r");
+		}
+	}while(status != WIFI_SUCCESS);
+
+	//printing the received config_time values
+	for (int i = 0; i <= 15; i++)
+		xil_printf("%c",config_time[i]);
+	//loop(&myWiFi);
+
+	xil_printf("this is a bcm test\n\r");
+	exit(1);
+
+	if (Xil_In32(XPAR_MYIPBCM_0_S00_AXI_BASEADDR+12) != 0x25feeded){
+		xil_printf("warning: did not find the device\n\r");
+	}
+
+	//sleep(2);
+
+	Xil_Out32(XPAR_MYIPBCM_0_S00_AXI_BASEADDR, 0x0001F933);
+	sleep(2);
+	Xil_Out32(XPAR_MYIPBCM_0_S00_AXI_BASEADDR, 0x0000F933);
+
+	//sleep(20);
+
+	u32 val = Xil_In32(XPAR_MYIPBCM_0_S00_AXI_BASEADDR+4);
+	xil_printf("the value is: %d\n\r",val);
+
+	u32 new_val;
+	u32 ticker_val;
+
+	ticker_val = Xil_In32(XPAR_MYIPBCM_0_S00_AXI_BASEADDR+8);
+	xil_printf("first ticker value is: %d\n\r", ticker_val);
+
+	while (1){
+		sleep(1);
+		new_val = Xil_In32(XPAR_MYIPBCM_0_S00_AXI_BASEADDR+4);
+		if (new_val != val){
+			xil_printf("value is changed to %d\n\r", new_val);
+			val = new_val;
+		}
+
+		ticker_val = Xil_In32(XPAR_MYIPBCM_0_S00_AXI_BASEADDR+8);
+		//if (ticker_val == 0)
+		//xil_printf("ticker value is: %d\n\r", ticker_val);
+	}
+
+	return 0;
+}

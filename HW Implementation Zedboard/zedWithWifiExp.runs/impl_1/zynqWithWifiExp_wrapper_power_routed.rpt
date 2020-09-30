@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-| Date             : Mon Sep 28 10:11:57 2020
+| Date             : Mon Sep 28 23:56:00 2020
 | Host             : DESKTOP-98SOI2D running 64-bit major release  (build 9200)
 | Command          : report_power -file zynqWithWifiExp_wrapper_power_routed.rpt -pb zynqWithWifiExp_wrapper_power_summary_routed.pb -rpx zynqWithWifiExp_wrapper_power_routed.rpx
 | Design           : zynqWithWifiExp_wrapper
@@ -53,13 +53,13 @@ Table of Contents
 | On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
 +-------------------------+-----------+----------+-----------+-----------------+
 | Clocks                  |     0.003 |        3 |       --- |             --- |
-| Slice Logic             |     0.001 |     1320 |       --- |             --- |
-|   LUT as Logic          |     0.001 |      370 |     53200 |            0.70 |
-|   Register              |    <0.001 |      583 |    106400 |            0.55 |
+| Slice Logic             |     0.001 |     1399 |       --- |             --- |
+|   LUT as Logic          |     0.001 |      422 |     53200 |            0.79 |
+|   Register              |    <0.001 |      602 |    106400 |            0.57 |
 |   CARRY4                |    <0.001 |       14 |     13300 |            0.11 |
 |   LUT as Shift Register |    <0.001 |       60 |     17400 |            0.34 |
-|   Others                |     0.000 |      188 |       --- |             --- |
-| Signals                 |     0.002 |      949 |       --- |             --- |
+|   Others                |     0.000 |      189 |       --- |             --- |
+| Signals                 |     0.002 |     1023 |       --- |             --- |
 | I/O                     |    <0.001 |       10 |       200 |            5.00 |
 | PS7                     |     1.529 |        1 |       --- |             --- |
 | Static Power            |     0.144 |          |           |                 |
@@ -151,9 +151,9 @@ Table of Contents
 +--------------------------------------------------+-----------+
 | zynqWithWifiExp_wrapper                          |     1.536 |
 |   zynqWithWifiExp_i                              |     1.535 |
-|     myipBCM_0                                    |    <0.001 |
-|       inst                                       |    <0.001 |
-|         myipBCM_v1_0_S00_AXI_inst                |    <0.001 |
+|     myipBCM_0                                    |     0.001 |
+|       inst                                       |     0.001 |
+|         myipBCM_v1_0_S00_AXI_inst                |     0.001 |
 |           timestampProcessor                     |    <0.001 |
 |     processing_system7_0                         |     1.529 |
 |       inst                                       |     1.529 |
