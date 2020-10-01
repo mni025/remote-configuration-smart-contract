@@ -1,0 +1,17 @@
+verilog xil_defaultlib --include "../../../../zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ec67/hdl" --include "../../../../zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/02c8/hdl/verilog" --include "../../../../zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/1313/hdl" \
+"../../../bd/zynqWithWifiExp/ip/zynqWithWifiExp_processing_system7_0_0/sim/zynqWithWifiExp_processing_system7_0_0.v" \
+"../../../bd/zynqWithWifiExp/sim/zynqWithWifiExp.v" \
+"../../../bd/zynqWithWifiExp/ipshared/7b5a/src/aes_128.v" \
+"../../../bd/zynqWithWifiExp/ipshared/7b5a/src/bcmProcess.v" \
+"../../../bd/zynqWithWifiExp/ipshared/7b5a/src/hcmProcess.v" \
+"../../../bd/zynqWithWifiExp/ipshared/7b5a/hdl/myipBCM_v1_0_S00_AXI.v" \
+"../../../bd/zynqWithWifiExp/ipshared/7b5a/src/round.v" \
+"../../../bd/zynqWithWifiExp/ipshared/7b5a/src/table.v" \
+"../../../bd/zynqWithWifiExp/ipshared/7b5a/src/timestampProcess.v" \
+"../../../bd/zynqWithWifiExp/ipshared/7b5a/hdl/myipBCM_v1_0.v" \
+"../../../bd/zynqWithWifiExp/ip/zynqWithWifiExp_myipBCM_0_0/sim/zynqWithWifiExp_myipBCM_0_0.v" \
+"../../../bd/zynqWithWifiExp/ip/zynqWithWifiExp_auto_pc_0/sim/zynqWithWifiExp_auto_pc_0.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

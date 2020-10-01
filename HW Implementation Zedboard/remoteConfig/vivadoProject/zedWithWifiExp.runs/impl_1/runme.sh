@@ -6,25 +6,21 @@
 # Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 # 
 
-echo "This script was generated under a different operating system."
-echo "Please update the PATH and LD_LIBRARY_PATH variables below, before executing this script"
-exit
-
 if [ -z "$PATH" ]; then
-  PATH=C:/Xilinx/SDK/2017.4/bin;C:/Xilinx/Vivado/2017.4/ids_lite/ISE/bin/nt64;C:/Xilinx/Vivado/2017.4/ids_lite/ISE/lib/nt64:C:/Xilinx/Vivado/2017.4/bin
+  PATH=/home/nazmul/research/xilinx/SDK/2017.4/bin:/home/nazmul/research/xilinx/Vivado/2017.4/ids_lite/ISE/bin/lin64:/home/nazmul/research/xilinx/Vivado/2017.4/bin
 else
-  PATH=C:/Xilinx/SDK/2017.4/bin;C:/Xilinx/Vivado/2017.4/ids_lite/ISE/bin/nt64;C:/Xilinx/Vivado/2017.4/ids_lite/ISE/lib/nt64:C:/Xilinx/Vivado/2017.4/bin:$PATH
+  PATH=/home/nazmul/research/xilinx/SDK/2017.4/bin:/home/nazmul/research/xilinx/Vivado/2017.4/ids_lite/ISE/bin/lin64:/home/nazmul/research/xilinx/Vivado/2017.4/bin:$PATH
 fi
 export PATH
 
 if [ -z "$LD_LIBRARY_PATH" ]; then
-  LD_LIBRARY_PATH=
+  LD_LIBRARY_PATH=/home/nazmul/research/xilinx/Vivado/2017.4/ids_lite/ISE/lib/lin64
 else
-  LD_LIBRARY_PATH=:$LD_LIBRARY_PATH
+  LD_LIBRARY_PATH=/home/nazmul/research/xilinx/Vivado/2017.4/ids_lite/ISE/lib/lin64:$LD_LIBRARY_PATH
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.runs/impl_1'
+HD_PWD='/home/nazmul/research/xilinxVivado/remoteConfig/zedWithWifiExp.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

@@ -1,0 +1,4 @@
+vhdl xil_defaultlib  \
+"../../../bd/zynqWithWifiExp/ip/zynqWithWifiExp_rst_ps7_0_100M_1/sim/zynqWithWifiExp_rst_ps7_0_100M_1.vhd" \
+
+nosort

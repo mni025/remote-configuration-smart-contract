@@ -69,18 +69,18 @@ set rc [catch {
   set_property board_part em.avnet.com:zed:part0:1.3 [current_project]
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.cache/wt [current_project]
-  set_property parent.project_path D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.xpr [current_project]
-  set_property ip_repo_paths D:/Tools/xilinxVivado/ip_repo [current_project]
-  set_property ip_output_repo D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.cache/ip [current_project]
+  set_property webtalk.parent_dir /home/nazmul/research/xilinxVivado/remoteConfig/zedWithWifiExp.cache/wt [current_project]
+  set_property parent.project_path /home/nazmul/research/xilinxVivado/remoteConfig/zedWithWifiExp.xpr [current_project]
+  set_property ip_repo_paths /home/nazmul/research/ip_repo [current_project]
+  set_property ip_output_repo /home/nazmul/research/zedWithWifiExp/zedWithWifiExp.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
-  add_files -quiet D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.runs/synth_1/zynqWithWifiExp_wrapper.dcp
+  add_files -quiet /home/nazmul/research/xilinxVivado/remoteConfig/zedWithWifiExp.runs/synth_1/zynqWithWifiExp_wrapper.dcp
   set_msg_config -source 4 -id {BD 41-1661} -limit 0
   set_param project.isImplRun true
-  add_files D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/zynqWithWifiExp.bd
+  add_files /home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/zynqWithWifiExp.bd
   set_param project.isImplRun false
-  read_xdc D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/constrs_1/new/esp.xdc
+  read_xdc /home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/constrs_1/new/esp.xdc
   set_param project.isImplRun true
   link_design -top zynqWithWifiExp_wrapper -part xc7z020clg484-1
   set_param project.isImplRun false

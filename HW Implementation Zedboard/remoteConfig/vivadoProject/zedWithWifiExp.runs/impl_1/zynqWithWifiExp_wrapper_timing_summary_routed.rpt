@@ -1,8 +1,8 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-| Date         : Mon Sep 28 23:56:01 2020
-| Host         : DESKTOP-98SOI2D running 64-bit major release  (build 9200)
+| Tool Version : Vivado v.2017.4 (lin64) Build 2086221 Fri Dec 15 20:54:30 MST 2017
+| Date         : Thu Oct  1 15:28:52 2020
+| Host         : ecs-mst-140-02.campus.ads.umass.edu running 64-bit CentOS Linux release 7.8.2003 (Core)
 | Command      : report_timing_summary -max_paths 10 -file zynqWithWifiExp_wrapper_timing_summary_routed.rpt -rpx zynqWithWifiExp_wrapper_timing_summary_routed.rpx -warn_on_violation
 | Design       : zynqWithWifiExp_wrapper
 | Device       : 7z020-clg484
@@ -1274,9 +1274,9 @@ Min Period        n/a     FDRE/C       n/a            1.000         10.000      
 Min Period        n/a     FDRE/C       n/a            1.000         10.000      9.000      SLICE_X29Y88    zynqWithWifiExp_i/myipBCM_0/inst/myipBCM_v1_0_S00_AXI_inst/axi_arready_reg/C
 Min Period        n/a     FDRE/C       n/a            1.000         10.000      9.000      SLICE_X31Y96    zynqWithWifiExp_i/myipBCM_0/inst/myipBCM_v1_0_S00_AXI_inst/axi_awaddr_reg[2]/C
 Min Period        n/a     FDRE/C       n/a            1.000         10.000      9.000      SLICE_X31Y96    zynqWithWifiExp_i/myipBCM_0/inst/myipBCM_v1_0_S00_AXI_inst/axi_awaddr_reg[3]/C
+Min Period        n/a     FDRE/C       n/a            1.000         10.000      9.000      SLICE_X28Y96    zynqWithWifiExp_i/myipBCM_0/inst/myipBCM_v1_0_S00_AXI_inst/axi_awready_reg/C
 Min Period        n/a     FDCE/C       n/a            1.000         10.000      9.000      SLICE_X32Y102   zynqWithWifiExp_i/myipBCM_0/inst/myipBCM_v1_0_S00_AXI_inst/timestampProcessor/counter_reg[31]/C
 Min Period        n/a     FDCE/C       n/a            1.000         10.000      9.000      SLICE_X33Y96    zynqWithWifiExp_i/myipBCM_0/inst/myipBCM_v1_0_S00_AXI_inst/timestampProcessor/counter_reg[3]/C
-Min Period        n/a     FDCE/C       n/a            1.000         10.000      9.000      SLICE_X34Y96    zynqWithWifiExp_i/myipBCM_0/inst/myipBCM_v1_0_S00_AXI_inst/timestampProcessor/counter_reg[4]/C
 Low Pulse Width   Slow    SRL16E/CLK   n/a            0.980         5.000       4.020      SLICE_X26Y97    zynqWithWifiExp_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/bid_fifo_0/memory_reg[3][8]_srl4/CLK
 Low Pulse Width   Slow    SRL16E/CLK   n/a            0.980         5.000       4.020      SLICE_X26Y97    zynqWithWifiExp_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/bid_fifo_0/memory_reg[3][9]_srl4/CLK
 Low Pulse Width   Slow    SRL16E/CLK   n/a            0.980         5.000       4.020      SLICE_X26Y101   zynqWithWifiExp_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/bresp_fifo_0/memory_reg[3][0]_srl4/CLK

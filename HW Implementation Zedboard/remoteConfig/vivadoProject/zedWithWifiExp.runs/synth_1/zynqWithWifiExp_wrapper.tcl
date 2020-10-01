@@ -22,23 +22,23 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.cache/wt [current_project]
-set_property parent.project_path D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.xpr [current_project]
+set_property webtalk.parent_dir /home/nazmul/research/xilinxVivado/remoteConfig/zedWithWifiExp.cache/wt [current_project]
+set_property parent.project_path /home/nazmul/research/xilinxVivado/remoteConfig/zedWithWifiExp.xpr [current_project]
 set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part em.avnet.com:zed:part0:1.3 [current_project]
-set_property ip_repo_paths d:/Tools/xilinxVivado/ip_repo [current_project]
-set_property ip_output_repo d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.cache/ip [current_project]
+set_property ip_repo_paths /home/nazmul/research/ip_repo [current_project]
+set_property ip_output_repo /home/nazmul/research/zedWithWifiExp/zedWithWifiExp.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-read_verilog -library xil_defaultlib D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/hdl/zynqWithWifiExp_wrapper.v
-add_files D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/zynqWithWifiExp.bd
-set_property used_in_implementation false [get_files -all d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ip/zynqWithWifiExp_processing_system7_0_0/zynqWithWifiExp_processing_system7_0_0.xdc]
-set_property used_in_implementation false [get_files -all d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ip/zynqWithWifiExp_rst_ps7_0_100M_1/zynqWithWifiExp_rst_ps7_0_100M_1_board.xdc]
-set_property used_in_implementation false [get_files -all d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ip/zynqWithWifiExp_rst_ps7_0_100M_1/zynqWithWifiExp_rst_ps7_0_100M_1.xdc]
-set_property used_in_implementation false [get_files -all d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ip/zynqWithWifiExp_rst_ps7_0_100M_1/zynqWithWifiExp_rst_ps7_0_100M_1_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ip/zynqWithWifiExp_auto_pc_0/zynqWithWifiExp_auto_pc_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/zynqWithWifiExp_ooc.xdc]
+read_verilog -library xil_defaultlib /home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/hdl/zynqWithWifiExp_wrapper.v
+add_files /home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/zynqWithWifiExp.bd
+set_property used_in_implementation false [get_files -all /home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ip/zynqWithWifiExp_processing_system7_0_0/zynqWithWifiExp_processing_system7_0_0.xdc]
+set_property used_in_implementation false [get_files -all /home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ip/zynqWithWifiExp_rst_ps7_0_100M_1/zynqWithWifiExp_rst_ps7_0_100M_1_board.xdc]
+set_property used_in_implementation false [get_files -all /home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ip/zynqWithWifiExp_rst_ps7_0_100M_1/zynqWithWifiExp_rst_ps7_0_100M_1.xdc]
+set_property used_in_implementation false [get_files -all /home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ip/zynqWithWifiExp_rst_ps7_0_100M_1/zynqWithWifiExp_rst_ps7_0_100M_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ip/zynqWithWifiExp_auto_pc_0/zynqWithWifiExp_auto_pc_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/zynqWithWifiExp_ooc.xdc]
 
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -48,8 +48,8 @@ set_property used_in_implementation false [get_files -all D:/Tools/xilinxVivado/
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/constrs_1/new/esp.xdc
-set_property used_in_implementation false [get_files D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/constrs_1/new/esp.xdc]
+read_xdc /home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/constrs_1/new/esp.xdc
+set_property used_in_implementation false [get_files /home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/constrs_1/new/esp.xdc]
 
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]

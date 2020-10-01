@@ -4,55 +4,75 @@
 
 
 ****** Vivado v2017.4 (64-bit)
-  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
   **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
     ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 
 source zynqWithWifiExp_wrapper.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Tools/xilinxVivado/ip_repo'.
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.
-add_files: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 259.801 ; gain = 29.941
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/nazmul/research/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/nazmul/research/xilinx/Vivado/2017.4/data/ip'.
 Command: synth_design -top zynqWithWifiExp_wrapper -part xc7z020clg484-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 17344 
+INFO: Helper process launched with PID 21217 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 381.465 ; gain = 111.379
+Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:25 . Memory (MB): peak = 1371.020 ; gain = 95.000 ; free physical = 7378 ; free virtual = 27685
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'zynqWithWifiExp_wrapper' [D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/hdl/zynqWithWifiExp_wrapper.v:12]
-INFO: [Synth 8-638] synthesizing module 'zynqWithWifiExp' [D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/synth/zynqWithWifiExp.v:318]
-INFO: [Synth 8-638] synthesizing module 'zynqWithWifiExp_myipBCM_0_0' [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ip/zynqWithWifiExp_myipBCM_0_0/synth/zynqWithWifiExp_myipBCM_0_0.v:57]
-INFO: [Synth 8-638] synthesizing module 'myipBCM_v1_0' [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/8a92/hdl/myipBCM_v1_0.v:4]
+INFO: [Synth 8-638] synthesizing module 'zynqWithWifiExp_wrapper' [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/hdl/zynqWithWifiExp_wrapper.v:12]
+INFO: [Synth 8-638] synthesizing module 'zynqWithWifiExp' [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/synth/zynqWithWifiExp.v:318]
+INFO: [Synth 8-638] synthesizing module 'zynqWithWifiExp_myipBCM_0_0' [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ip/zynqWithWifiExp_myipBCM_0_0/synth/zynqWithWifiExp_myipBCM_0_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'myipBCM_v1_0' [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/hdl/myipBCM_v1_0.v:4]
 	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S00_AXI_ADDR_WIDTH bound to: 4 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'myipBCM_v1_0_S00_AXI' [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/8a92/hdl/myipBCM_v1_0_S00_AXI.v:4]
+INFO: [Synth 8-638] synthesizing module 'myipBCM_v1_0_S00_AXI' [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/hdl/myipBCM_v1_0_S00_AXI.v:4]
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
 	Parameter ADDR_LSB bound to: 2 - type: integer 
 	Parameter OPT_MEM_ADDR_BITS bound to: 1 - type: integer 
-INFO: [Synth 8-226] default block is never used [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/8a92/hdl/myipBCM_v1_0_S00_AXI.v:237]
-INFO: [Synth 8-226] default block is never used [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/8a92/hdl/myipBCM_v1_0_S00_AXI.v:378]
-INFO: [Synth 8-638] synthesizing module 'bcmProcess' [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/8a92/src/bcmProcess.v:3]
-INFO: [Synth 8-256] done synthesizing module 'bcmProcess' (1#1) [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/8a92/src/bcmProcess.v:3]
-INFO: [Synth 8-638] synthesizing module 'hcmProcess' [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/8a92/src/hcmProcess.v:3]
-WARNING: [Synth 8-567] referenced signal 'configs_in' should be on the sensitivity list [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/8a92/src/hcmProcess.v:9]
-INFO: [Synth 8-256] done synthesizing module 'hcmProcess' (2#1) [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/8a92/src/hcmProcess.v:3]
-INFO: [Synth 8-638] synthesizing module 'timestampProcess' [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/8a92/src/timestampProcess.v:3]
+INFO: [Synth 8-226] default block is never used [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/hdl/myipBCM_v1_0_S00_AXI.v:242]
+INFO: [Synth 8-226] default block is never used [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/hdl/myipBCM_v1_0_S00_AXI.v:383]
+INFO: [Synth 8-638] synthesizing module 'bcmProcess' [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/src/bcmProcess.v:3]
+INFO: [Synth 8-256] done synthesizing module 'bcmProcess' (1#1) [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/src/bcmProcess.v:3]
+INFO: [Synth 8-638] synthesizing module 'hcmProcess' [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/src/hcmProcess.v:3]
+WARNING: [Synth 8-567] referenced signal 'configs_in' should be on the sensitivity list [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/src/hcmProcess.v:34]
+INFO: [Synth 8-256] done synthesizing module 'hcmProcess' (2#1) [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/src/hcmProcess.v:3]
+WARNING: [Synth 8-689] width (1) of port connection 'aes_out' does not match port width (2) of module 'hcmProcess' [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/hdl/myipBCM_v1_0_S00_AXI.v:426]
+INFO: [Synth 8-638] synthesizing module 'timestampProcess' [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/src/timestampProcess.v:3]
 	Parameter DIVISOR bound to: 50000000 - type: integer 
-WARNING: [Synth 8-5788] Register ticker_reg in module timestampProcess is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/8a92/src/timestampProcess.v:44]
-WARNING: [Synth 8-5788] Register timeup_out_reg in module timestampProcess is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/8a92/src/timestampProcess.v:48]
-INFO: [Synth 8-256] done synthesizing module 'timestampProcess' (3#1) [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/8a92/src/timestampProcess.v:3]
-WARNING: [Synth 8-6014] Unused sequential element slv_reg1_reg was removed.  [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/8a92/hdl/myipBCM_v1_0_S00_AXI.v:230]
-WARNING: [Synth 8-6014] Unused sequential element slv_reg2_reg was removed.  [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/8a92/hdl/myipBCM_v1_0_S00_AXI.v:231]
-WARNING: [Synth 8-6014] Unused sequential element slv_reg3_reg was removed.  [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/8a92/hdl/myipBCM_v1_0_S00_AXI.v:232]
-INFO: [Synth 8-256] done synthesizing module 'myipBCM_v1_0_S00_AXI' (4#1) [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/8a92/hdl/myipBCM_v1_0_S00_AXI.v:4]
-INFO: [Synth 8-256] done synthesizing module 'myipBCM_v1_0' (5#1) [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/8a92/hdl/myipBCM_v1_0.v:4]
-INFO: [Synth 8-256] done synthesizing module 'zynqWithWifiExp_myipBCM_0_0' (6#1) [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ip/zynqWithWifiExp_myipBCM_0_0/synth/zynqWithWifiExp_myipBCM_0_0.v:57]
-INFO: [Synth 8-638] synthesizing module 'zynqWithWifiExp_processing_system7_0_0' [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ip/zynqWithWifiExp_processing_system7_0_0/synth/zynqWithWifiExp_processing_system7_0_0.v:60]
-INFO: [Synth 8-638] synthesizing module 'processing_system7_v5_5_processing_system7' [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ip/zynqWithWifiExp_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:162]
+WARNING: [Synth 8-5788] Register ticker_reg in module timestampProcess is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/src/timestampProcess.v:39]
+WARNING: [Synth 8-5788] Register timeup_out_reg in module timestampProcess is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/src/timestampProcess.v:43]
+INFO: [Synth 8-256] done synthesizing module 'timestampProcess' (3#1) [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/src/timestampProcess.v:3]
+INFO: [Synth 8-638] synthesizing module 'aes_128' [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/src/aes_128.v:3]
+INFO: [Synth 8-638] synthesizing module 'expand_key_128' [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/src/aes_128.v:70]
+INFO: [Synth 8-638] synthesizing module 'S4' [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/src/table.v:19]
+INFO: [Synth 8-638] synthesizing module 'S' [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/src/table.v:48]
+INFO: [Synth 8-256] done synthesizing module 'S' (4#1) [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/src/table.v:48]
+INFO: [Synth 8-256] done synthesizing module 'S4' (5#1) [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/src/table.v:19]
+INFO: [Synth 8-256] done synthesizing module 'expand_key_128' (6#1) [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/src/aes_128.v:70]
+INFO: [Synth 8-638] synthesizing module 'one_round' [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/src/round.v:4]
+INFO: [Synth 8-638] synthesizing module 'table_lookup' [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/src/table.v:3]
+INFO: [Synth 8-638] synthesizing module 'T' [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/src/table.v:33]
+INFO: [Synth 8-638] synthesizing module 'xS' [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/src/table.v:317]
+INFO: [Synth 8-256] done synthesizing module 'xS' (7#1) [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/src/table.v:317]
+INFO: [Synth 8-256] done synthesizing module 'T' (8#1) [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/src/table.v:33]
+INFO: [Synth 8-256] done synthesizing module 'table_lookup' (9#1) [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/src/table.v:3]
+INFO: [Synth 8-256] done synthesizing module 'one_round' (10#1) [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/src/round.v:4]
+INFO: [Synth 8-638] synthesizing module 'final_round' [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/src/round.v:38]
+INFO: [Synth 8-256] done synthesizing module 'final_round' (11#1) [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/src/round.v:38]
+INFO: [Synth 8-256] done synthesizing module 'aes_128' (12#1) [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/src/aes_128.v:3]
+WARNING: [Synth 8-689] width (1) of port connection 'aes_in' does not match port width (2) of module 'aes_128' [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/hdl/myipBCM_v1_0_S00_AXI.v:440]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg1_reg was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/hdl/myipBCM_v1_0_S00_AXI.v:235]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg2_reg was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/hdl/myipBCM_v1_0_S00_AXI.v:236]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg3_reg was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/hdl/myipBCM_v1_0_S00_AXI.v:237]
+INFO: [Synth 8-256] done synthesizing module 'myipBCM_v1_0_S00_AXI' (13#1) [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/hdl/myipBCM_v1_0_S00_AXI.v:4]
+WARNING: [Synth 8-350] instance 'myipBCM_v1_0_S00_AXI_inst' of module 'myipBCM_v1_0_S00_AXI' requires 23 connections, but only 22 given [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/hdl/myipBCM_v1_0.v:50]
+INFO: [Synth 8-256] done synthesizing module 'myipBCM_v1_0' (14#1) [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/hdl/myipBCM_v1_0.v:4]
+INFO: [Synth 8-256] done synthesizing module 'zynqWithWifiExp_myipBCM_0_0' (15#1) [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ip/zynqWithWifiExp_myipBCM_0_0/synth/zynqWithWifiExp_myipBCM_0_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'zynqWithWifiExp_processing_system7_0_0' [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ip/zynqWithWifiExp_processing_system7_0_0/synth/zynqWithWifiExp_processing_system7_0_0.v:60]
+INFO: [Synth 8-638] synthesizing module 'processing_system7_v5_5_processing_system7' [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ip/zynqWithWifiExp_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:162]
 	Parameter C_USE_DEFAULT_ACP_USER_VAL bound to: 0 - type: integer 
 	Parameter C_S_AXI_ACP_ARUSER_VAL bound to: 31 - type: integer 
 	Parameter C_S_AXI_ACP_AWUSER_VAL bound to: 31 - type: integer 
@@ -109,22 +129,22 @@ INFO: [Synth 8-638] synthesizing module 'processing_system7_v5_5_processing_syst
 	Parameter C_USE_S_AXI_ACP bound to: 0 - type: integer 
 	Parameter C_GP0_EN_MODIFIABLE_TXN bound to: 1 - type: integer 
 	Parameter C_GP1_EN_MODIFIABLE_TXN bound to: 1 - type: integer 
-INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ip/zynqWithWifiExp_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:1348]
-INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ip/zynqWithWifiExp_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:1349]
-INFO: [Synth 8-638] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:607]
-INFO: [Synth 8-256] done synthesizing module 'BUFG' (7#1) [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:607]
-INFO: [Synth 8-638] synthesizing module 'BIBUF' [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:268]
-INFO: [Synth 8-256] done synthesizing module 'BIBUF' (8#1) [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:268]
-INFO: [Synth 8-638] synthesizing module 'PS7' [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:40559]
-INFO: [Synth 8-256] done synthesizing module 'PS7' (9#1) [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:40559]
-INFO: [Synth 8-256] done synthesizing module 'processing_system7_v5_5_processing_system7' (10#1) [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ip/zynqWithWifiExp_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:162]
-WARNING: [Synth 8-350] instance 'inst' of module 'processing_system7_v5_5_processing_system7' requires 685 connections, but only 672 given [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ip/zynqWithWifiExp_processing_system7_0_0/synth/zynqWithWifiExp_processing_system7_0_0.v:334]
-INFO: [Synth 8-256] done synthesizing module 'zynqWithWifiExp_processing_system7_0_0' (11#1) [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ip/zynqWithWifiExp_processing_system7_0_0/synth/zynqWithWifiExp_processing_system7_0_0.v:60]
-WARNING: [Synth 8-350] instance 'processing_system7_0' of module 'zynqWithWifiExp_processing_system7_0_0' requires 70 connections, but only 65 given [D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/synth/zynqWithWifiExp.v:480]
-INFO: [Synth 8-638] synthesizing module 'zynqWithWifiExp_ps7_0_axi_periph_1' [D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/synth/zynqWithWifiExp.v:620]
-INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_1GBAENF' [D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/synth/zynqWithWifiExp.v:12]
-INFO: [Synth 8-638] synthesizing module 'zynqWithWifiExp_auto_pc_0' [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ip/zynqWithWifiExp_auto_pc_0/synth/zynqWithWifiExp_auto_pc_0.v:58]
-INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_15_axi_protocol_converter' [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4811]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ip/zynqWithWifiExp_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:1348]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ip/zynqWithWifiExp_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:1349]
+INFO: [Synth 8-638] synthesizing module 'BUFG' [/home/nazmul/research/xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:607]
+INFO: [Synth 8-256] done synthesizing module 'BUFG' (16#1) [/home/nazmul/research/xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:607]
+INFO: [Synth 8-638] synthesizing module 'BIBUF' [/home/nazmul/research/xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:268]
+INFO: [Synth 8-256] done synthesizing module 'BIBUF' (17#1) [/home/nazmul/research/xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:268]
+INFO: [Synth 8-638] synthesizing module 'PS7' [/home/nazmul/research/xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:40559]
+INFO: [Synth 8-256] done synthesizing module 'PS7' (18#1) [/home/nazmul/research/xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:40559]
+INFO: [Synth 8-256] done synthesizing module 'processing_system7_v5_5_processing_system7' (19#1) [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ip/zynqWithWifiExp_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:162]
+WARNING: [Synth 8-350] instance 'inst' of module 'processing_system7_v5_5_processing_system7' requires 685 connections, but only 672 given [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ip/zynqWithWifiExp_processing_system7_0_0/synth/zynqWithWifiExp_processing_system7_0_0.v:334]
+INFO: [Synth 8-256] done synthesizing module 'zynqWithWifiExp_processing_system7_0_0' (20#1) [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ip/zynqWithWifiExp_processing_system7_0_0/synth/zynqWithWifiExp_processing_system7_0_0.v:60]
+WARNING: [Synth 8-350] instance 'processing_system7_0' of module 'zynqWithWifiExp_processing_system7_0_0' requires 70 connections, but only 65 given [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/synth/zynqWithWifiExp.v:480]
+INFO: [Synth 8-638] synthesizing module 'zynqWithWifiExp_ps7_0_axi_periph_1' [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/synth/zynqWithWifiExp.v:620]
+INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_1GBAENF' [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/synth/zynqWithWifiExp.v:12]
+INFO: [Synth 8-638] synthesizing module 'zynqWithWifiExp_auto_pc_0' [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ip/zynqWithWifiExp_auto_pc_0/synth/zynqWithWifiExp_auto_pc_0.v:58]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_15_axi_protocol_converter' [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4811]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_M_AXI_PROTOCOL bound to: 2 - type: integer 
 	Parameter C_S_AXI_PROTOCOL bound to: 1 - type: integer 
@@ -150,39 +170,39 @@ INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_15_axi_prot
 	Parameter P_SLVERR bound to: 2'b10 
 	Parameter P_PROTECTION bound to: 1 - type: integer 
 	Parameter P_CONVERSION bound to: 2 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_15_b2s' [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4229]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_15_b2s' [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4229]
 	Parameter C_S_AXI_PROTOCOL bound to: 1 - type: integer 
 	Parameter C_AXI_ID_WIDTH bound to: 12 - type: integer 
 	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
 	Parameter C_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_AXI_SUPPORTS_WRITE bound to: 1 - type: integer 
 	Parameter C_AXI_SUPPORTS_READ bound to: 1 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_15_b2s_aw_channel' [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3974]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_15_b2s_aw_channel' [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3974]
 	Parameter C_ID_WIDTH bound to: 12 - type: integer 
 	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_15_b2s_cmd_translator' [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3467]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_15_b2s_cmd_translator' [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3467]
 	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
 	Parameter P_AXBURST_FIXED bound to: 2'b00 
 	Parameter P_AXBURST_INCR bound to: 2'b01 
 	Parameter P_AXBURST_WRAP bound to: 2'b10 
-INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_15_b2s_incr_cmd' [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3093]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_15_b2s_incr_cmd' [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3093]
 	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
 	Parameter L_AXI_ADDR_LOW_BIT bound to: 12 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_15_b2s_incr_cmd' (12#1) [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3093]
-INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_15_b2s_wrap_cmd' [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2903]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_15_b2s_incr_cmd' (21#1) [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3093]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_15_b2s_wrap_cmd' [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2903]
 	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
 	Parameter L_AXI_ADDR_LOW_BIT bound to: 12 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_15_b2s_wrap_cmd' (13#1) [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2903]
-INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_15_b2s_cmd_translator' (14#1) [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3467]
-INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_15_b2s_wr_cmd_fsm' [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3225]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_15_b2s_wrap_cmd' (22#1) [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2903]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_15_b2s_cmd_translator' (23#1) [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3467]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_15_b2s_wr_cmd_fsm' [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3225]
 	Parameter SM_IDLE bound to: 2'b00 
 	Parameter SM_CMD_EN bound to: 2'b01 
 	Parameter SM_CMD_ACCEPTED bound to: 2'b10 
 	Parameter SM_DONE_WAIT bound to: 2'b11 
-INFO: [Synth 8-226] default block is never used [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3279]
-INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_15_b2s_wr_cmd_fsm' (15#1) [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3225]
-INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_15_b2s_aw_channel' (16#1) [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3974]
-INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_15_b2s_b_channel' [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3609]
+INFO: [Synth 8-226] default block is never used [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3279]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_15_b2s_wr_cmd_fsm' (24#1) [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3225]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_15_b2s_aw_channel' (25#1) [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3974]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_15_b2s_b_channel' [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3609]
 	Parameter C_ID_WIDTH bound to: 12 - type: integer 
 	Parameter LP_RESP_OKAY bound to: 2'b00 
 	Parameter LP_RESP_EXOKAY bound to: 2'b01 
@@ -194,7 +214,7 @@ INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_15_b2s_b_ch
 	Parameter P_RWIDTH bound to: 2 - type: integer 
 	Parameter P_RDEPTH bound to: 4 - type: integer 
 	Parameter P_RAWIDTH bound to: 2 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_15_b2s_simple_fifo' [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2816]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_15_b2s_simple_fifo' [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2816]
 	Parameter C_WIDTH bound to: 20 - type: integer 
 	Parameter C_AWIDTH bound to: 2 - type: integer 
 	Parameter C_DEPTH bound to: 4 - type: integer 
@@ -202,8 +222,8 @@ INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_15_b2s_simp
 	Parameter C_EMPTY_PRE bound to: 2'b00 
 	Parameter C_FULL bound to: 2'b10 
 	Parameter C_FULL_PRE bound to: 2'b01 
-INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_15_b2s_simple_fifo' (17#1) [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2816]
-INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_15_b2s_simple_fifo__parameterized0' [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2816]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_15_b2s_simple_fifo' (26#1) [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2816]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_15_b2s_simple_fifo__parameterized0' [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2816]
 	Parameter C_WIDTH bound to: 2 - type: integer 
 	Parameter C_AWIDTH bound to: 2 - type: integer 
 	Parameter C_DEPTH bound to: 4 - type: integer 
@@ -211,22 +231,22 @@ INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_15_b2s_simp
 	Parameter C_EMPTY_PRE bound to: 2'b00 
 	Parameter C_FULL bound to: 2'b10 
 	Parameter C_FULL_PRE bound to: 2'b01 
-INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_15_b2s_simple_fifo__parameterized0' (17#1) [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2816]
-INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_15_b2s_b_channel' (18#1) [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3609]
-INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_15_b2s_ar_channel' [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4085]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_15_b2s_simple_fifo__parameterized0' (26#1) [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2816]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_15_b2s_b_channel' (27#1) [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3609]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_15_b2s_ar_channel' [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4085]
 	Parameter C_ID_WIDTH bound to: 12 - type: integer 
 	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_15_b2s_rd_cmd_fsm' [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3336]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_15_b2s_rd_cmd_fsm' [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3336]
 	Parameter SM_IDLE bound to: 2'b00 
 	Parameter SM_CMD_EN bound to: 2'b01 
 	Parameter SM_CMD_ACCEPTED bound to: 2'b10 
 	Parameter SM_DONE bound to: 2'b11 
-INFO: [Synth 8-226] default block is never used [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3398]
-WARNING: [Synth 8-6014] Unused sequential element state_r1_reg was removed.  [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3386]
-WARNING: [Synth 8-6014] Unused sequential element s_arlen_r_reg was removed.  [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3387]
-INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_15_b2s_rd_cmd_fsm' (19#1) [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3336]
-INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_15_b2s_ar_channel' (20#1) [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4085]
-INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_15_b2s_r_channel' [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3814]
+INFO: [Synth 8-226] default block is never used [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3398]
+WARNING: [Synth 8-6014] Unused sequential element state_r1_reg was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3386]
+WARNING: [Synth 8-6014] Unused sequential element s_arlen_r_reg was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3387]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_15_b2s_rd_cmd_fsm' (28#1) [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3336]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_15_b2s_ar_channel' (29#1) [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4085]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_15_b2s_r_channel' [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3814]
 	Parameter C_ID_WIDTH bound to: 12 - type: integer 
 	Parameter C_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter P_WIDTH bound to: 13 - type: integer 
@@ -235,7 +255,7 @@ INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_15_b2s_r_ch
 	Parameter P_D_WIDTH bound to: 34 - type: integer 
 	Parameter P_D_DEPTH bound to: 32 - type: integer 
 	Parameter P_D_AWIDTH bound to: 5 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_15_b2s_simple_fifo__parameterized1' [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2816]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_15_b2s_simple_fifo__parameterized1' [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2816]
 	Parameter C_WIDTH bound to: 34 - type: integer 
 	Parameter C_AWIDTH bound to: 5 - type: integer 
 	Parameter C_DEPTH bound to: 32 - type: integer 
@@ -243,8 +263,8 @@ INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_15_b2s_simp
 	Parameter C_EMPTY_PRE bound to: 5'b00000 
 	Parameter C_FULL bound to: 5'b11110 
 	Parameter C_FULL_PRE bound to: 5'b11010 
-INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_15_b2s_simple_fifo__parameterized1' (20#1) [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2816]
-INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_15_b2s_simple_fifo__parameterized2' [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2816]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_15_b2s_simple_fifo__parameterized1' (29#1) [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2816]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_15_b2s_simple_fifo__parameterized2' [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2816]
 	Parameter C_WIDTH bound to: 13 - type: integer 
 	Parameter C_AWIDTH bound to: 5 - type: integer 
 	Parameter C_DEPTH bound to: 32 - type: integer 
@@ -252,9 +272,9 @@ INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_15_b2s_simp
 	Parameter C_EMPTY_PRE bound to: 5'b00000 
 	Parameter C_FULL bound to: 5'b11110 
 	Parameter C_FULL_PRE bound to: 5'b11010 
-INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_15_b2s_simple_fifo__parameterized2' (20#1) [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2816]
-INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_15_b2s_r_channel' (21#1) [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3814]
-INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_15_axi_register_slice' [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/3ed1/hdl/axi_register_slice_v2_1_vl_rfs.v:2300]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_15_b2s_simple_fifo__parameterized2' (29#1) [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2816]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_15_b2s_r_channel' (30#1) [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3814]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_15_axi_register_slice' [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/3ed1/hdl/axi_register_slice_v2_1_vl_rfs.v:2300]
 	Parameter C_FAMILY bound to: virtex6 - type: string 
 	Parameter C_AXI_PROTOCOL bound to: 1 - type: integer 
 	Parameter C_AXI_ID_WIDTH bound to: 12 - type: integer 
@@ -365,27 +385,27 @@ INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_15_axi_register
 	Parameter G_AXI_RUSER_INDEX bound to: 47 - type: integer 
 	Parameter G_AXI_RUSER_WIDTH bound to: 0 - type: integer 
 	Parameter G_AXI_RPAYLOAD_WIDTH bound to: 47 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_15_axic_register_slice' [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/3ed1/hdl/axi_register_slice_v2_1_vl_rfs.v:189]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_15_axic_register_slice' [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/3ed1/hdl/axi_register_slice_v2_1_vl_rfs.v:189]
 	Parameter C_FAMILY bound to: virtex6 - type: string 
 	Parameter C_DATA_WIDTH bound to: 66 - type: integer 
 	Parameter C_REG_CONFIG bound to: 1 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_15_axic_register_slice' (22#1) [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/3ed1/hdl/axi_register_slice_v2_1_vl_rfs.v:189]
-INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_15_axic_register_slice__parameterized0' [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/3ed1/hdl/axi_register_slice_v2_1_vl_rfs.v:189]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_15_axic_register_slice' (31#1) [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/3ed1/hdl/axi_register_slice_v2_1_vl_rfs.v:189]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_15_axic_register_slice__parameterized0' [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/3ed1/hdl/axi_register_slice_v2_1_vl_rfs.v:189]
 	Parameter C_FAMILY bound to: virtex6 - type: string 
 	Parameter C_DATA_WIDTH bound to: 49 - type: integer 
 	Parameter C_REG_CONFIG bound to: 0 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_15_axic_register_slice__parameterized0' (22#1) [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/3ed1/hdl/axi_register_slice_v2_1_vl_rfs.v:189]
-INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_15_axic_register_slice__parameterized1' [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/3ed1/hdl/axi_register_slice_v2_1_vl_rfs.v:189]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_15_axic_register_slice__parameterized0' (31#1) [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/3ed1/hdl/axi_register_slice_v2_1_vl_rfs.v:189]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_15_axic_register_slice__parameterized1' [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/3ed1/hdl/axi_register_slice_v2_1_vl_rfs.v:189]
 	Parameter C_FAMILY bound to: virtex6 - type: string 
 	Parameter C_DATA_WIDTH bound to: 14 - type: integer 
 	Parameter C_REG_CONFIG bound to: 1 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_15_axic_register_slice__parameterized1' (22#1) [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/3ed1/hdl/axi_register_slice_v2_1_vl_rfs.v:189]
-INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_15_axic_register_slice__parameterized2' [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/3ed1/hdl/axi_register_slice_v2_1_vl_rfs.v:189]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_15_axic_register_slice__parameterized1' (31#1) [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/3ed1/hdl/axi_register_slice_v2_1_vl_rfs.v:189]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_15_axic_register_slice__parameterized2' [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/3ed1/hdl/axi_register_slice_v2_1_vl_rfs.v:189]
 	Parameter C_FAMILY bound to: virtex6 - type: string 
 	Parameter C_DATA_WIDTH bound to: 47 - type: integer 
 	Parameter C_REG_CONFIG bound to: 1 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_15_axic_register_slice__parameterized2' (22#1) [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/3ed1/hdl/axi_register_slice_v2_1_vl_rfs.v:189]
-INFO: [Synth 8-638] synthesizing module 'axi_infrastructure_v1_1_0_axi2vector' [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:60]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_15_axic_register_slice__parameterized2' (31#1) [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/3ed1/hdl/axi_register_slice_v2_1_vl_rfs.v:189]
+INFO: [Synth 8-638] synthesizing module 'axi_infrastructure_v1_1_0_axi2vector' [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:60]
 	Parameter C_AXI_PROTOCOL bound to: 1 - type: integer 
 	Parameter C_AXI_ID_WIDTH bound to: 12 - type: integer 
 	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
@@ -477,8 +497,8 @@ INFO: [Synth 8-638] synthesizing module 'axi_infrastructure_v1_1_0_axi2vector' [
 	Parameter G_AXI_RUSER_INDEX bound to: 47 - type: integer 
 	Parameter G_AXI_RUSER_WIDTH bound to: 0 - type: integer 
 	Parameter G_AXI_RPAYLOAD_WIDTH bound to: 47 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'axi_infrastructure_v1_1_0_axi2vector' (23#1) [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:60]
-INFO: [Synth 8-638] synthesizing module 'axi_infrastructure_v1_1_0_vector2axi' [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:474]
+INFO: [Synth 8-256] done synthesizing module 'axi_infrastructure_v1_1_0_axi2vector' (32#1) [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:60]
+INFO: [Synth 8-638] synthesizing module 'axi_infrastructure_v1_1_0_vector2axi' [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:474]
 	Parameter C_AXI_PROTOCOL bound to: 1 - type: integer 
 	Parameter C_AXI_ID_WIDTH bound to: 12 - type: integer 
 	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
@@ -570,10 +590,10 @@ INFO: [Synth 8-638] synthesizing module 'axi_infrastructure_v1_1_0_vector2axi' [
 	Parameter G_AXI_RUSER_INDEX bound to: 47 - type: integer 
 	Parameter G_AXI_RUSER_WIDTH bound to: 0 - type: integer 
 	Parameter G_AXI_RPAYLOAD_WIDTH bound to: 47 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'axi_infrastructure_v1_1_0_vector2axi' (24#1) [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:474]
-INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_15_axi_register_slice' (25#1) [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/3ed1/hdl/axi_register_slice_v2_1_vl_rfs.v:2300]
-WARNING: [Synth 8-350] instance 'SI_REG' of module 'axi_register_slice_v2_1_15_axi_register_slice' requires 93 connections, but only 92 given [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4395]
-INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_15_axi_register_slice__parameterized0' [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/3ed1/hdl/axi_register_slice_v2_1_vl_rfs.v:2300]
+INFO: [Synth 8-256] done synthesizing module 'axi_infrastructure_v1_1_0_vector2axi' (33#1) [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:474]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_15_axi_register_slice' (34#1) [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/3ed1/hdl/axi_register_slice_v2_1_vl_rfs.v:2300]
+WARNING: [Synth 8-350] instance 'SI_REG' of module 'axi_register_slice_v2_1_15_axi_register_slice' requires 93 connections, but only 92 given [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4395]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_15_axi_register_slice__parameterized0' [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/3ed1/hdl/axi_register_slice_v2_1_vl_rfs.v:2300]
 	Parameter C_FAMILY bound to: virtex6 - type: string 
 	Parameter C_AXI_PROTOCOL bound to: 2 - type: integer 
 	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
@@ -684,27 +704,27 @@ INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_15_axi_register
 	Parameter G_AXI_RUSER_INDEX bound to: 34 - type: integer 
 	Parameter G_AXI_RUSER_WIDTH bound to: 0 - type: integer 
 	Parameter G_AXI_RPAYLOAD_WIDTH bound to: 34 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_15_axic_register_slice__parameterized3' [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/3ed1/hdl/axi_register_slice_v2_1_vl_rfs.v:189]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_15_axic_register_slice__parameterized3' [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/3ed1/hdl/axi_register_slice_v2_1_vl_rfs.v:189]
 	Parameter C_FAMILY bound to: virtex6 - type: string 
 	Parameter C_DATA_WIDTH bound to: 35 - type: integer 
 	Parameter C_REG_CONFIG bound to: 0 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_15_axic_register_slice__parameterized3' (25#1) [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/3ed1/hdl/axi_register_slice_v2_1_vl_rfs.v:189]
-INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_15_axic_register_slice__parameterized4' [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/3ed1/hdl/axi_register_slice_v2_1_vl_rfs.v:189]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_15_axic_register_slice__parameterized3' (34#1) [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/3ed1/hdl/axi_register_slice_v2_1_vl_rfs.v:189]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_15_axic_register_slice__parameterized4' [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/3ed1/hdl/axi_register_slice_v2_1_vl_rfs.v:189]
 	Parameter C_FAMILY bound to: virtex6 - type: string 
 	Parameter C_DATA_WIDTH bound to: 36 - type: integer 
 	Parameter C_REG_CONFIG bound to: 0 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_15_axic_register_slice__parameterized4' (25#1) [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/3ed1/hdl/axi_register_slice_v2_1_vl_rfs.v:189]
-INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_15_axic_register_slice__parameterized5' [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/3ed1/hdl/axi_register_slice_v2_1_vl_rfs.v:189]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_15_axic_register_slice__parameterized4' (34#1) [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/3ed1/hdl/axi_register_slice_v2_1_vl_rfs.v:189]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_15_axic_register_slice__parameterized5' [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/3ed1/hdl/axi_register_slice_v2_1_vl_rfs.v:189]
 	Parameter C_FAMILY bound to: virtex6 - type: string 
 	Parameter C_DATA_WIDTH bound to: 2 - type: integer 
 	Parameter C_REG_CONFIG bound to: 0 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_15_axic_register_slice__parameterized5' (25#1) [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/3ed1/hdl/axi_register_slice_v2_1_vl_rfs.v:189]
-INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_15_axic_register_slice__parameterized6' [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/3ed1/hdl/axi_register_slice_v2_1_vl_rfs.v:189]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_15_axic_register_slice__parameterized5' (34#1) [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/3ed1/hdl/axi_register_slice_v2_1_vl_rfs.v:189]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_15_axic_register_slice__parameterized6' [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/3ed1/hdl/axi_register_slice_v2_1_vl_rfs.v:189]
 	Parameter C_FAMILY bound to: virtex6 - type: string 
 	Parameter C_DATA_WIDTH bound to: 34 - type: integer 
 	Parameter C_REG_CONFIG bound to: 0 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_15_axic_register_slice__parameterized6' (25#1) [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/3ed1/hdl/axi_register_slice_v2_1_vl_rfs.v:189]
-INFO: [Synth 8-638] synthesizing module 'axi_infrastructure_v1_1_0_axi2vector__parameterized0' [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:60]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_15_axic_register_slice__parameterized6' (34#1) [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/3ed1/hdl/axi_register_slice_v2_1_vl_rfs.v:189]
+INFO: [Synth 8-638] synthesizing module 'axi_infrastructure_v1_1_0_axi2vector__parameterized0' [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:60]
 	Parameter C_AXI_PROTOCOL bound to: 2 - type: integer 
 	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
 	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
@@ -796,8 +816,8 @@ INFO: [Synth 8-638] synthesizing module 'axi_infrastructure_v1_1_0_axi2vector__p
 	Parameter G_AXI_RUSER_INDEX bound to: 34 - type: integer 
 	Parameter G_AXI_RUSER_WIDTH bound to: 0 - type: integer 
 	Parameter G_AXI_RPAYLOAD_WIDTH bound to: 34 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'axi_infrastructure_v1_1_0_axi2vector__parameterized0' (25#1) [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:60]
-INFO: [Synth 8-638] synthesizing module 'axi_infrastructure_v1_1_0_vector2axi__parameterized0' [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:474]
+INFO: [Synth 8-256] done synthesizing module 'axi_infrastructure_v1_1_0_axi2vector__parameterized0' (34#1) [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:60]
+INFO: [Synth 8-638] synthesizing module 'axi_infrastructure_v1_1_0_vector2axi__parameterized0' [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:474]
 	Parameter C_AXI_PROTOCOL bound to: 2 - type: integer 
 	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
 	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
@@ -889,15 +909,15 @@ INFO: [Synth 8-638] synthesizing module 'axi_infrastructure_v1_1_0_vector2axi__p
 	Parameter G_AXI_RUSER_INDEX bound to: 34 - type: integer 
 	Parameter G_AXI_RUSER_WIDTH bound to: 0 - type: integer 
 	Parameter G_AXI_RPAYLOAD_WIDTH bound to: 34 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'axi_infrastructure_v1_1_0_vector2axi__parameterized0' (25#1) [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:474]
-INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_15_axi_register_slice__parameterized0' (25#1) [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/3ed1/hdl/axi_register_slice_v2_1_vl_rfs.v:2300]
-WARNING: [Synth 8-350] instance 'MI_REG' of module 'axi_register_slice_v2_1_15_axi_register_slice' requires 93 connections, but only 92 given [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4650]
-INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_15_b2s' (26#1) [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4229]
-INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_15_axi_protocol_converter' (27#1) [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4811]
-INFO: [Synth 8-256] done synthesizing module 'zynqWithWifiExp_auto_pc_0' (28#1) [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ip/zynqWithWifiExp_auto_pc_0/synth/zynqWithWifiExp_auto_pc_0.v:58]
-INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_1GBAENF' (29#1) [D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/synth/zynqWithWifiExp.v:12]
-INFO: [Synth 8-256] done synthesizing module 'zynqWithWifiExp_ps7_0_axi_periph_1' (30#1) [D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/synth/zynqWithWifiExp.v:620]
-INFO: [Synth 8-638] synthesizing module 'zynqWithWifiExp_rst_ps7_0_100M_1' [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ip/zynqWithWifiExp_rst_ps7_0_100M_1/synth/zynqWithWifiExp_rst_ps7_0_100M_1.vhd:74]
+INFO: [Synth 8-256] done synthesizing module 'axi_infrastructure_v1_1_0_vector2axi__parameterized0' (34#1) [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:474]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_15_axi_register_slice__parameterized0' (34#1) [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/3ed1/hdl/axi_register_slice_v2_1_vl_rfs.v:2300]
+WARNING: [Synth 8-350] instance 'MI_REG' of module 'axi_register_slice_v2_1_15_axi_register_slice' requires 93 connections, but only 92 given [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4650]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_15_b2s' (35#1) [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4229]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_15_axi_protocol_converter' (36#1) [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4811]
+INFO: [Synth 8-256] done synthesizing module 'zynqWithWifiExp_auto_pc_0' (37#1) [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ip/zynqWithWifiExp_auto_pc_0/synth/zynqWithWifiExp_auto_pc_0.v:58]
+INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_1GBAENF' (38#1) [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/synth/zynqWithWifiExp.v:12]
+INFO: [Synth 8-256] done synthesizing module 'zynqWithWifiExp_ps7_0_axi_periph_1' (39#1) [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/synth/zynqWithWifiExp.v:620]
+INFO: [Synth 8-638] synthesizing module 'zynqWithWifiExp_rst_ps7_0_100M_1' [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ip/zynqWithWifiExp_rst_ps7_0_100M_1/synth/zynqWithWifiExp_rst_ps7_0_100M_1.vhd:74]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
 	Parameter C_AUX_RST_WIDTH bound to: 4 - type: integer 
@@ -907,8 +927,8 @@ INFO: [Synth 8-638] synthesizing module 'zynqWithWifiExp_rst_ps7_0_100M_1' [d:/T
 	Parameter C_NUM_PERP_RST bound to: 1 - type: integer 
 	Parameter C_NUM_INTERCONNECT_ARESETN bound to: 1 - type: integer 
 	Parameter C_NUM_PERP_ARESETN bound to: 1 - type: integer 
-INFO: [Synth 8-3491] module 'proc_sys_reset' declared at 'd:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1264' bound to instance 'U0' of component 'proc_sys_reset' [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ip/zynqWithWifiExp_rst_ps7_0_100M_1/synth/zynqWithWifiExp_rst_ps7_0_100M_1.vhd:129]
-INFO: [Synth 8-638] synthesizing module 'proc_sys_reset' [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
+INFO: [Synth 8-3491] module 'proc_sys_reset' declared at '/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1264' bound to instance 'U0' of component 'proc_sys_reset' [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ip/zynqWithWifiExp_rst_ps7_0_100M_1/synth/zynqWithWifiExp_rst_ps7_0_100M_1.vhd:129]
+INFO: [Synth 8-638] synthesizing module 'proc_sys_reset' [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
 	Parameter C_AUX_RST_WIDTH bound to: 4 - type: integer 
@@ -922,37 +942,37 @@ INFO: [Synth 8-638] synthesizing module 'proc_sys_reset' [d:/Tools/xilinxVivado/
 	Parameter IS_C_INVERTED bound to: 1'b0 
 	Parameter IS_D_INVERTED bound to: 1'b0 
 	Parameter IS_R_INVERTED bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'FDRE_inst' to cell 'FDRE' [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1392]
+INFO: [Synth 8-113] binding component instance 'FDRE_inst' to cell 'FDRE' [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1392]
 	Parameter INIT bound to: 1'b1 
 	Parameter IS_C_INVERTED bound to: 1'b0 
 	Parameter IS_D_INVERTED bound to: 1'b0 
 	Parameter IS_R_INVERTED bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'FDRE_BSR' to cell 'FDRE' [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1408]
+INFO: [Synth 8-113] binding component instance 'FDRE_BSR' to cell 'FDRE' [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1408]
 	Parameter INIT bound to: 1'b0 
 	Parameter IS_C_INVERTED bound to: 1'b0 
 	Parameter IS_D_INVERTED bound to: 1'b0 
 	Parameter IS_R_INVERTED bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'FDRE_BSR_N' to cell 'FDRE' [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1434]
+INFO: [Synth 8-113] binding component instance 'FDRE_BSR_N' to cell 'FDRE' [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1434]
 	Parameter INIT bound to: 1'b1 
 	Parameter IS_C_INVERTED bound to: 1'b0 
 	Parameter IS_D_INVERTED bound to: 1'b0 
 	Parameter IS_R_INVERTED bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'FDRE_PER' to cell 'FDRE' [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1457]
+INFO: [Synth 8-113] binding component instance 'FDRE_PER' to cell 'FDRE' [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1457]
 	Parameter INIT bound to: 1'b0 
 	Parameter IS_C_INVERTED bound to: 1'b0 
 	Parameter IS_D_INVERTED bound to: 1'b0 
 	Parameter IS_R_INVERTED bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'FDRE_PER_N' to cell 'FDRE' [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1481]
-INFO: [Synth 8-638] synthesizing module 'lpf' [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
+INFO: [Synth 8-113] binding component instance 'FDRE_PER_N' to cell 'FDRE' [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1481]
+INFO: [Synth 8-638] synthesizing module 'lpf' [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
 	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
 	Parameter C_AUX_RST_WIDTH bound to: 4 - type: integer 
 	Parameter C_EXT_RESET_HIGH bound to: 1'b0 
 	Parameter C_AUX_RESET_HIGH bound to: 1'b0 
-INFO: [Synth 8-3491] module 'SRL16' declared at 'C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:50689' bound to instance 'POR_SRL_I' of component 'SRL16' [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:868]
-INFO: [Synth 8-638] synthesizing module 'SRL16' [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:50689]
+INFO: [Synth 8-3491] module 'SRL16' declared at '/home/nazmul/research/xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:50689' bound to instance 'POR_SRL_I' of component 'SRL16' [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:868]
+INFO: [Synth 8-638] synthesizing module 'SRL16' [/home/nazmul/research/xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:50689]
 	Parameter INIT bound to: 16'b0000000000000000 
-INFO: [Synth 8-256] done synthesizing module 'SRL16' (31#1) [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:50689]
-INFO: [Synth 8-638] synthesizing module 'cdc_sync' [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'SRL16' (40#1) [/home/nazmul/research/xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:50689]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync' [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
 	Parameter C_CDC_TYPE bound to: 1 - type: integer 
 	Parameter C_RESET_STATE bound to: 0 - type: integer 
 	Parameter C_SINGLE_BIT bound to: 1 - type: integer 
@@ -960,29 +980,29 @@ INFO: [Synth 8-638] synthesizing module 'cdc_sync' [d:/Tools/xilinxVivado/VipinK
 	Parameter C_VECTOR_WIDTH bound to: 2 - type: integer 
 	Parameter C_MTBF_STAGES bound to: 4 - type: integer 
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:514]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:514]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2' to cell 'FDR' [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:545]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2' to cell 'FDR' [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:545]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3' to cell 'FDR' [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:554]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3' to cell 'FDR' [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:554]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4' to cell 'FDR' [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:564]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4' to cell 'FDR' [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:564]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5' to cell 'FDR' [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:574]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5' to cell 'FDR' [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:574]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6' to cell 'FDR' [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:584]
-INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (32#1) [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
-INFO: [Synth 8-256] done synthesizing module 'lpf' (33#1) [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
-INFO: [Synth 8-638] synthesizing module 'sequence_psr' [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
-INFO: [Synth 8-638] synthesizing module 'upcnt_n' [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6' to cell 'FDR' [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:584]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (41#1) [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'lpf' (42#1) [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
+INFO: [Synth 8-638] synthesizing module 'sequence_psr' [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
+INFO: [Synth 8-638] synthesizing module 'upcnt_n' [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
 	Parameter C_SIZE bound to: 6 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'upcnt_n' (34#1) [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
-INFO: [Synth 8-256] done synthesizing module 'sequence_psr' (35#1) [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
-INFO: [Synth 8-256] done synthesizing module 'proc_sys_reset' (36#1) [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
-INFO: [Synth 8-256] done synthesizing module 'zynqWithWifiExp_rst_ps7_0_100M_1' (37#1) [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ip/zynqWithWifiExp_rst_ps7_0_100M_1/synth/zynqWithWifiExp_rst_ps7_0_100M_1.vhd:74]
-WARNING: [Synth 8-350] instance 'rst_ps7_0_100M' of module 'zynqWithWifiExp_rst_ps7_0_100M_1' requires 10 connections, but only 7 given [D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/synth/zynqWithWifiExp.v:610]
-INFO: [Synth 8-256] done synthesizing module 'zynqWithWifiExp' (38#1) [D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/synth/zynqWithWifiExp.v:318]
-INFO: [Synth 8-256] done synthesizing module 'zynqWithWifiExp_wrapper' (39#1) [D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/hdl/zynqWithWifiExp_wrapper.v:12]
+INFO: [Synth 8-256] done synthesizing module 'upcnt_n' (43#1) [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
+INFO: [Synth 8-256] done synthesizing module 'sequence_psr' (44#1) [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
+INFO: [Synth 8-256] done synthesizing module 'proc_sys_reset' (45#1) [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
+INFO: [Synth 8-256] done synthesizing module 'zynqWithWifiExp_rst_ps7_0_100M_1' (46#1) [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ip/zynqWithWifiExp_rst_ps7_0_100M_1/synth/zynqWithWifiExp_rst_ps7_0_100M_1.vhd:74]
+WARNING: [Synth 8-350] instance 'rst_ps7_0_100M' of module 'zynqWithWifiExp_rst_ps7_0_100M_1' requires 10 connections, but only 7 given [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/synth/zynqWithWifiExp.v:610]
+INFO: [Synth 8-256] done synthesizing module 'zynqWithWifiExp' (47#1) [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/synth/zynqWithWifiExp.v:318]
+INFO: [Synth 8-256] done synthesizing module 'zynqWithWifiExp_wrapper' (48#1) [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/hdl/zynqWithWifiExp_wrapper.v:12]
 WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_aclk
 WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_resetn
 WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_vect_in[1]
@@ -1085,7 +1105,7 @@ WARNING: [Synth 8-3331] design axi_protocol_converter_v2_1_15_b2s_rd_cmd_fsm has
 WARNING: [Synth 8-3331] design axi_protocol_converter_v2_1_15_b2s_rd_cmd_fsm has unconnected port s_arlen[2]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:01:12 ; elapsed = 00:01:19 . Memory (MB): peak = 536.062 ; gain = 265.977
+Finished RTL Elaboration : Time (s): cpu = 00:00:29 ; elapsed = 00:00:59 . Memory (MB): peak = 1503.555 ; gain = 227.535 ; free physical = 7374 ; free virtual = 27682
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -1095,7 +1115,7 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:13 ; elapsed = 00:01:22 . Memory (MB): peak = 536.062 ; gain = 265.977
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:29 ; elapsed = 00:01:00 . Memory (MB): peak = 1503.555 ; gain = 227.535 ; free physical = 7380 ; free virtual = 27688
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 13 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -1104,21 +1124,21 @@ INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ip/zynqWithWifiExp_processing_system7_0_0/zynqWithWifiExp_processing_system7_0_0.xdc] for cell 'zynqWithWifiExp_i/processing_system7_0/inst'
-Finished Parsing XDC File [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ip/zynqWithWifiExp_processing_system7_0_0/zynqWithWifiExp_processing_system7_0_0.xdc] for cell 'zynqWithWifiExp_i/processing_system7_0/inst'
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ip/zynqWithWifiExp_processing_system7_0_0/zynqWithWifiExp_processing_system7_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/zynqWithWifiExp_wrapper_propImpl.xdc].
+Parsing XDC File [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ip/zynqWithWifiExp_processing_system7_0_0/zynqWithWifiExp_processing_system7_0_0.xdc] for cell 'zynqWithWifiExp_i/processing_system7_0/inst'
+Finished Parsing XDC File [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ip/zynqWithWifiExp_processing_system7_0_0/zynqWithWifiExp_processing_system7_0_0.xdc] for cell 'zynqWithWifiExp_i/processing_system7_0/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ip/zynqWithWifiExp_processing_system7_0_0/zynqWithWifiExp_processing_system7_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/zynqWithWifiExp_wrapper_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/zynqWithWifiExp_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Parsing XDC File [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ip/zynqWithWifiExp_rst_ps7_0_100M_1/zynqWithWifiExp_rst_ps7_0_100M_1_board.xdc] for cell 'zynqWithWifiExp_i/rst_ps7_0_100M/U0'
-Finished Parsing XDC File [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ip/zynqWithWifiExp_rst_ps7_0_100M_1/zynqWithWifiExp_rst_ps7_0_100M_1_board.xdc] for cell 'zynqWithWifiExp_i/rst_ps7_0_100M/U0'
-Parsing XDC File [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ip/zynqWithWifiExp_rst_ps7_0_100M_1/zynqWithWifiExp_rst_ps7_0_100M_1.xdc] for cell 'zynqWithWifiExp_i/rst_ps7_0_100M/U0'
-Finished Parsing XDC File [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ip/zynqWithWifiExp_rst_ps7_0_100M_1/zynqWithWifiExp_rst_ps7_0_100M_1.xdc] for cell 'zynqWithWifiExp_i/rst_ps7_0_100M/U0'
-Parsing XDC File [D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/constrs_1/new/esp.xdc]
-Finished Parsing XDC File [D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/constrs_1/new/esp.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/constrs_1/new/esp.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/zynqWithWifiExp_wrapper_propImpl.xdc].
+Parsing XDC File [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ip/zynqWithWifiExp_rst_ps7_0_100M_1/zynqWithWifiExp_rst_ps7_0_100M_1_board.xdc] for cell 'zynqWithWifiExp_i/rst_ps7_0_100M/U0'
+Finished Parsing XDC File [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ip/zynqWithWifiExp_rst_ps7_0_100M_1/zynqWithWifiExp_rst_ps7_0_100M_1_board.xdc] for cell 'zynqWithWifiExp_i/rst_ps7_0_100M/U0'
+Parsing XDC File [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ip/zynqWithWifiExp_rst_ps7_0_100M_1/zynqWithWifiExp_rst_ps7_0_100M_1.xdc] for cell 'zynqWithWifiExp_i/rst_ps7_0_100M/U0'
+Finished Parsing XDC File [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ip/zynqWithWifiExp_rst_ps7_0_100M_1/zynqWithWifiExp_rst_ps7_0_100M_1.xdc] for cell 'zynqWithWifiExp_i/rst_ps7_0_100M/U0'
+Parsing XDC File [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/constrs_1/new/esp.xdc]
+Finished Parsing XDC File [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/constrs_1/new/esp.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/constrs_1/new/esp.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/zynqWithWifiExp_wrapper_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/zynqWithWifiExp_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Parsing XDC File [D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.runs/synth_1/dont_touch.xdc]
-Finished Parsing XDC File [D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.runs/synth_1/dont_touch.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.runs/synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/zynqWithWifiExp_wrapper_propImpl.xdc].
+Parsing XDC File [/home/nazmul/research/xilinxVivado/remoteConfig/zedWithWifiExp.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/nazmul/research/xilinxVivado/remoteConfig/zedWithWifiExp.runs/synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/nazmul/research/xilinxVivado/remoteConfig/zedWithWifiExp.runs/synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/zynqWithWifiExp_wrapper_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/zynqWithWifiExp_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
@@ -1127,22 +1147,22 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   FDR => FDRE: 12 instances
   SRL16 => SRL16E: 1 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.207 . Memory (MB): peak = 802.246 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1828.988 ; gain = 0.004 ; free physical = 7029 ; free virtual = 27355
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:01:37 ; elapsed = 00:02:06 . Memory (MB): peak = 802.246 ; gain = 532.160
+Finished Constraint Validation : Time (s): cpu = 00:00:47 ; elapsed = 00:01:47 . Memory (MB): peak = 1828.988 ; gain = 552.969 ; free physical = 7148 ; free virtual = 27473
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:01:37 ; elapsed = 00:02:07 . Memory (MB): peak = 802.246 ; gain = 532.160
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:47 ; elapsed = 00:01:47 . Memory (MB): peak = 1828.988 ; gain = 552.969 ; free physical = 7148 ; free virtual = 27473
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property DONT_TOUCH = true for zynqWithWifiExp_i/processing_system7_0/inst. (constraint file  D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.runs/synth_1/dont_touch.xdc, line 25).
-Applied set_property DONT_TOUCH = true for zynqWithWifiExp_i/rst_ps7_0_100M/U0. (constraint file  D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.runs/synth_1/dont_touch.xdc, line 28).
+Applied set_property DONT_TOUCH = true for zynqWithWifiExp_i/processing_system7_0/inst. (constraint file  /home/nazmul/research/xilinxVivado/remoteConfig/zedWithWifiExp.runs/synth_1/dont_touch.xdc, line 25).
+Applied set_property DONT_TOUCH = true for zynqWithWifiExp_i/rst_ps7_0_100M/U0. (constraint file  /home/nazmul/research/xilinxVivado/remoteConfig/zedWithWifiExp.runs/synth_1/dont_touch.xdc, line 28).
 Applied set_property DONT_TOUCH = true for zynqWithWifiExp_i. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for zynqWithWifiExp_i/myipBCM_0. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for zynqWithWifiExp_i/processing_system7_0. (constraint file  auto generated constraint, line ).
@@ -1150,88 +1170,93 @@ Applied set_property DONT_TOUCH = true for zynqWithWifiExp_i/ps7_0_axi_periph. (
 Applied set_property DONT_TOUCH = true for zynqWithWifiExp_i/ps7_0_axi_periph/s00_couplers/auto_pc. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for zynqWithWifiExp_i/rst_ps7_0_100M. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:38 ; elapsed = 00:02:08 . Memory (MB): peak = 802.246 ; gain = 532.160
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:48 ; elapsed = 00:01:47 . Memory (MB): peak = 1828.988 ; gain = 552.969 ; free physical = 7154 ; free virtual = 27475
 ---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "aes_out" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_out" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5545] ROM "counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "clock_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-WARNING: [Synth 8-6014] Unused sequential element memory_reg[3] was removed.  [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
-WARNING: [Synth 8-6014] Unused sequential element memory_reg[2] was removed.  [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
-WARNING: [Synth 8-6014] Unused sequential element memory_reg[1] was removed.  [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
-WARNING: [Synth 8-6014] Unused sequential element memory_reg[0] was removed.  [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
-WARNING: [Synth 8-6014] Unused sequential element memory_reg[3] was removed.  [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
-WARNING: [Synth 8-6014] Unused sequential element memory_reg[2] was removed.  [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
-WARNING: [Synth 8-6014] Unused sequential element memory_reg[1] was removed.  [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
-WARNING: [Synth 8-6014] Unused sequential element memory_reg[0] was removed.  [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
-WARNING: [Synth 8-6014] Unused sequential element bresp_cnt_reg was removed.  [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3759]
-WARNING: [Synth 8-6014] Unused sequential element memory_reg[31] was removed.  [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
-WARNING: [Synth 8-6014] Unused sequential element memory_reg[30] was removed.  [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
-WARNING: [Synth 8-6014] Unused sequential element memory_reg[29] was removed.  [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
-WARNING: [Synth 8-6014] Unused sequential element memory_reg[28] was removed.  [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
-WARNING: [Synth 8-6014] Unused sequential element memory_reg[27] was removed.  [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
-WARNING: [Synth 8-6014] Unused sequential element memory_reg[26] was removed.  [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
-WARNING: [Synth 8-6014] Unused sequential element memory_reg[25] was removed.  [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
-WARNING: [Synth 8-6014] Unused sequential element memory_reg[24] was removed.  [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
-WARNING: [Synth 8-6014] Unused sequential element memory_reg[23] was removed.  [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
-WARNING: [Synth 8-6014] Unused sequential element memory_reg[22] was removed.  [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
-WARNING: [Synth 8-6014] Unused sequential element memory_reg[21] was removed.  [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
-WARNING: [Synth 8-6014] Unused sequential element memory_reg[20] was removed.  [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
-WARNING: [Synth 8-6014] Unused sequential element memory_reg[19] was removed.  [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
-WARNING: [Synth 8-6014] Unused sequential element memory_reg[18] was removed.  [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
-WARNING: [Synth 8-6014] Unused sequential element memory_reg[17] was removed.  [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
-WARNING: [Synth 8-6014] Unused sequential element memory_reg[16] was removed.  [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
-WARNING: [Synth 8-6014] Unused sequential element memory_reg[15] was removed.  [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
-WARNING: [Synth 8-6014] Unused sequential element memory_reg[14] was removed.  [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
-WARNING: [Synth 8-6014] Unused sequential element memory_reg[13] was removed.  [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
-WARNING: [Synth 8-6014] Unused sequential element memory_reg[12] was removed.  [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
-WARNING: [Synth 8-6014] Unused sequential element memory_reg[11] was removed.  [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
-WARNING: [Synth 8-6014] Unused sequential element memory_reg[10] was removed.  [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
-WARNING: [Synth 8-6014] Unused sequential element memory_reg[9] was removed.  [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
-WARNING: [Synth 8-6014] Unused sequential element memory_reg[8] was removed.  [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
-WARNING: [Synth 8-6014] Unused sequential element memory_reg[7] was removed.  [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
-WARNING: [Synth 8-6014] Unused sequential element memory_reg[6] was removed.  [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
-WARNING: [Synth 8-6014] Unused sequential element memory_reg[5] was removed.  [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
-WARNING: [Synth 8-6014] Unused sequential element memory_reg[4] was removed.  [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
-WARNING: [Synth 8-6014] Unused sequential element memory_reg[3] was removed.  [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
-WARNING: [Synth 8-6014] Unused sequential element memory_reg[2] was removed.  [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
-WARNING: [Synth 8-6014] Unused sequential element memory_reg[1] was removed.  [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
-WARNING: [Synth 8-6014] Unused sequential element memory_reg[0] was removed.  [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
-WARNING: [Synth 8-6014] Unused sequential element memory_reg[31] was removed.  [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
-WARNING: [Synth 8-6014] Unused sequential element memory_reg[30] was removed.  [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
-WARNING: [Synth 8-6014] Unused sequential element memory_reg[29] was removed.  [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
-WARNING: [Synth 8-6014] Unused sequential element memory_reg[28] was removed.  [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
-WARNING: [Synth 8-6014] Unused sequential element memory_reg[27] was removed.  [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
-WARNING: [Synth 8-6014] Unused sequential element memory_reg[26] was removed.  [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
-WARNING: [Synth 8-6014] Unused sequential element memory_reg[25] was removed.  [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
-WARNING: [Synth 8-6014] Unused sequential element memory_reg[24] was removed.  [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
-WARNING: [Synth 8-6014] Unused sequential element memory_reg[23] was removed.  [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
-WARNING: [Synth 8-6014] Unused sequential element memory_reg[22] was removed.  [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
-WARNING: [Synth 8-6014] Unused sequential element memory_reg[21] was removed.  [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
-WARNING: [Synth 8-6014] Unused sequential element memory_reg[20] was removed.  [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
-WARNING: [Synth 8-6014] Unused sequential element memory_reg[19] was removed.  [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
-WARNING: [Synth 8-6014] Unused sequential element memory_reg[18] was removed.  [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
-WARNING: [Synth 8-6014] Unused sequential element memory_reg[17] was removed.  [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
-WARNING: [Synth 8-6014] Unused sequential element memory_reg[16] was removed.  [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
-WARNING: [Synth 8-6014] Unused sequential element memory_reg[15] was removed.  [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
-WARNING: [Synth 8-6014] Unused sequential element memory_reg[14] was removed.  [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
-WARNING: [Synth 8-6014] Unused sequential element memory_reg[13] was removed.  [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
-WARNING: [Synth 8-6014] Unused sequential element memory_reg[12] was removed.  [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
-WARNING: [Synth 8-6014] Unused sequential element memory_reg[11] was removed.  [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
-WARNING: [Synth 8-6014] Unused sequential element memory_reg[10] was removed.  [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
-WARNING: [Synth 8-6014] Unused sequential element memory_reg[9] was removed.  [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
-WARNING: [Synth 8-6014] Unused sequential element memory_reg[8] was removed.  [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
-WARNING: [Synth 8-6014] Unused sequential element memory_reg[7] was removed.  [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
-WARNING: [Synth 8-6014] Unused sequential element memory_reg[6] was removed.  [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
-WARNING: [Synth 8-6014] Unused sequential element memory_reg[5] was removed.  [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
-WARNING: [Synth 8-6014] Unused sequential element memory_reg[4] was removed.  [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
-WARNING: [Synth 8-6014] Unused sequential element memory_reg[3] was removed.  [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
-WARNING: [Synth 8-6014] Unused sequential element memory_reg[2] was removed.  [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
-WARNING: [Synth 8-6014] Unused sequential element memory_reg[1] was removed.  [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
-WARNING: [Synth 8-6014] Unused sequential element memory_reg[0] was removed.  [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
-WARNING: [Synth 8-6014] Unused sequential element q_int_reg was removed.  [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:138]
-INFO: [Synth 8-4471] merging register 'seq_cnt_en_reg' into 'from_sys_reg' [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:377]
-WARNING: [Synth 8-6014] Unused sequential element seq_cnt_en_reg was removed.  [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:377]
+WARNING: [Synth 8-6014] Unused sequential element out_reg was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/src/table.v:57]
+WARNING: [Synth 8-6014] Unused sequential element out_reg was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/src/table.v:326]
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element memory_reg[3] was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
+WARNING: [Synth 8-6014] Unused sequential element memory_reg[2] was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
+WARNING: [Synth 8-6014] Unused sequential element memory_reg[1] was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
+WARNING: [Synth 8-6014] Unused sequential element memory_reg[0] was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
+WARNING: [Synth 8-6014] Unused sequential element memory_reg[3] was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
+WARNING: [Synth 8-6014] Unused sequential element memory_reg[2] was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
+WARNING: [Synth 8-6014] Unused sequential element memory_reg[1] was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
+WARNING: [Synth 8-6014] Unused sequential element memory_reg[0] was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
+WARNING: [Synth 8-6014] Unused sequential element bresp_cnt_reg was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3759]
+WARNING: [Synth 8-6014] Unused sequential element memory_reg[31] was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
+WARNING: [Synth 8-6014] Unused sequential element memory_reg[30] was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
+WARNING: [Synth 8-6014] Unused sequential element memory_reg[29] was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
+WARNING: [Synth 8-6014] Unused sequential element memory_reg[28] was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
+WARNING: [Synth 8-6014] Unused sequential element memory_reg[27] was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
+WARNING: [Synth 8-6014] Unused sequential element memory_reg[26] was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
+WARNING: [Synth 8-6014] Unused sequential element memory_reg[25] was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
+WARNING: [Synth 8-6014] Unused sequential element memory_reg[24] was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
+WARNING: [Synth 8-6014] Unused sequential element memory_reg[23] was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
+WARNING: [Synth 8-6014] Unused sequential element memory_reg[22] was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
+WARNING: [Synth 8-6014] Unused sequential element memory_reg[21] was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
+WARNING: [Synth 8-6014] Unused sequential element memory_reg[20] was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
+WARNING: [Synth 8-6014] Unused sequential element memory_reg[19] was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
+WARNING: [Synth 8-6014] Unused sequential element memory_reg[18] was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
+WARNING: [Synth 8-6014] Unused sequential element memory_reg[17] was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
+WARNING: [Synth 8-6014] Unused sequential element memory_reg[16] was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
+WARNING: [Synth 8-6014] Unused sequential element memory_reg[15] was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
+WARNING: [Synth 8-6014] Unused sequential element memory_reg[14] was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
+WARNING: [Synth 8-6014] Unused sequential element memory_reg[13] was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
+WARNING: [Synth 8-6014] Unused sequential element memory_reg[12] was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
+WARNING: [Synth 8-6014] Unused sequential element memory_reg[11] was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
+WARNING: [Synth 8-6014] Unused sequential element memory_reg[10] was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
+WARNING: [Synth 8-6014] Unused sequential element memory_reg[9] was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
+WARNING: [Synth 8-6014] Unused sequential element memory_reg[8] was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
+WARNING: [Synth 8-6014] Unused sequential element memory_reg[7] was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
+WARNING: [Synth 8-6014] Unused sequential element memory_reg[6] was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
+WARNING: [Synth 8-6014] Unused sequential element memory_reg[5] was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
+WARNING: [Synth 8-6014] Unused sequential element memory_reg[4] was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
+WARNING: [Synth 8-6014] Unused sequential element memory_reg[3] was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
+WARNING: [Synth 8-6014] Unused sequential element memory_reg[2] was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
+WARNING: [Synth 8-6014] Unused sequential element memory_reg[1] was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
+WARNING: [Synth 8-6014] Unused sequential element memory_reg[0] was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
+WARNING: [Synth 8-6014] Unused sequential element memory_reg[31] was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
+WARNING: [Synth 8-6014] Unused sequential element memory_reg[30] was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
+WARNING: [Synth 8-6014] Unused sequential element memory_reg[29] was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
+WARNING: [Synth 8-6014] Unused sequential element memory_reg[28] was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
+WARNING: [Synth 8-6014] Unused sequential element memory_reg[27] was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
+WARNING: [Synth 8-6014] Unused sequential element memory_reg[26] was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
+WARNING: [Synth 8-6014] Unused sequential element memory_reg[25] was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
+WARNING: [Synth 8-6014] Unused sequential element memory_reg[24] was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
+WARNING: [Synth 8-6014] Unused sequential element memory_reg[23] was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
+WARNING: [Synth 8-6014] Unused sequential element memory_reg[22] was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
+WARNING: [Synth 8-6014] Unused sequential element memory_reg[21] was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
+WARNING: [Synth 8-6014] Unused sequential element memory_reg[20] was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
+WARNING: [Synth 8-6014] Unused sequential element memory_reg[19] was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
+WARNING: [Synth 8-6014] Unused sequential element memory_reg[18] was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
+WARNING: [Synth 8-6014] Unused sequential element memory_reg[17] was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
+WARNING: [Synth 8-6014] Unused sequential element memory_reg[16] was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
+WARNING: [Synth 8-6014] Unused sequential element memory_reg[15] was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
+WARNING: [Synth 8-6014] Unused sequential element memory_reg[14] was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
+WARNING: [Synth 8-6014] Unused sequential element memory_reg[13] was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
+WARNING: [Synth 8-6014] Unused sequential element memory_reg[12] was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
+WARNING: [Synth 8-6014] Unused sequential element memory_reg[11] was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
+WARNING: [Synth 8-6014] Unused sequential element memory_reg[10] was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
+WARNING: [Synth 8-6014] Unused sequential element memory_reg[9] was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
+WARNING: [Synth 8-6014] Unused sequential element memory_reg[8] was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
+WARNING: [Synth 8-6014] Unused sequential element memory_reg[7] was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
+WARNING: [Synth 8-6014] Unused sequential element memory_reg[6] was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
+WARNING: [Synth 8-6014] Unused sequential element memory_reg[5] was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
+WARNING: [Synth 8-6014] Unused sequential element memory_reg[4] was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
+WARNING: [Synth 8-6014] Unused sequential element memory_reg[3] was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
+WARNING: [Synth 8-6014] Unused sequential element memory_reg[2] was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
+WARNING: [Synth 8-6014] Unused sequential element memory_reg[1] was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
+WARNING: [Synth 8-6014] Unused sequential element memory_reg[0] was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
+WARNING: [Synth 8-6014] Unused sequential element q_int_reg was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:138]
+INFO: [Synth 8-4471] merging register 'seq_cnt_en_reg' into 'from_sys_reg' [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:377]
+WARNING: [Synth 8-6014] Unused sequential element seq_cnt_en_reg was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:377]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:41 ; elapsed = 00:02:12 . Memory (MB): peak = 802.246 ; gain = 532.160
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:49 ; elapsed = 00:01:48 . Memory (MB): peak = 1828.988 ; gain = 552.969 ; free physical = 7146 ; free virtual = 27466
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1251,23 +1276,34 @@ Detailed RTL Component Info :
 	   2 Input      6 Bit       Adders := 1     
 	   2 Input      5 Bit       Adders := 5     
 	   2 Input      4 Bit       Adders := 4     
-	   2 Input      2 Bit       Adders := 3     
+	   2 Input      2 Bit       Adders := 4     
++---XORs : 
+	   2 Input    128 Bit         XORs := 2     
+	   2 Input     32 Bit         XORs := 74    
+	   5 Input     32 Bit         XORs := 36    
+	   2 Input      8 Bit         XORs := 154   
 +---Registers : 
+	              128 Bit    Registers := 23    
 	               66 Bit    Registers := 4     
+	               64 Bit    Registers := 1     
 	               47 Bit    Registers := 2     
-	               32 Bit    Registers := 3     
+	               32 Bit    Registers := 43    
 	               14 Bit    Registers := 2     
 	               12 Bit    Registers := 9     
 	                9 Bit    Registers := 2     
-	                8 Bit    Registers := 3     
+	                8 Bit    Registers := 347   
 	                6 Bit    Registers := 1     
 	                5 Bit    Registers := 4     
 	                4 Bit    Registers := 8     
 	                3 Bit    Registers := 3     
-	                2 Bit    Registers := 11    
+	                2 Bit    Registers := 12    
 	                1 Bit    Registers := 44    
++---ROMs : 
+	                              ROMs := 344   
 +---Muxes : 
+	   2 Input    128 Bit        Muxes := 1     
 	   2 Input     66 Bit        Muxes := 4     
+	   2 Input     64 Bit        Muxes := 1     
 	   2 Input     47 Bit        Muxes := 2     
 	   2 Input     32 Bit        Muxes := 10    
 	   4 Input     32 Bit        Muxes := 2     
@@ -1278,10 +1314,10 @@ Detailed RTL Component Info :
 	   2 Input      6 Bit        Muxes := 1     
 	   2 Input      5 Bit        Muxes := 6     
 	   2 Input      4 Bit        Muxes := 18    
-	   2 Input      2 Bit        Muxes := 7     
+	   2 Input      2 Bit        Muxes := 9     
 	   4 Input      2 Bit        Muxes := 1     
 	   5 Input      2 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 31    
+	   2 Input      1 Bit        Muxes := 33    
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -1291,8 +1327,17 @@ Start RTL Hierarchical Component Statistics
 Hierarchical RTL Component report 
 Module hcmProcess 
 Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---XORs : 
+	   2 Input    128 Bit         XORs := 1     
++---Registers : 
+	               64 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
 +---Muxes : 
 	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
 Module timestampProcess 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -1306,6 +1351,51 @@ Detailed RTL Component Info :
 	   2 Input     32 Bit        Muxes := 1     
 	   2 Input      8 Bit        Muxes := 2     
 	   2 Input      1 Bit        Muxes := 1     
+Module S 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module expand_key_128 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     32 Bit         XORs := 7     
+	   2 Input      8 Bit         XORs := 1     
++---Registers : 
+	              128 Bit    Registers := 1     
+	               32 Bit    Registers := 4     
+Module xS 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module T 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 1     
+Module one_round 
+Detailed RTL Component Info : 
++---XORs : 
+	   5 Input     32 Bit         XORs := 4     
++---Registers : 
+	              128 Bit    Registers := 1     
+Module final_round 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     32 Bit         XORs := 4     
++---Registers : 
+	              128 Bit    Registers := 1     
+Module aes_128 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input    128 Bit         XORs := 1     
++---Registers : 
+	              128 Bit    Registers := 3     
++---Muxes : 
+	   2 Input    128 Bit        Muxes := 1     
+	   2 Input     64 Bit        Muxes := 1     
 Module myipBCM_v1_0_S00_AXI 
 Detailed RTL Component Info : 
 +---Registers : 
@@ -1485,72 +1575,215 @@ Finished Part Resource Summary
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element S4_0/S_0/out_reg was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/src/table.v:57]
+WARNING: [Synth 8-6014] Unused sequential element S4_0/S_1/out_reg was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/src/table.v:57]
+WARNING: [Synth 8-6014] Unused sequential element S4_0/S_2/out_reg was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/src/table.v:57]
+WARNING: [Synth 8-6014] Unused sequential element S4_0/S_3/out_reg was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/src/table.v:57]
+WARNING: [Synth 8-6014] Unused sequential element S4_0/S_3/out_reg was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/src/table.v:57]
+WARNING: [Synth 8-6014] Unused sequential element S4_0/S_2/out_reg was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/src/table.v:57]
+WARNING: [Synth 8-6014] Unused sequential element S4_0/S_1/out_reg was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/src/table.v:57]
+WARNING: [Synth 8-6014] Unused sequential element S4_0/S_0/out_reg was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/src/table.v:57]
+WARNING: [Synth 8-6014] Unused sequential element S4_0/S_3/out_reg was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/src/table.v:57]
+WARNING: [Synth 8-6014] Unused sequential element S4_0/S_2/out_reg was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/src/table.v:57]
+WARNING: [Synth 8-6014] Unused sequential element S4_0/S_1/out_reg was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/src/table.v:57]
+WARNING: [Synth 8-6014] Unused sequential element S4_0/S_0/out_reg was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/src/table.v:57]
+WARNING: [Synth 8-6014] Unused sequential element S4_0/S_3/out_reg was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/src/table.v:57]
+WARNING: [Synth 8-6014] Unused sequential element S4_0/S_2/out_reg was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/src/table.v:57]
+WARNING: [Synth 8-6014] Unused sequential element S4_0/S_1/out_reg was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/src/table.v:57]
+WARNING: [Synth 8-6014] Unused sequential element S4_0/S_0/out_reg was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/src/table.v:57]
+WARNING: [Synth 8-6014] Unused sequential element S4_0/S_3/out_reg was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/src/table.v:57]
+WARNING: [Synth 8-6014] Unused sequential element S4_0/S_2/out_reg was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/src/table.v:57]
+INFO: [Common 17-14] Message 'Synth 8-6014' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5545] ROM "inst/myipBCM_v1_0_S00_AXI_inst/timestampProcessor/counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "inst/myipBCM_v1_0_S00_AXI_inst/timestampProcessor/clock_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-3936] Found unconnected internal register 'inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw.aw_pipe/m_payload_i_reg' and it is trimmed from '66' to '62' bits. [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/3ed1/hdl/axi_register_slice_v2_1_vl_rfs.v:422]
-INFO: [Synth 8-3936] Found unconnected internal register 'inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar.ar_pipe/m_payload_i_reg' and it is trimmed from '66' to '62' bits. [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/3ed1/hdl/axi_register_slice_v2_1_vl_rfs.v:422]
-WARNING: [Synth 8-6014] Unused sequential element inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/bresp_cnt_reg was removed.  [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3759]
-WARNING: [Synth 8-6014] Unused sequential element SEQ/SEQ_COUNTER/q_int_reg was removed.  [d:/Tools/xilinxVivado/VipinKizheppatt/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:138]
+INFO: [Synth 8-3936] Found unconnected internal register 'inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw.aw_pipe/m_payload_i_reg' and it is trimmed from '66' to '62' bits. [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/3ed1/hdl/axi_register_slice_v2_1_vl_rfs.v:422]
+INFO: [Synth 8-3936] Found unconnected internal register 'inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar.ar_pipe/m_payload_i_reg' and it is trimmed from '66' to '62' bits. [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/3ed1/hdl/axi_register_slice_v2_1_vl_rfs.v:422]
 INFO: [Synth 8-3886] merging instance 'zynqWithWifiExp_i/myipBCM_0/inst/myipBCM_v1_0_S00_AXI_inst/axi_rresp_reg[0]' (FDRE) to 'zynqWithWifiExp_i/myipBCM_0/inst/myipBCM_v1_0_S00_AXI_inst/axi_rresp_reg[1]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (zynqWithWifiExp_i/myipBCM_0/\inst/myipBCM_v1_0_S00_AXI_inst/axi_rresp_reg[1] )
 INFO: [Synth 8-3886] merging instance 'zynqWithWifiExp_i/myipBCM_0/inst/myipBCM_v1_0_S00_AXI_inst/axi_bresp_reg[0]' (FDRE) to 'zynqWithWifiExp_i/myipBCM_0/inst/myipBCM_v1_0_S00_AXI_inst/axi_bresp_reg[1]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (zynqWithWifiExp_i/myipBCM_0/\inst/myipBCM_v1_0_S00_AXI_inst/axi_bresp_reg[1] )
-INFO: [Synth 8-3332] Sequential element (inst/myipBCM_v1_0_S00_AXI_inst/axi_awaddr_reg[1]) is unused and will be removed from module zynqWithWifiExp_myipBCM_0_0.
-INFO: [Synth 8-3332] Sequential element (inst/myipBCM_v1_0_S00_AXI_inst/axi_awaddr_reg[0]) is unused and will be removed from module zynqWithWifiExp_myipBCM_0_0.
-INFO: [Synth 8-3332] Sequential element (inst/myipBCM_v1_0_S00_AXI_inst/axi_bresp_reg[1]) is unused and will be removed from module zynqWithWifiExp_myipBCM_0_0.
-INFO: [Synth 8-3332] Sequential element (inst/myipBCM_v1_0_S00_AXI_inst/axi_araddr_reg[1]) is unused and will be removed from module zynqWithWifiExp_myipBCM_0_0.
-INFO: [Synth 8-3332] Sequential element (inst/myipBCM_v1_0_S00_AXI_inst/axi_araddr_reg[0]) is unused and will be removed from module zynqWithWifiExp_myipBCM_0_0.
-INFO: [Synth 8-3332] Sequential element (inst/myipBCM_v1_0_S00_AXI_inst/axi_rresp_reg[1]) is unused and will be removed from module zynqWithWifiExp_myipBCM_0_0.
+WARNING: [Synth 8-3332] Sequential element (k3a_reg[31]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (k3a_reg[30]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (k3a_reg[29]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (k3a_reg[28]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (k3a_reg[27]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (k3a_reg[26]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (k3a_reg[25]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (k3a_reg[24]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (k3a_reg[23]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (k3a_reg[22]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (k3a_reg[21]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (k3a_reg[20]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (k3a_reg[19]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (k3a_reg[18]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (k3a_reg[17]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (k3a_reg[16]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (k3a_reg[15]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (k3a_reg[14]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (k3a_reg[13]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (k3a_reg[12]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (k3a_reg[11]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (k3a_reg[10]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (k3a_reg[9]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (k3a_reg[8]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (k3a_reg[7]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (k3a_reg[6]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (k3a_reg[5]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (k3a_reg[4]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (k3a_reg[3]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (k3a_reg[2]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (k3a_reg[1]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (k3a_reg[0]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (k2a_reg[31]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (k2a_reg[30]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (k2a_reg[29]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (k2a_reg[28]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (k2a_reg[27]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (k2a_reg[26]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (k2a_reg[25]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (k2a_reg[24]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (k2a_reg[23]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (k2a_reg[22]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (k2a_reg[21]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (k2a_reg[20]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (k2a_reg[19]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (k2a_reg[18]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (k2a_reg[17]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (k2a_reg[16]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (k2a_reg[15]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (k2a_reg[14]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (k2a_reg[13]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (k2a_reg[12]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (k2a_reg[11]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (k2a_reg[10]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (k2a_reg[9]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (k2a_reg[8]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (k2a_reg[7]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (k2a_reg[6]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (k2a_reg[5]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (k2a_reg[4]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (k2a_reg[3]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (k2a_reg[2]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (k2a_reg[1]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (k2a_reg[0]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (k1a_reg[31]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (k1a_reg[30]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (k1a_reg[29]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (k1a_reg[28]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (k1a_reg[27]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (k1a_reg[26]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (k1a_reg[25]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (k1a_reg[24]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (k1a_reg[23]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (k1a_reg[22]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (k1a_reg[21]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (k1a_reg[20]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (k1a_reg[19]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (k1a_reg[18]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (k1a_reg[17]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (k1a_reg[16]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (k1a_reg[15]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (k1a_reg[14]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (k1a_reg[13]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (k1a_reg[12]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (k1a_reg[11]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (k1a_reg[10]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (k1a_reg[9]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (k1a_reg[8]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (k1a_reg[7]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (k1a_reg[6]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (k1a_reg[5]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (k1a_reg[4]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (k1a_reg[3]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (k1a_reg[2]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (k1a_reg[1]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (k1a_reg[0]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (k0a_reg[31]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (k0a_reg[30]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (k0a_reg[29]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (k0a_reg[28]) is unused and will be removed from module expand_key_128.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 INFO: [Synth 8-3886] merging instance 'zynqWithWifiExp_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/r.r_pipe/aresetn_d_reg[0]' (FDR) to 'zynqWithWifiExp_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/b.b_pipe/aresetn_d_reg[0]'
 INFO: [Synth 8-3886] merging instance 'zynqWithWifiExp_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/b.b_pipe/aresetn_d_reg[0]' (FDR) to 'zynqWithWifiExp_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw.aw_pipe/aresetn_d_reg[0]'
 INFO: [Synth 8-3886] merging instance 'zynqWithWifiExp_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw.aw_pipe/aresetn_d_reg[1]' (FDR) to 'zynqWithWifiExp_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/b.b_pipe/aresetn_d_reg[1]'
 INFO: [Synth 8-3886] merging instance 'zynqWithWifiExp_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/r.r_pipe/aresetn_d_reg[1]' (FDR) to 'zynqWithWifiExp_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/b.b_pipe/aresetn_d_reg[1]'
 INFO: [Synth 8-3886] merging instance 'zynqWithWifiExp_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar.ar_pipe/aresetn_d_reg[0]' (FDR) to 'zynqWithWifiExp_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw.aw_pipe/aresetn_d_reg[0]'
 INFO: [Synth 8-3886] merging instance 'zynqWithWifiExp_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/b.b_pipe/aresetn_d_reg[1]' (FDR) to 'zynqWithWifiExp_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar.ar_pipe/aresetn_d_reg[1]'
-INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw.aw_pipe/skid_buffer_reg[65]) is unused and will be removed from module zynqWithWifiExp_auto_pc_0.
-INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw.aw_pipe/skid_buffer_reg[64]) is unused and will be removed from module zynqWithWifiExp_auto_pc_0.
-INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw.aw_pipe/skid_buffer_reg[63]) is unused and will be removed from module zynqWithWifiExp_auto_pc_0.
-INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw.aw_pipe/skid_buffer_reg[62]) is unused and will be removed from module zynqWithWifiExp_auto_pc_0.
-INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw.aw_pipe/skid_buffer_reg[49]) is unused and will be removed from module zynqWithWifiExp_auto_pc_0.
-INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw.aw_pipe/skid_buffer_reg[48]) is unused and will be removed from module zynqWithWifiExp_auto_pc_0.
-INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw.aw_pipe/skid_buffer_reg[43]) is unused and will be removed from module zynqWithWifiExp_auto_pc_0.
-INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw.aw_pipe/skid_buffer_reg[42]) is unused and will be removed from module zynqWithWifiExp_auto_pc_0.
-INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw.aw_pipe/skid_buffer_reg[41]) is unused and will be removed from module zynqWithWifiExp_auto_pc_0.
-INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw.aw_pipe/skid_buffer_reg[40]) is unused and will be removed from module zynqWithWifiExp_auto_pc_0.
-INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw.aw_pipe/skid_buffer_reg[37]) is unused and will be removed from module zynqWithWifiExp_auto_pc_0.
-INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw.aw_pipe/m_payload_i_reg[49]) is unused and will be removed from module zynqWithWifiExp_auto_pc_0.
-INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw.aw_pipe/m_payload_i_reg[48]) is unused and will be removed from module zynqWithWifiExp_auto_pc_0.
-INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw.aw_pipe/m_payload_i_reg[43]) is unused and will be removed from module zynqWithWifiExp_auto_pc_0.
-INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw.aw_pipe/m_payload_i_reg[42]) is unused and will be removed from module zynqWithWifiExp_auto_pc_0.
-INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw.aw_pipe/m_payload_i_reg[41]) is unused and will be removed from module zynqWithWifiExp_auto_pc_0.
-INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw.aw_pipe/m_payload_i_reg[40]) is unused and will be removed from module zynqWithWifiExp_auto_pc_0.
-INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw.aw_pipe/m_payload_i_reg[37]) is unused and will be removed from module zynqWithWifiExp_auto_pc_0.
-INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar.ar_pipe/skid_buffer_reg[65]) is unused and will be removed from module zynqWithWifiExp_auto_pc_0.
-INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar.ar_pipe/skid_buffer_reg[64]) is unused and will be removed from module zynqWithWifiExp_auto_pc_0.
-INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar.ar_pipe/skid_buffer_reg[63]) is unused and will be removed from module zynqWithWifiExp_auto_pc_0.
-INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar.ar_pipe/skid_buffer_reg[62]) is unused and will be removed from module zynqWithWifiExp_auto_pc_0.
-INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar.ar_pipe/skid_buffer_reg[49]) is unused and will be removed from module zynqWithWifiExp_auto_pc_0.
-INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar.ar_pipe/skid_buffer_reg[48]) is unused and will be removed from module zynqWithWifiExp_auto_pc_0.
-INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar.ar_pipe/skid_buffer_reg[43]) is unused and will be removed from module zynqWithWifiExp_auto_pc_0.
-INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar.ar_pipe/skid_buffer_reg[42]) is unused and will be removed from module zynqWithWifiExp_auto_pc_0.
-INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar.ar_pipe/skid_buffer_reg[41]) is unused and will be removed from module zynqWithWifiExp_auto_pc_0.
-INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar.ar_pipe/skid_buffer_reg[40]) is unused and will be removed from module zynqWithWifiExp_auto_pc_0.
-INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar.ar_pipe/skid_buffer_reg[37]) is unused and will be removed from module zynqWithWifiExp_auto_pc_0.
-INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar.ar_pipe/m_payload_i_reg[49]) is unused and will be removed from module zynqWithWifiExp_auto_pc_0.
-INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar.ar_pipe/m_payload_i_reg[48]) is unused and will be removed from module zynqWithWifiExp_auto_pc_0.
-INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar.ar_pipe/m_payload_i_reg[43]) is unused and will be removed from module zynqWithWifiExp_auto_pc_0.
-INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar.ar_pipe/m_payload_i_reg[42]) is unused and will be removed from module zynqWithWifiExp_auto_pc_0.
-INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar.ar_pipe/m_payload_i_reg[41]) is unused and will be removed from module zynqWithWifiExp_auto_pc_0.
-INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar.ar_pipe/m_payload_i_reg[40]) is unused and will be removed from module zynqWithWifiExp_auto_pc_0.
-INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar.ar_pipe/m_payload_i_reg[37]) is unused and will be removed from module zynqWithWifiExp_auto_pc_0.
 INFO: [Synth 8-3886] merging instance 'zynqWithWifiExp_i/rst_ps7_0_100M/U0/SEQ/pr_dec_reg[1]' (FD) to 'zynqWithWifiExp_i/rst_ps7_0_100M/U0/SEQ/bsr_dec_reg[1]'
 INFO: [Synth 8-3886] merging instance 'zynqWithWifiExp_i/rst_ps7_0_100M/U0/SEQ/bsr_dec_reg[1]' (FD) to 'zynqWithWifiExp_i/rst_ps7_0_100M/U0/SEQ/core_dec_reg[1]'
-WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module proc_sys_reset.
-WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module proc_sys_reset.
-WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module proc_sys_reset.
-WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module proc_sys_reset.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:46 ; elapsed = 00:02:19 . Memory (MB): peak = 802.246 ; gain = 532.160
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:01 ; elapsed = 00:02:02 . Memory (MB): peak = 1828.988 ; gain = 552.969 ; free physical = 7123 ; free virtual = 27436
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++---------------+------------------+---------------+----------------+
+|Module Name    | RTL Object       | Depth x Width | Implemented As | 
++---------------+------------------+---------------+----------------+
+|S              | out_reg          | 256x8         | Block RAM      | 
+|xS             | out_reg          | 256x8         | Block RAM      | 
+|expand_key_128 | S4_0/S_3/out_reg | 256x8         | Block RAM      | 
+|expand_key_128 | S4_0/S_2/out_reg | 256x8         | Block RAM      | 
+|expand_key_128 | S4_0/S_1/out_reg | 256x8         | Block RAM      | 
+|expand_key_128 | S4_0/S_0/out_reg | 256x8         | Block RAM      | 
+|expand_key_128 | S4_0/S_3/out_reg | 256x8         | Block RAM      | 
+|expand_key_128 | S4_0/S_2/out_reg | 256x8         | Block RAM      | 
+|expand_key_128 | S4_0/S_1/out_reg | 256x8         | Block RAM      | 
+|expand_key_128 | S4_0/S_0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t0/t0/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t0/t1/s4/out_reg | 256x8         | Block RAM      | 
+|one_round      | t0/t2/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t0/t2/s4/out_reg | 256x8         | Block RAM      | 
+|one_round      | t0/t3/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t0/t3/s4/out_reg | 256x8         | Block RAM      | 
+|one_round      | t1/t0/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t1/t0/s4/out_reg | 256x8         | Block RAM      | 
+|one_round      | t1/t1/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t1/t1/s4/out_reg | 256x8         | Block RAM      | 
+|one_round      | t1/t2/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t1/t2/s4/out_reg | 256x8         | Block RAM      | 
+|one_round      | t1/t3/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t1/t3/s4/out_reg | 256x8         | Block RAM      | 
+|one_round      | t2/t0/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t2/t0/s4/out_reg | 256x8         | Block RAM      | 
+|one_round      | t2/t1/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t2/t1/s4/out_reg | 256x8         | Block RAM      | 
+|one_round      | t2/t2/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t2/t2/s4/out_reg | 256x8         | Block RAM      | 
+|one_round      | t2/t3/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t2/t3/s4/out_reg | 256x8         | Block RAM      | 
+|one_round      | t3/t0/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t3/t0/s4/out_reg | 256x8         | Block RAM      | 
+|one_round      | t3/t1/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t3/t1/s4/out_reg | 256x8         | Block RAM      | 
+|one_round      | t3/t2/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t3/t2/s4/out_reg | 256x8         | Block RAM      | 
+|one_round      | t3/t3/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t3/t3/s4/out_reg | 256x8         | Block RAM      | 
+|one_round      | t0/t0/s0/out_reg | 256x8         | Block RAM      | 
+|final_round    | S4_1/S_3/out_reg | 256x8         | Block RAM      | 
+|final_round    | S4_1/S_2/out_reg | 256x8         | Block RAM      | 
+|final_round    | S4_1/S_1/out_reg | 256x8         | Block RAM      | 
+|final_round    | S4_1/S_0/out_reg | 256x8         | Block RAM      | 
+|final_round    | S4_2/S_3/out_reg | 256x8         | Block RAM      | 
+|final_round    | S4_2/S_2/out_reg | 256x8         | Block RAM      | 
+|final_round    | S4_2/S_1/out_reg | 256x8         | Block RAM      | 
+|final_round    | S4_2/S_0/out_reg | 256x8         | Block RAM      | 
+|final_round    | S4_3/S_3/out_reg | 256x8         | Block RAM      | 
+|final_round    | S4_3/S_2/out_reg | 256x8         | Block RAM      | 
+|final_round    | S4_3/S_1/out_reg | 256x8         | Block RAM      | 
+|final_round    | S4_3/S_0/out_reg | 256x8         | Block RAM      | 
+|final_round    | S4_4/S_3/out_reg | 256x8         | Block RAM      | 
+|final_round    | S4_4/S_2/out_reg | 256x8         | Block RAM      | 
+|final_round    | S4_4/S_1/out_reg | 256x8         | Block RAM      | 
+|final_round    | S4_4/S_0/out_reg | 256x8         | Block RAM      | 
++---------------+------------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1562,13 +1795,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:04 ; elapsed = 00:02:51 . Memory (MB): peak = 957.383 ; gain = 687.297
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:07 ; elapsed = 00:02:13 . Memory (MB): peak = 1921.969 ; gain = 645.949 ; free physical = 6809 ; free virtual = 27146
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:02:07 ; elapsed = 00:03:02 . Memory (MB): peak = 1024.738 ; gain = 754.652
+Finished Timing Optimization : Time (s): cpu = 00:01:09 ; elapsed = 00:02:15 . Memory (MB): peak = 1976.062 ; gain = 700.043 ; free physical = 6770 ; free virtual = 27107
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1579,10 +1812,8 @@ Report RTL Partitions:
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/axlen_cnt_reg[8]) is unused and will be removed from module zynqWithWifiExp_auto_pc_0.
-INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.ar_channel_0/cmd_translator_0/incr_cmd_0/axlen_cnt_reg[8]) is unused and will be removed from module zynqWithWifiExp_auto_pc_0.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:02:10 ; elapsed = 00:03:07 . Memory (MB): peak = 1033.832 ; gain = 763.746
+Finished Technology Mapping : Time (s): cpu = 00:01:10 ; elapsed = 00:02:16 . Memory (MB): peak = 1984.070 ; gain = 708.051 ; free physical = 6783 ; free virtual = 27105
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1623,7 +1854,7 @@ INFO: [Synth 8-4618] Found max_fanout attribute set to 20 on net \inst/gen_axili
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:02:13 ; elapsed = 00:03:10 . Memory (MB): peak = 1033.832 ; gain = 763.746
+Finished IO Insertion : Time (s): cpu = 00:01:11 ; elapsed = 00:02:17 . Memory (MB): peak = 1984.074 ; gain = 708.055 ; free physical = 6789 ; free virtual = 27104
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -1636,7 +1867,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:02:13 ; elapsed = 00:03:11 . Memory (MB): peak = 1033.832 ; gain = 763.746
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:11 ; elapsed = 00:02:17 . Memory (MB): peak = 1984.074 ; gain = 708.055 ; free physical = 6791 ; free virtual = 27106
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1648,25 +1879,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:13 ; elapsed = 00:03:12 . Memory (MB): peak = 1033.832 ; gain = 763.746
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:11 ; elapsed = 00:02:17 . Memory (MB): peak = 1984.074 ; gain = 708.055 ; free physical = 6791 ; free virtual = 27106
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:02:13 ; elapsed = 00:03:12 . Memory (MB): peak = 1033.832 ; gain = 763.746
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:11 ; elapsed = 00:02:17 . Memory (MB): peak = 1984.074 ; gain = 708.055 ; free physical = 6792 ; free virtual = 27107
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:02:13 ; elapsed = 00:03:12 . Memory (MB): peak = 1033.832 ; gain = 763.746
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:11 ; elapsed = 00:02:18 . Memory (MB): peak = 1984.074 ; gain = 708.055 ; free physical = 6791 ; free virtual = 27106
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:02:13 ; elapsed = 00:03:12 . Memory (MB): peak = 1033.832 ; gain = 763.746
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:11 ; elapsed = 00:02:18 . Memory (MB): peak = 1984.074 ; gain = 708.055 ; free physical = 6791 ; free virtual = 27106
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -1771,11 +2002,11 @@ Report Instance Areas:
 |41    |          SEQ_COUNTER                              |upcnt_n                                                        |    13|
 +------+---------------------------------------------------+---------------------------------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:02:13 ; elapsed = 00:03:12 . Memory (MB): peak = 1033.832 ; gain = 763.746
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:11 ; elapsed = 00:02:18 . Memory (MB): peak = 1984.074 ; gain = 708.055 ; free physical = 6791 ; free virtual = 27106
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 203 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:46 ; elapsed = 00:02:43 . Memory (MB): peak = 1033.832 ; gain = 497.562
-Synthesis Optimization Complete : Time (s): cpu = 00:02:13 ; elapsed = 00:03:13 . Memory (MB): peak = 1033.832 ; gain = 763.746
+Synthesis finished with 0 errors, 0 critical warnings and 1447 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:00 ; elapsed = 00:01:38 . Memory (MB): peak = 1984.074 ; gain = 382.621 ; free physical = 6841 ; free virtual = 27156
+Synthesis Optimization Complete : Time (s): cpu = 00:01:12 ; elapsed = 00:02:18 . Memory (MB): peak = 1984.078 ; gain = 708.055 ; free physical = 6844 ; free virtual = 27159
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 44 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -1788,10 +2019,10 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   SRL16 => SRL16E: 1 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-223 Infos, 194 Warnings, 0 Critical Warnings and 0 Errors encountered.
+203 Infos, 311 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:02:18 ; elapsed = 00:03:48 . Memory (MB): peak = 1033.832 ; gain = 774.031
-INFO: [Common 17-1381] The checkpoint 'D:/Tools/xilinxVivado/VipinKizheppatt/remoteConfig/vivadoProject/zedWithWifiExp.runs/synth_1/zynqWithWifiExp_wrapper.dcp' has been generated.
+synth_design: Time (s): cpu = 00:01:14 ; elapsed = 00:02:20 . Memory (MB): peak = 2016.090 ; gain = 764.895 ; free physical = 7000 ; free virtual = 27318
+INFO: [Common 17-1381] The checkpoint '/home/nazmul/research/xilinxVivado/remoteConfig/zedWithWifiExp.runs/synth_1/zynqWithWifiExp_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file zynqWithWifiExp_wrapper_utilization_synth.rpt -pb zynqWithWifiExp_wrapper_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:02 . Memory (MB): peak = 1033.832 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Mon Sep 28 23:52:19 2020...
+report_utilization: Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.08 . Memory (MB): peak = 2040.105 ; gain = 0.000 ; free physical = 7005 ; free virtual = 27320
+INFO: [Common 17-206] Exiting Vivado at Thu Oct  1 15:26:50 2020...
