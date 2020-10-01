@@ -12,11 +12,6 @@ module timestampProcess(
     reg[31:0] counter=32'd0;
     localparam DIVISOR = 50000000;
     reg clock_out;
-    // The frequency of the output clk_out
-    //  = The frequency of the input clk_in divided by DIVISOR
-    // For example: Fclk_in = 50Mhz, if you want to get 1Hz signal to blink LEDs
-    // You will modify the DIVISOR parameter value to 28'd50.000.000
-    // Then the frequency of the output clk_out = 50Mhz/50.000.000 = 1Hz
     always @(posedge clk, posedge reset_in)
     begin
      if (reset_in == 1'b1)

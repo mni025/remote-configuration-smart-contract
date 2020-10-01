@@ -16,6 +16,7 @@
 	(
 		// Users to add ports here
         output wire [7:0] leds,
+        output [127:0] config_enc,
 		// User ports ends
 		// Do not modify the ports beyond this line
 
@@ -99,6 +100,10 @@
     wire reset;
     wire timeout;
     wire [7:0] ticker;
+    wire [63:0] state;
+    wire aes;
+    wire [127:0] out;
+    //wire [127:0] out_cipher;
 	// Example-specific design signals
 	// local parameter for addressing 32 bit / 64 bit C_S_AXI_DATA_WIDTH
 	// ADDR_LSB is used for addressing 32/64 bit registers/memories
@@ -413,7 +418,13 @@
     hcmProcess hcmProcessor(
         .configs_in(configs),
         .timeup_in(timeout),
-        .leds(leds)
+        .clk(S_AXI_ACLK),
+        .reset_in(reset),
+        .out(out),
+        .leds(leds),
+        .state_out(state),
+        .aes_out(aes),
+        .config_enc(config_enc)
         );
     timestampProcess timestampProcessor(
         .timestamp_in(timestamp),
@@ -422,6 +433,13 @@
         .timeup_out(timeout),
         .ticker(ticker)
         );
+    aes_128 aes_128Processor(
+        .clk(S_AXI_ACLK),
+        .reset_in(reset),
+        .state_in(state),
+        .aes_in(aes),
+        .out(out)
+    );
 	// User logic ends
 
 	endmodule
