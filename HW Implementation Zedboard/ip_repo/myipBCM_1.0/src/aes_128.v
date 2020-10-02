@@ -16,19 +16,17 @@ module aes_128(clk, reset_in, state_in, aes_in, out);
 
     initial key = 128'h11111111111111111111111111111111;
     
-    always @(posedge clk, posedge reset_in)
-        begin
-         if (reset_in == 1'b1)
-            aes_start <= 0;
-        end
-    
     always @ (posedge clk)
     begin
-        if (aes_in == 2'b00)
+        if (reset_in == 1'b1)
+            aes_start <= 0;
+        else if (aes_in == 2'b00)
             state[63:0] = state_in;
         else if (aes_in == 2'b01)
-            state[127:64] = state_in;
-            aes_start <= 1;
+            begin
+                state[127:64] = state_in;
+                aes_start <= 1;
+            end
     end
 
     always @ (posedge clk)

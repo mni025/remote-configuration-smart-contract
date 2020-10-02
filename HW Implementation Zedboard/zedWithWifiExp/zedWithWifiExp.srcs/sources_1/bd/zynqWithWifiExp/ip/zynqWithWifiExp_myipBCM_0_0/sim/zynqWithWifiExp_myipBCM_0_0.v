@@ -48,7 +48,7 @@
 
 
 // IP VLNV: xilinx.com:user:myipBCM:1.2
-// IP Revision: 5
+// IP Revision: 8
 
 `timescale 1ns/1ps
 

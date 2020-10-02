@@ -2,8 +2,8 @@
 # Vivado v2017.4 (64-bit)
 # SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
 # IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-# Start of session at: Thu Oct  1 15:26:50 2020
-# Process ID: 21520
+# Start of session at: Thu Oct  1 19:15:43 2020
+# Process ID: 17804
 # Current directory: /home/nazmul/research/xilinxVivado/remoteConfig/zedWithWifiExp.runs/impl_1
 # Command line: vivado -log zynqWithWifiExp_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source zynqWithWifiExp_wrapper.tcl -notrace
 # Log file: /home/nazmul/research/xilinxVivado/remoteConfig/zedWithWifiExp.runs/impl_1/zynqWithWifiExp_wrapper.vdi

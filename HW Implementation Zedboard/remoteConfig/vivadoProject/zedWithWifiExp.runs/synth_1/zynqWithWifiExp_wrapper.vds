@@ -2,8 +2,8 @@
 # Vivado v2017.4 (64-bit)
 # SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
 # IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-# Start of session at: Thu Oct  1 15:24:19 2020
-# Process ID: 21208
+# Start of session at: Thu Oct  1 19:13:13 2020
+# Process ID: 17538
 # Current directory: /home/nazmul/research/xilinxVivado/remoteConfig/zedWithWifiExp.runs/synth_1
 # Command line: vivado -log zynqWithWifiExp_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source zynqWithWifiExp_wrapper.tcl
 # Log file: /home/nazmul/research/xilinxVivado/remoteConfig/zedWithWifiExp.runs/synth_1/zynqWithWifiExp_wrapper.vds
@@ -18,59 +18,59 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 21217 
+INFO: Helper process launched with PID 17572 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:25 . Memory (MB): peak = 1371.020 ; gain = 95.000 ; free physical = 7378 ; free virtual = 27685
+Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:26 . Memory (MB): peak = 1371.016 ; gain = 95.000 ; free physical = 6486 ; free virtual = 26620
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'zynqWithWifiExp_wrapper' [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/hdl/zynqWithWifiExp_wrapper.v:12]
 INFO: [Synth 8-638] synthesizing module 'zynqWithWifiExp' [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/synth/zynqWithWifiExp.v:318]
 INFO: [Synth 8-638] synthesizing module 'zynqWithWifiExp_myipBCM_0_0' [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ip/zynqWithWifiExp_myipBCM_0_0/synth/zynqWithWifiExp_myipBCM_0_0.v:57]
-INFO: [Synth 8-638] synthesizing module 'myipBCM_v1_0' [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/hdl/myipBCM_v1_0.v:4]
+INFO: [Synth 8-638] synthesizing module 'myipBCM_v1_0' [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/d53c/hdl/myipBCM_v1_0.v:4]
 	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S00_AXI_ADDR_WIDTH bound to: 4 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'myipBCM_v1_0_S00_AXI' [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/hdl/myipBCM_v1_0_S00_AXI.v:4]
+INFO: [Synth 8-638] synthesizing module 'myipBCM_v1_0_S00_AXI' [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/d53c/hdl/myipBCM_v1_0_S00_AXI.v:4]
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
 	Parameter ADDR_LSB bound to: 2 - type: integer 
 	Parameter OPT_MEM_ADDR_BITS bound to: 1 - type: integer 
-INFO: [Synth 8-226] default block is never used [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/hdl/myipBCM_v1_0_S00_AXI.v:242]
-INFO: [Synth 8-226] default block is never used [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/hdl/myipBCM_v1_0_S00_AXI.v:383]
-INFO: [Synth 8-638] synthesizing module 'bcmProcess' [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/src/bcmProcess.v:3]
-INFO: [Synth 8-256] done synthesizing module 'bcmProcess' (1#1) [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/src/bcmProcess.v:3]
-INFO: [Synth 8-638] synthesizing module 'hcmProcess' [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/src/hcmProcess.v:3]
-WARNING: [Synth 8-567] referenced signal 'configs_in' should be on the sensitivity list [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/src/hcmProcess.v:34]
-INFO: [Synth 8-256] done synthesizing module 'hcmProcess' (2#1) [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/src/hcmProcess.v:3]
-WARNING: [Synth 8-689] width (1) of port connection 'aes_out' does not match port width (2) of module 'hcmProcess' [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/hdl/myipBCM_v1_0_S00_AXI.v:426]
-INFO: [Synth 8-638] synthesizing module 'timestampProcess' [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/src/timestampProcess.v:3]
+INFO: [Synth 8-226] default block is never used [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/d53c/hdl/myipBCM_v1_0_S00_AXI.v:242]
+INFO: [Synth 8-226] default block is never used [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/d53c/hdl/myipBCM_v1_0_S00_AXI.v:383]
+INFO: [Synth 8-638] synthesizing module 'bcmProcess' [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/d53c/src/bcmProcess.v:3]
+INFO: [Synth 8-256] done synthesizing module 'bcmProcess' (1#1) [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/d53c/src/bcmProcess.v:3]
+INFO: [Synth 8-638] synthesizing module 'hcmProcess' [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/d53c/src/hcmProcess.v:3]
+WARNING: [Synth 8-567] referenced signal 'configs_in' should be on the sensitivity list [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/d53c/src/hcmProcess.v:34]
+INFO: [Synth 8-256] done synthesizing module 'hcmProcess' (2#1) [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/d53c/src/hcmProcess.v:3]
+WARNING: [Synth 8-689] width (1) of port connection 'aes_out' does not match port width (2) of module 'hcmProcess' [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/d53c/hdl/myipBCM_v1_0_S00_AXI.v:426]
+INFO: [Synth 8-638] synthesizing module 'timestampProcess' [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/d53c/src/timestampProcess.v:3]
 	Parameter DIVISOR bound to: 50000000 - type: integer 
-WARNING: [Synth 8-5788] Register ticker_reg in module timestampProcess is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/src/timestampProcess.v:39]
-WARNING: [Synth 8-5788] Register timeup_out_reg in module timestampProcess is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/src/timestampProcess.v:43]
-INFO: [Synth 8-256] done synthesizing module 'timestampProcess' (3#1) [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/src/timestampProcess.v:3]
-INFO: [Synth 8-638] synthesizing module 'aes_128' [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/src/aes_128.v:3]
-INFO: [Synth 8-638] synthesizing module 'expand_key_128' [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/src/aes_128.v:70]
-INFO: [Synth 8-638] synthesizing module 'S4' [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/src/table.v:19]
-INFO: [Synth 8-638] synthesizing module 'S' [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/src/table.v:48]
-INFO: [Synth 8-256] done synthesizing module 'S' (4#1) [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/src/table.v:48]
-INFO: [Synth 8-256] done synthesizing module 'S4' (5#1) [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/src/table.v:19]
-INFO: [Synth 8-256] done synthesizing module 'expand_key_128' (6#1) [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/src/aes_128.v:70]
-INFO: [Synth 8-638] synthesizing module 'one_round' [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/src/round.v:4]
-INFO: [Synth 8-638] synthesizing module 'table_lookup' [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/src/table.v:3]
-INFO: [Synth 8-638] synthesizing module 'T' [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/src/table.v:33]
-INFO: [Synth 8-638] synthesizing module 'xS' [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/src/table.v:317]
-INFO: [Synth 8-256] done synthesizing module 'xS' (7#1) [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/src/table.v:317]
-INFO: [Synth 8-256] done synthesizing module 'T' (8#1) [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/src/table.v:33]
-INFO: [Synth 8-256] done synthesizing module 'table_lookup' (9#1) [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/src/table.v:3]
-INFO: [Synth 8-256] done synthesizing module 'one_round' (10#1) [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/src/round.v:4]
-INFO: [Synth 8-638] synthesizing module 'final_round' [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/src/round.v:38]
-INFO: [Synth 8-256] done synthesizing module 'final_round' (11#1) [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/src/round.v:38]
-INFO: [Synth 8-256] done synthesizing module 'aes_128' (12#1) [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/src/aes_128.v:3]
-WARNING: [Synth 8-689] width (1) of port connection 'aes_in' does not match port width (2) of module 'aes_128' [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/hdl/myipBCM_v1_0_S00_AXI.v:440]
-WARNING: [Synth 8-6014] Unused sequential element slv_reg1_reg was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/hdl/myipBCM_v1_0_S00_AXI.v:235]
-WARNING: [Synth 8-6014] Unused sequential element slv_reg2_reg was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/hdl/myipBCM_v1_0_S00_AXI.v:236]
-WARNING: [Synth 8-6014] Unused sequential element slv_reg3_reg was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/hdl/myipBCM_v1_0_S00_AXI.v:237]
-INFO: [Synth 8-256] done synthesizing module 'myipBCM_v1_0_S00_AXI' (13#1) [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/hdl/myipBCM_v1_0_S00_AXI.v:4]
-WARNING: [Synth 8-350] instance 'myipBCM_v1_0_S00_AXI_inst' of module 'myipBCM_v1_0_S00_AXI' requires 23 connections, but only 22 given [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/hdl/myipBCM_v1_0.v:50]
-INFO: [Synth 8-256] done synthesizing module 'myipBCM_v1_0' (14#1) [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/hdl/myipBCM_v1_0.v:4]
+WARNING: [Synth 8-5788] Register ticker_reg in module timestampProcess is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/d53c/src/timestampProcess.v:39]
+WARNING: [Synth 8-5788] Register timeup_out_reg in module timestampProcess is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/d53c/src/timestampProcess.v:43]
+INFO: [Synth 8-256] done synthesizing module 'timestampProcess' (3#1) [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/d53c/src/timestampProcess.v:3]
+INFO: [Synth 8-638] synthesizing module 'aes_128' [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/d53c/src/aes_128.v:3]
+INFO: [Synth 8-638] synthesizing module 'expand_key_128' [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/d53c/src/aes_128.v:68]
+INFO: [Synth 8-638] synthesizing module 'S4' [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/d53c/src/table.v:19]
+INFO: [Synth 8-638] synthesizing module 'S' [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/d53c/src/table.v:48]
+INFO: [Synth 8-256] done synthesizing module 'S' (4#1) [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/d53c/src/table.v:48]
+INFO: [Synth 8-256] done synthesizing module 'S4' (5#1) [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/d53c/src/table.v:19]
+INFO: [Synth 8-256] done synthesizing module 'expand_key_128' (6#1) [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/d53c/src/aes_128.v:68]
+INFO: [Synth 8-638] synthesizing module 'one_round' [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/d53c/src/round.v:4]
+INFO: [Synth 8-638] synthesizing module 'table_lookup' [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/d53c/src/table.v:3]
+INFO: [Synth 8-638] synthesizing module 'T' [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/d53c/src/table.v:33]
+INFO: [Synth 8-638] synthesizing module 'xS' [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/d53c/src/table.v:317]
+INFO: [Synth 8-256] done synthesizing module 'xS' (7#1) [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/d53c/src/table.v:317]
+INFO: [Synth 8-256] done synthesizing module 'T' (8#1) [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/d53c/src/table.v:33]
+INFO: [Synth 8-256] done synthesizing module 'table_lookup' (9#1) [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/d53c/src/table.v:3]
+INFO: [Synth 8-256] done synthesizing module 'one_round' (10#1) [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/d53c/src/round.v:4]
+INFO: [Synth 8-638] synthesizing module 'final_round' [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/d53c/src/round.v:38]
+INFO: [Synth 8-256] done synthesizing module 'final_round' (11#1) [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/d53c/src/round.v:38]
+INFO: [Synth 8-256] done synthesizing module 'aes_128' (12#1) [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/d53c/src/aes_128.v:3]
+WARNING: [Synth 8-689] width (1) of port connection 'aes_in' does not match port width (2) of module 'aes_128' [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/d53c/hdl/myipBCM_v1_0_S00_AXI.v:440]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg1_reg was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/d53c/hdl/myipBCM_v1_0_S00_AXI.v:235]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg2_reg was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/d53c/hdl/myipBCM_v1_0_S00_AXI.v:236]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg3_reg was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/d53c/hdl/myipBCM_v1_0_S00_AXI.v:237]
+INFO: [Synth 8-256] done synthesizing module 'myipBCM_v1_0_S00_AXI' (13#1) [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/d53c/hdl/myipBCM_v1_0_S00_AXI.v:4]
+WARNING: [Synth 8-350] instance 'myipBCM_v1_0_S00_AXI_inst' of module 'myipBCM_v1_0_S00_AXI' requires 23 connections, but only 22 given [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/d53c/hdl/myipBCM_v1_0.v:50]
+INFO: [Synth 8-256] done synthesizing module 'myipBCM_v1_0' (14#1) [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/d53c/hdl/myipBCM_v1_0.v:4]
 INFO: [Synth 8-256] done synthesizing module 'zynqWithWifiExp_myipBCM_0_0' (15#1) [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ip/zynqWithWifiExp_myipBCM_0_0/synth/zynqWithWifiExp_myipBCM_0_0.v:57]
 INFO: [Synth 8-638] synthesizing module 'zynqWithWifiExp_processing_system7_0_0' [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ip/zynqWithWifiExp_processing_system7_0_0/synth/zynqWithWifiExp_processing_system7_0_0.v:60]
 INFO: [Synth 8-638] synthesizing module 'processing_system7_v5_5_processing_system7' [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ip/zynqWithWifiExp_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:162]
@@ -1106,7 +1106,7 @@ WARNING: [Synth 8-3331] design axi_protocol_converter_v2_1_15_b2s_rd_cmd_fsm has
 WARNING: [Synth 8-3331] design axi_protocol_converter_v2_1_15_b2s_rd_cmd_fsm has unconnected port s_arlen[2]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:29 ; elapsed = 00:00:59 . Memory (MB): peak = 1503.555 ; gain = 227.535 ; free physical = 7374 ; free virtual = 27682
+Finished RTL Elaboration : Time (s): cpu = 00:00:29 ; elapsed = 00:01:00 . Memory (MB): peak = 1503.551 ; gain = 227.535 ; free physical = 6486 ; free virtual = 26620
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -1116,7 +1116,7 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:29 ; elapsed = 00:01:00 . Memory (MB): peak = 1503.555 ; gain = 227.535 ; free physical = 7380 ; free virtual = 27688
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:29 ; elapsed = 00:01:00 . Memory (MB): peak = 1503.551 ; gain = 227.535 ; free physical = 6493 ; free virtual = 26627
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 13 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -1148,16 +1148,16 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   FDR => FDRE: 12 instances
   SRL16 => SRL16E: 1 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1828.988 ; gain = 0.004 ; free physical = 7029 ; free virtual = 27355
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1828.984 ; gain = 0.004 ; free physical = 6181 ; free virtual = 26322
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:47 ; elapsed = 00:01:47 . Memory (MB): peak = 1828.988 ; gain = 552.969 ; free physical = 7148 ; free virtual = 27473
+Finished Constraint Validation : Time (s): cpu = 00:00:47 ; elapsed = 00:01:47 . Memory (MB): peak = 1828.984 ; gain = 552.969 ; free physical = 6288 ; free virtual = 26429
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:47 ; elapsed = 00:01:47 . Memory (MB): peak = 1828.988 ; gain = 552.969 ; free physical = 7148 ; free virtual = 27473
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:47 ; elapsed = 00:01:47 . Memory (MB): peak = 1828.984 ; gain = 552.969 ; free physical = 6288 ; free virtual = 26429
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -1171,14 +1171,14 @@ Applied set_property DONT_TOUCH = true for zynqWithWifiExp_i/ps7_0_axi_periph. (
 Applied set_property DONT_TOUCH = true for zynqWithWifiExp_i/ps7_0_axi_periph/s00_couplers/auto_pc. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for zynqWithWifiExp_i/rst_ps7_0_100M. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:48 ; elapsed = 00:01:47 . Memory (MB): peak = 1828.988 ; gain = 552.969 ; free physical = 7154 ; free virtual = 27475
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:48 ; elapsed = 00:01:47 . Memory (MB): peak = 1828.984 ; gain = 552.969 ; free physical = 6289 ; free virtual = 26430
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5544] ROM "aes_out" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "state_out" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5545] ROM "counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "clock_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-WARNING: [Synth 8-6014] Unused sequential element out_reg was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/src/table.v:57]
-WARNING: [Synth 8-6014] Unused sequential element out_reg was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/src/table.v:326]
+WARNING: [Synth 8-6014] Unused sequential element out_reg was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/d53c/src/table.v:57]
+WARNING: [Synth 8-6014] Unused sequential element out_reg was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/d53c/src/table.v:326]
 INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 WARNING: [Synth 8-6014] Unused sequential element memory_reg[3] was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
 WARNING: [Synth 8-6014] Unused sequential element memory_reg[2] was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2857]
@@ -1257,7 +1257,7 @@ WARNING: [Synth 8-6014] Unused sequential element q_int_reg was removed.  [/home
 INFO: [Synth 8-4471] merging register 'seq_cnt_en_reg' into 'from_sys_reg' [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:377]
 WARNING: [Synth 8-6014] Unused sequential element seq_cnt_en_reg was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:377]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:49 ; elapsed = 00:01:48 . Memory (MB): peak = 1828.988 ; gain = 552.969 ; free physical = 7146 ; free virtual = 27466
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:49 ; elapsed = 00:01:49 . Memory (MB): peak = 1828.984 ; gain = 552.969 ; free physical = 6280 ; free virtual = 26421
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1298,11 +1298,11 @@ Detailed RTL Component Info :
 	                4 Bit    Registers := 8     
 	                3 Bit    Registers := 3     
 	                2 Bit    Registers := 12    
-	                1 Bit    Registers := 44    
+	                1 Bit    Registers := 45    
 +---ROMs : 
 	                              ROMs := 344   
 +---Muxes : 
-	   2 Input    128 Bit        Muxes := 1     
+	   2 Input    128 Bit        Muxes := 2     
 	   2 Input     66 Bit        Muxes := 4     
 	   2 Input     64 Bit        Muxes := 1     
 	   2 Input     47 Bit        Muxes := 2     
@@ -1318,7 +1318,7 @@ Detailed RTL Component Info :
 	   2 Input      2 Bit        Muxes := 9     
 	   4 Input      2 Bit        Muxes := 1     
 	   5 Input      2 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 33    
+	   2 Input      1 Bit        Muxes := 35    
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -1394,9 +1394,11 @@ Detailed RTL Component Info :
 	   2 Input    128 Bit         XORs := 1     
 +---Registers : 
 	              128 Bit    Registers := 3     
+	                1 Bit    Registers := 1     
 +---Muxes : 
-	   2 Input    128 Bit        Muxes := 1     
+	   2 Input    128 Bit        Muxes := 2     
 	   2 Input     64 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
 Module myipBCM_v1_0_S00_AXI 
 Detailed RTL Component Info : 
 +---Registers : 
@@ -1576,24 +1578,24 @@ Finished Part Resource Summary
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-6014] Unused sequential element S4_0/S_0/out_reg was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/src/table.v:57]
-WARNING: [Synth 8-6014] Unused sequential element S4_0/S_1/out_reg was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/src/table.v:57]
-WARNING: [Synth 8-6014] Unused sequential element S4_0/S_2/out_reg was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/src/table.v:57]
-WARNING: [Synth 8-6014] Unused sequential element S4_0/S_3/out_reg was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/src/table.v:57]
-WARNING: [Synth 8-6014] Unused sequential element S4_0/S_3/out_reg was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/src/table.v:57]
-WARNING: [Synth 8-6014] Unused sequential element S4_0/S_2/out_reg was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/src/table.v:57]
-WARNING: [Synth 8-6014] Unused sequential element S4_0/S_1/out_reg was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/src/table.v:57]
-WARNING: [Synth 8-6014] Unused sequential element S4_0/S_0/out_reg was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/src/table.v:57]
-WARNING: [Synth 8-6014] Unused sequential element S4_0/S_3/out_reg was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/src/table.v:57]
-WARNING: [Synth 8-6014] Unused sequential element S4_0/S_2/out_reg was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/src/table.v:57]
-WARNING: [Synth 8-6014] Unused sequential element S4_0/S_1/out_reg was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/src/table.v:57]
-WARNING: [Synth 8-6014] Unused sequential element S4_0/S_0/out_reg was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/src/table.v:57]
-WARNING: [Synth 8-6014] Unused sequential element S4_0/S_3/out_reg was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/src/table.v:57]
-WARNING: [Synth 8-6014] Unused sequential element S4_0/S_2/out_reg was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/src/table.v:57]
-WARNING: [Synth 8-6014] Unused sequential element S4_0/S_1/out_reg was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/src/table.v:57]
-WARNING: [Synth 8-6014] Unused sequential element S4_0/S_0/out_reg was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/src/table.v:57]
-WARNING: [Synth 8-6014] Unused sequential element S4_0/S_3/out_reg was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/src/table.v:57]
-WARNING: [Synth 8-6014] Unused sequential element S4_0/S_2/out_reg was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/7b5a/src/table.v:57]
+WARNING: [Synth 8-6014] Unused sequential element S4_0/S_0/out_reg was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/d53c/src/table.v:57]
+WARNING: [Synth 8-6014] Unused sequential element S4_0/S_1/out_reg was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/d53c/src/table.v:57]
+WARNING: [Synth 8-6014] Unused sequential element S4_0/S_2/out_reg was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/d53c/src/table.v:57]
+WARNING: [Synth 8-6014] Unused sequential element S4_0/S_3/out_reg was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/d53c/src/table.v:57]
+WARNING: [Synth 8-6014] Unused sequential element S4_0/S_3/out_reg was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/d53c/src/table.v:57]
+WARNING: [Synth 8-6014] Unused sequential element S4_0/S_2/out_reg was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/d53c/src/table.v:57]
+WARNING: [Synth 8-6014] Unused sequential element S4_0/S_1/out_reg was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/d53c/src/table.v:57]
+WARNING: [Synth 8-6014] Unused sequential element S4_0/S_0/out_reg was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/d53c/src/table.v:57]
+WARNING: [Synth 8-6014] Unused sequential element S4_0/S_3/out_reg was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/d53c/src/table.v:57]
+WARNING: [Synth 8-6014] Unused sequential element S4_0/S_2/out_reg was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/d53c/src/table.v:57]
+WARNING: [Synth 8-6014] Unused sequential element S4_0/S_1/out_reg was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/d53c/src/table.v:57]
+WARNING: [Synth 8-6014] Unused sequential element S4_0/S_0/out_reg was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/d53c/src/table.v:57]
+WARNING: [Synth 8-6014] Unused sequential element S4_0/S_3/out_reg was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/d53c/src/table.v:57]
+WARNING: [Synth 8-6014] Unused sequential element S4_0/S_2/out_reg was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/d53c/src/table.v:57]
+WARNING: [Synth 8-6014] Unused sequential element S4_0/S_1/out_reg was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/d53c/src/table.v:57]
+WARNING: [Synth 8-6014] Unused sequential element S4_0/S_0/out_reg was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/d53c/src/table.v:57]
+WARNING: [Synth 8-6014] Unused sequential element S4_0/S_3/out_reg was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/d53c/src/table.v:57]
+WARNING: [Synth 8-6014] Unused sequential element S4_0/S_2/out_reg was removed.  [/home/nazmul/research/zedWithWifiExp/zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/d53c/src/table.v:57]
 INFO: [Common 17-14] Message 'Synth 8-6014' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5545] ROM "inst/myipBCM_v1_0_S00_AXI_inst/timestampProcessor/counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
@@ -1714,7 +1716,7 @@ INFO: [Synth 8-3886] merging instance 'zynqWithWifiExp_i/ps7_0_axi_periph/s00_co
 INFO: [Synth 8-3886] merging instance 'zynqWithWifiExp_i/rst_ps7_0_100M/U0/SEQ/pr_dec_reg[1]' (FD) to 'zynqWithWifiExp_i/rst_ps7_0_100M/U0/SEQ/bsr_dec_reg[1]'
 INFO: [Synth 8-3886] merging instance 'zynqWithWifiExp_i/rst_ps7_0_100M/U0/SEQ/bsr_dec_reg[1]' (FD) to 'zynqWithWifiExp_i/rst_ps7_0_100M/U0/SEQ/core_dec_reg[1]'
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:01 ; elapsed = 00:02:02 . Memory (MB): peak = 1828.988 ; gain = 552.969 ; free physical = 7123 ; free virtual = 27436
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:00 ; elapsed = 00:02:01 . Memory (MB): peak = 1828.984 ; gain = 552.969 ; free physical = 6261 ; free virtual = 26390
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -1796,13 +1798,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:07 ; elapsed = 00:02:13 . Memory (MB): peak = 1921.969 ; gain = 645.949 ; free physical = 6809 ; free virtual = 27146
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:06 ; elapsed = 00:02:13 . Memory (MB): peak = 1920.965 ; gain = 644.949 ; free physical = 5980 ; free virtual = 26109
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:09 ; elapsed = 00:02:15 . Memory (MB): peak = 1976.062 ; gain = 700.043 ; free physical = 6770 ; free virtual = 27107
+Finished Timing Optimization : Time (s): cpu = 00:01:07 ; elapsed = 00:02:14 . Memory (MB): peak = 1976.059 ; gain = 700.043 ; free physical = 5939 ; free virtual = 26068
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1814,7 +1816,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:10 ; elapsed = 00:02:16 . Memory (MB): peak = 1984.070 ; gain = 708.051 ; free physical = 6783 ; free virtual = 27105
+Finished Technology Mapping : Time (s): cpu = 00:01:09 ; elapsed = 00:02:15 . Memory (MB): peak = 1984.066 ; gain = 708.051 ; free physical = 5947 ; free virtual = 26075
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1855,7 +1857,7 @@ INFO: [Synth 8-4618] Found max_fanout attribute set to 20 on net \inst/gen_axili
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:11 ; elapsed = 00:02:17 . Memory (MB): peak = 1984.074 ; gain = 708.055 ; free physical = 6789 ; free virtual = 27104
+Finished IO Insertion : Time (s): cpu = 00:01:10 ; elapsed = 00:02:16 . Memory (MB): peak = 1984.070 ; gain = 708.055 ; free physical = 5950 ; free virtual = 26078
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -1868,7 +1870,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:11 ; elapsed = 00:02:17 . Memory (MB): peak = 1984.074 ; gain = 708.055 ; free physical = 6791 ; free virtual = 27106
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:10 ; elapsed = 00:02:16 . Memory (MB): peak = 1984.070 ; gain = 708.055 ; free physical = 5950 ; free virtual = 26078
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1880,25 +1882,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:11 ; elapsed = 00:02:17 . Memory (MB): peak = 1984.074 ; gain = 708.055 ; free physical = 6791 ; free virtual = 27106
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:10 ; elapsed = 00:02:16 . Memory (MB): peak = 1984.070 ; gain = 708.055 ; free physical = 5950 ; free virtual = 26078
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:11 ; elapsed = 00:02:17 . Memory (MB): peak = 1984.074 ; gain = 708.055 ; free physical = 6792 ; free virtual = 27107
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:10 ; elapsed = 00:02:16 . Memory (MB): peak = 1984.070 ; gain = 708.055 ; free physical = 5950 ; free virtual = 26078
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:11 ; elapsed = 00:02:18 . Memory (MB): peak = 1984.074 ; gain = 708.055 ; free physical = 6791 ; free virtual = 27106
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:10 ; elapsed = 00:02:16 . Memory (MB): peak = 1984.070 ; gain = 708.055 ; free physical = 5950 ; free virtual = 26078
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:11 ; elapsed = 00:02:18 . Memory (MB): peak = 1984.074 ; gain = 708.055 ; free physical = 6791 ; free virtual = 27106
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:10 ; elapsed = 00:02:16 . Memory (MB): peak = 1984.070 ; gain = 708.055 ; free physical = 5950 ; free virtual = 26078
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -2003,11 +2005,11 @@ Report Instance Areas:
 |41    |          SEQ_COUNTER                              |upcnt_n                                                        |    13|
 +------+---------------------------------------------------+---------------------------------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:11 ; elapsed = 00:02:18 . Memory (MB): peak = 1984.074 ; gain = 708.055 ; free physical = 6791 ; free virtual = 27106
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:10 ; elapsed = 00:02:16 . Memory (MB): peak = 1984.070 ; gain = 708.055 ; free physical = 5950 ; free virtual = 26078
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 1447 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:01:00 ; elapsed = 00:01:38 . Memory (MB): peak = 1984.074 ; gain = 382.621 ; free physical = 6841 ; free virtual = 27156
-Synthesis Optimization Complete : Time (s): cpu = 00:01:12 ; elapsed = 00:02:18 . Memory (MB): peak = 1984.078 ; gain = 708.055 ; free physical = 6844 ; free virtual = 27159
+Synthesis finished with 0 errors, 0 critical warnings and 1446 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:59 ; elapsed = 00:01:37 . Memory (MB): peak = 1984.070 ; gain = 382.621 ; free physical = 6007 ; free virtual = 26135
+Synthesis Optimization Complete : Time (s): cpu = 00:01:10 ; elapsed = 00:02:17 . Memory (MB): peak = 1984.074 ; gain = 708.055 ; free physical = 6007 ; free virtual = 26135
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 44 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -2022,8 +2024,8 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 INFO: [Common 17-83] Releasing license: Synthesis
 203 Infos, 311 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:14 ; elapsed = 00:02:20 . Memory (MB): peak = 2016.090 ; gain = 764.895 ; free physical = 7000 ; free virtual = 27318
+synth_design: Time (s): cpu = 00:01:13 ; elapsed = 00:02:19 . Memory (MB): peak = 2016.086 ; gain = 764.895 ; free physical = 6165 ; free virtual = 26294
 INFO: [Common 17-1381] The checkpoint '/home/nazmul/research/xilinxVivado/remoteConfig/zedWithWifiExp.runs/synth_1/zynqWithWifiExp_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file zynqWithWifiExp_wrapper_utilization_synth.rpt -pb zynqWithWifiExp_wrapper_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.08 . Memory (MB): peak = 2040.105 ; gain = 0.000 ; free physical = 7005 ; free virtual = 27320
-INFO: [Common 17-206] Exiting Vivado at Thu Oct  1 15:26:50 2020...
+report_utilization: Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.08 . Memory (MB): peak = 2040.102 ; gain = 0.000 ; free physical = 6166 ; free virtual = 26295
+INFO: [Common 17-206] Exiting Vivado at Thu Oct  1 19:15:42 2020...

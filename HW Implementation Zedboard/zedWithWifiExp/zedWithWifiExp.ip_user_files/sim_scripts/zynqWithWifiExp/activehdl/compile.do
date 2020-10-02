@@ -57,14 +57,14 @@ vlog -work processing_system7_vip_v1_0_3  -sv2k12 "+incdir+../../../../zedWithWi
 vlog -work xil_defaultlib  -v2k5 "+incdir+../../../../zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ec67/hdl" "+incdir+../../../../zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/02c8/hdl/verilog" "+incdir+../../../../zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/1313/hdl" "+incdir+/home/nazmul/research/xilinx/Vivado/2017.4/data/xilinx_vip/include" "+incdir+../../../../zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/ec67/hdl" "+incdir+../../../../zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/02c8/hdl/verilog" "+incdir+../../../../zedWithWifiExp.srcs/sources_1/bd/zynqWithWifiExp/ipshared/1313/hdl" "+incdir+/home/nazmul/research/xilinx/Vivado/2017.4/data/xilinx_vip/include" \
 "../../../bd/zynqWithWifiExp/ip/zynqWithWifiExp_processing_system7_0_0/sim/zynqWithWifiExp_processing_system7_0_0.v" \
 "../../../bd/zynqWithWifiExp/sim/zynqWithWifiExp.v" \
-"../../../bd/zynqWithWifiExp/ipshared/7b5a/src/aes_128.v" \
-"../../../bd/zynqWithWifiExp/ipshared/7b5a/src/bcmProcess.v" \
-"../../../bd/zynqWithWifiExp/ipshared/7b5a/src/hcmProcess.v" \
-"../../../bd/zynqWithWifiExp/ipshared/7b5a/hdl/myipBCM_v1_0_S00_AXI.v" \
-"../../../bd/zynqWithWifiExp/ipshared/7b5a/src/round.v" \
-"../../../bd/zynqWithWifiExp/ipshared/7b5a/src/table.v" \
-"../../../bd/zynqWithWifiExp/ipshared/7b5a/src/timestampProcess.v" \
-"../../../bd/zynqWithWifiExp/ipshared/7b5a/hdl/myipBCM_v1_0.v" \
+"../../../bd/zynqWithWifiExp/ipshared/d53c/src/aes_128.v" \
+"../../../bd/zynqWithWifiExp/ipshared/d53c/src/bcmProcess.v" \
+"../../../bd/zynqWithWifiExp/ipshared/d53c/src/hcmProcess.v" \
+"../../../bd/zynqWithWifiExp/ipshared/d53c/hdl/myipBCM_v1_0_S00_AXI.v" \
+"../../../bd/zynqWithWifiExp/ipshared/d53c/src/round.v" \
+"../../../bd/zynqWithWifiExp/ipshared/d53c/src/table.v" \
+"../../../bd/zynqWithWifiExp/ipshared/d53c/src/timestampProcess.v" \
+"../../../bd/zynqWithWifiExp/ipshared/d53c/hdl/myipBCM_v1_0.v" \
 "../../../bd/zynqWithWifiExp/ip/zynqWithWifiExp_myipBCM_0_0/sim/zynqWithWifiExp_myipBCM_0_0.v" \
 
 vcom -work lib_cdc_v1_0_2 -93 \

@@ -48,11 +48,11 @@
 
 
 // IP VLNV: xilinx.com:user:myipBCM:1.2
-// IP Revision: 5
+// IP Revision: 8
 
 (* X_CORE_INFO = "myipBCM_v1_0,Vivado 2017.4" *)
 (* CHECK_LICENSE_TYPE = "zynqWithWifiExp_myipBCM_0_0,myipBCM_v1_0,{}" *)
-(* CORE_GENERATION_INFO = "zynqWithWifiExp_myipBCM_0_0,myipBCM_v1_0,{x_ipProduct=Vivado 2017.4,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=myipBCM,x_ipVersion=1.2,x_ipCoreRevision=5,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_S00_AXI_DATA_WIDTH=32,C_S00_AXI_ADDR_WIDTH=4}" *)
+(* CORE_GENERATION_INFO = "zynqWithWifiExp_myipBCM_0_0,myipBCM_v1_0,{x_ipProduct=Vivado 2017.4,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=myipBCM,x_ipVersion=1.2,x_ipCoreRevision=8,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_S00_AXI_DATA_WIDTH=32,C_S00_AXI_ADDR_WIDTH=4}" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module zynqWithWifiExp_myipBCM_0_0 (
   leds,

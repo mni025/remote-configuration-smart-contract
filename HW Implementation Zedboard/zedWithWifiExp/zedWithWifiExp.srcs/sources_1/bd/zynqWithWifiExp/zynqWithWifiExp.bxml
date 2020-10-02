@@ -2,10 +2,10 @@
 <Root MajorVersion="0" MinorVersion="33">
   <CompositeFile CompositeFileTopName="zynqWithWifiExp" CanBeSetAsTop="false" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1601580234"/>
-    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1601580234"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1601580234"/>
-    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1601580234"/>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1601593967"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1601593967"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1601593967"/>
+    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1601593967"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="ip/zynqWithWifiExp_processing_system7_0_0/zynqWithWifiExp_processing_system7_0_0.xci" Type="IP">
         <Instance HierarchyPath="processing_system7_0"/>
