@@ -15,7 +15,7 @@ Hardware implementation:
 https://www.youtube.com/watch?v=mOxIy6ig-n0
 
 # Smart Contract Implementation
-The deployed smart contract address in 
-Rinkeby Ethereum Testnet (PoA): https://rinkeby.etherscan.io/address/0x31fae75a7ee2094f367e9e6ce522ef234f5438da
+The deployed smart contract address in
 
-Ropsten Ethereum Testner (PoW): https://ropsten.etherscan.io/address/0xe790fa82964853ba42695de768a4c4436f6f3022
+Rinkeby Ethereum Testnet (PoA): https://rinkeby.etherscan.io/address/0x31fae75a7ee2094f367e9e6ce522ef234f5438da
+Ropsten Ethereum Testnet (PoW): https://ropsten.etherscan.io/address/0xe790fa82964853ba42695de768a4c4436f6f3022
