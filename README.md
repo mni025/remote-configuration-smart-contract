@@ -13,3 +13,6 @@ https://www.youtube.com/watch?v=2Eaur3wn_cE&t=11s
 
 Hardware implementation:
 https://www.youtube.com/watch?v=mOxIy6ig-n0
+
+# Smart Contract Implementation
+The deployed smart contract address in Rinkeby Ethereum Testnet is: https://rinkeby.etherscan.io/address/0x31fae75a7ee2094f367e9e6ce522ef234f5438da
