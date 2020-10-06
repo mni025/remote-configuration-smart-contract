@@ -1,4 +1,9 @@
-pragma solidity ^0.5.11;
+// The deployed contract address in Rinkeby is: https://rinkeby.etherscan.io/address/0x31fae75a7ee2094f367e9e6ce522ef234f5438da
+/**
+ *Submitted for verification at Etherscan.io on 2020-10-06
+*/
+
+pragma solidity ^0.5.17;
 
 contract remoteConfiguration
 {
@@ -10,7 +15,10 @@ contract remoteConfiguration
     //This declares a new complex type which will be used for variables later. It will represent a single device.
     struct info {
         address owner;
-        uint256[] configurations;
+        //uint256[] configurations;
+        uint256 configurations0;
+        uint256 configurations1;
+        uint256 configurations2;
     }
     
     //The type maps unsigned integers to info. Mappings can be seen as hash tables which are virtually initialized such that
@@ -25,23 +33,27 @@ contract remoteConfiguration
 
     modifier onlyManufacturer()
     {
-        require(msg.sender == manufacturer);
+        require(
+            msg.sender == manufacturer,
+            "Only the mamanufacturer can register a new device."
+        );
         _;
     }
     
-    constructor() public
+    constructor() public payable 
     {
-        //manufacturer = msg.sender;
-        manufacturer = 0xFAFC4C0769f69Fc583A09380bD6Ee3136Eb4754C;
-        tempUpdated = true;
-        lastTempUpdate = block.number;
+        manufacturer = msg.sender;
+        //manufacturer = 0xFAFC4C0769f69Fc583A09380bD6Ee3136Eb4754C;
+        //manufacturer = _manufacturer;
+        //tempUpdated = true;
+        //lastTempUpdate = block.number;
     }
 
-    function registerDevice(uint _identifier, uint256 config0, uint256 config1, uint256 config2) public onlyManufacturer {
+    function registerDevice(uint _identifier, uint256 config0, uint256 config1, uint256 config2) public payable onlyManufacturer {
         idInfo[_identifier].owner = msg.sender;
-        idInfo[_identifier].configurations[0] = config0; //this is the encrypted default configuration
-        idInfo[_identifier].configurations[1] = config1;
-        idInfo[_identifier].configurations[2] = config2;
+        idInfo[_identifier].configurations0 = config0; //this is the encrypted default configuration
+        idInfo[_identifier].configurations1 = config1;
+        idInfo[_identifier].configurations2 = config2;
     }
     
     function transferOwnership(uint _identifier, address buyer) public {
@@ -64,13 +76,13 @@ contract remoteConfiguration
             if (msg.value < 100 finney){ 
                 revert(); 
             } else {
-                currentConfig = idInfo[_identifier].configurations[1] ;
+                currentConfig = idInfo[_identifier].configurations1 ;
             }
         } else if( requestedConfig == 2 ){
             if (msg.value < 200 finney){ 
                 revert(); 
             } else {
-                currentConfig = idInfo[_identifier].configurations[2];
+                currentConfig = idInfo[_identifier].configurations2;
             }
         } else {
             revert();
@@ -85,7 +97,6 @@ contract remoteConfiguration
         if (block.timestamp - configStartTime < configPeriod) {
             return (currentConfig, configPeriod);
         } else {
-            //LEDturnedOn = 27;
             revert();
         }
     }
