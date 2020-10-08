@@ -21,4 +21,5 @@ Rinkeby Ethereum Testnet (PoA): https://rinkeby.etherscan.io/address/0x31fae75a7
 
 Ropsten Ethereum Testnet (PoW): https://ropsten.etherscan.io/address/0xe790fa82964853ba42695de768a4c4436f6f3022
 
-Ethereum Maninet (PoW): https://etherscan.io/address/0x990bea57863d1a4de73daf21053c040c9abc8978
+Ethereum Maninet (PoW): 
+https://etherscan.io/address/0x990bea57863d1a4de73daf21053c040c9abc8978
