@@ -9,10 +9,10 @@ We implemented the remote IC configuraiton in both pure software and hardware-so
 Demo videos showing the implementation of remote IC configuration can be found on these YouTube links:
 
 Software implementation:
-https://www.youtube.com/watch?v=2Eaur3wn_cE&t=11s
+
 
 Hardware implementation:
-https://www.youtube.com/watch?v=mOxIy6ig-n0
+
 
 # Smart Contract Implementation
 The deployed smart contract address in
